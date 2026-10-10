@@ -1,0 +1,6 @@
+# Local coordination material must stay outside the public repository.
+handoff/
+local/
+.env
+.env.*
+*.key
