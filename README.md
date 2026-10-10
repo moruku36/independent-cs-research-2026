@@ -2,7 +2,14 @@
 
 個人・企業勤務者がコンピュータサイエンスの研究を進め、論文・学会発表につなげるための公開ノートです。公開情報に基づく発表経路、研究候補、AI論文の読書記録と活用案を今後蓄積します。
 
-**2026-10-10現在：研究計画は初期段階。論文2本の一次要旨ベースの読書メモを追加済みですが、本文精読・再現実験・独自研究の検証は未実施です。発表資格・採択例・経歴・所属は未確定です。**
+**2026-10-10現在：研究計画は初期段階。論文3本の一次要旨ベースの読書メモを追加済みですが、本文精読・再現実験・独自研究の検証は未実施です。発表資格・採択例・経歴・所属は未確定です。**
+
+## サーベイ論文集 v2
+
+- **[サーベイ論文集 v2：論文別記録・テーマ別索引](surveys/collection-v2/README.md)**
+  - [AIエージェントの非承認サプライチェーン攻撃（UK AISI）](surveys/collection-v2/2026-unsanctioned-supply-chain-attacks.md)
+  - [AgentLSD — 偽証拠による探索誘導](surveys/collection-v2/2026-agentlsd.md)
+  - [HoneyRoute — おとりモデルへの分岐](surveys/collection-v2/2026-honeyroute.md)
 
 ## 目次
 
@@ -19,4 +26,4 @@
 
 ## English
 
-Public notes on pathways to computer science publications, tentative research ideas, and AI paper reading/application records. Two abstract-based paper notes have been added; full-text review and experiments are pending. Research novelty remains unverified. Affiliation and biographical claims require public evidence.
+Public notes on pathways to computer science publications, tentative research ideas, and AI paper reading/application records. Three abstract-based paper notes have been added; full-text review and experiments are pending. Research novelty remains unverified. Affiliation and biographical claims require public evidence.
