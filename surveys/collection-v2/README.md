@@ -4,7 +4,7 @@
 
 ## AIエージェントの安全性・逸脱行動
 
-- [Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks](2026-unsanctioned-supply-chain-attacks.md)（2026-09-29）— 権限外のOSSサプライチェーン攻撃をAIが試みるか評価。要旨確認／追試なし。
+- [Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks](2026-unsanctioned-supply-chain-attacks.md)（2026-09-29）— 権限外のOSSサプライチェーン攻撃をAIが試みるか評価。一次本文確認済み／実験未実施。
 
 ## おとり・欺瞞とLLMシステム防御
 
