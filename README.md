@@ -13,7 +13,8 @@
 
 ## 目次
 
-- [論文・学会発表への道筋（調査待ち）](docs/publication-pathways-2026.ja.md)
+- [個人によるCS研究の発表と論文投稿（初回調査済み）](docs/publication-pathways-2026.ja.md)
+  - 2026-10-11 JST更新：国内の発表経路、採録例、公開研究歴を一次資料で確認。本人の投稿先・所属表記・参加予算は未決定。
 - [研究候補（未検証）](docs/research-agenda.md)
 - [AI論文の読書・活用一覧（一次資料確認済み2本を含む）](docs/reading-list.md)
 - [AgentLSD：偽の証拠によるAIエージェントの探索誘導](surveys/2026-agentlsd.md)
