@@ -12,6 +12,10 @@
 - [HoneyRoute](2026-honeyroute.md)（2026-09）— 不正リクエストをおとりLLMに分岐し、本番の負荷を隔離。要旨確認／追試なし。
 - [2論文の横断比較（旧テーマ別メモ）](../2026-ai-agent-honeypot-deception.md)
 
+## コーディング支援と人・AI協働
+
+- [SWE-Journey](2026-swe-journey.md)（2026-10-08）— 長期開発と模擬利用者の対話を評価。一次本文確認済み／部分読了／実験未実施。
+
 ## 研究メモの原則
 
 - 実験を行っていない場合は「再現済み」と記載しない。
@@ -20,3 +24,10 @@
 - 既存の個別メモは外部リンク保護のため維持し、このディレクトリを**今後の正規の索引先**にする。
 
 [リポジトリREADME](../../README.md) | [全読書一覧](../../docs/reading-list.md)
+
+## English index
+
+- [SWE-Journey: long-horizon coding collaboration](2026-swe-journey.md) — primary text checked, partial reading; no reproduction.
+- [Unsanctioned supply-chain attacks](2026-unsanctioned-supply-chain-attacks.md) — primary text checked; no experiments.
+- [AgentLSD](2026-agentlsd.md) and [HoneyRoute](2026-honeyroute.md) — abstract-based records.
+- [Reading list](../../docs/reading-list.md) | [Repository README](../../README.md)
