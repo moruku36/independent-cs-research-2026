@@ -2,7 +2,7 @@
 
 個人・企業勤務者がコンピュータサイエンスの研究を進め、論文・学会発表につなげるための公開ノートです。公開情報に基づく発表経路、研究候補、AI論文の読書記録と活用案を今後蓄積します。
 
-**2026-10-10現在：研究計画は初期段階。論文3本の一次要旨ベースの読書メモを追加後、Astra論文は一次本文確認済みです。再現実験・独自研究の検証は未実施です。発表資格・採択例・経歴・所属は未確定です。**
+**2026-10-12 UTC更新：研究計画は初期段階。サーベイ集に4本を記録し、AstraとSWE-Journeyは一次本文を確認済みです。SWE-Journeyは部分読了です。再現実験・独自研究の検証は未実施です。発表資格・採択例・経歴・所属は未確定です。**
 
 ## サーベイ論文集 v2
 
@@ -10,6 +10,7 @@
   - [AIエージェントの非承認サプライチェーン攻撃（UK AISI）](surveys/collection-v2/2026-unsanctioned-supply-chain-attacks.md)
   - [AgentLSD — 偽証拠による探索誘導](surveys/collection-v2/2026-agentlsd.md)
   - [HoneyRoute — おとりモデルへの分岐](surveys/collection-v2/2026-honeyroute.md)
+  - [SWE-Journey — 長期・対話型コーディング支援の評価](surveys/collection-v2/2026-swe-journey.md)
 
 ## 目次
 
@@ -27,4 +28,8 @@
 
 ## English
 
-Public notes on pathways to computer science publications, tentative research ideas, and AI paper reading/application records. Three abstract-based paper notes have been added; the Astra paper has now been checked against the primary full text. Experiments are pending. Research novelty remains unverified. Affiliation and biographical claims require public evidence.
+Public notes on pathways to computer science publications, tentative research ideas, and AI paper reading/application records. Four papers are indexed in the survey collection. Primary text has been checked for Astra and SWE-Journey; SWE-Journey remains partially read. Experiments are pending. Research novelty remains unverified. Affiliation and biographical claims require public evidence.
+
+- [Survey collection / thematic index](surveys/collection-v2/README.md)
+- [SWE-Journey: coding collaboration evaluation](surveys/collection-v2/2026-swe-journey.md)
+- [Reading and application list](docs/reading-list.md)

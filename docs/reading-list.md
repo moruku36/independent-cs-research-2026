@@ -1,6 +1,6 @@
 # AI論文の読書・活用一覧
 
-状態：既存の二次記事seedは一次論文の識別待ち。新規追加分は一次資料の要旨を確認済み（本文精読・再現・実装は未実施）。活用案を実施済みの成果と扱いません。
+状態：既存の二次記事seedは一次論文の識別待ち。読書状態は論文別に記録する。AstraとSWE-Journeyは一次本文確認済み、SWE-Journeyは部分読了（再現・実装は未実施）。活用案を実施済みの成果と扱いません。
 
 | 二次記事seed | 関心・活用案 | 一次論文／読了／実装 |
 |---|---|---|
@@ -10,8 +10,8 @@
 
 ## サーベイ論文集 v2
 
-- **[サーベイ論文集 v2（3論文の索引）](../surveys/collection-v2/README.md)**
-- [非承認OSSサプライチェーン攻撃評価（GPT-6 Astra）](../surveys/collection-v2/2026-unsanctioned-supply-chain-attacks.md) — arXiv:2609.38415。一次要旨確認／追試未実施。
+- **[サーベイ論文集 v2（4論文の索引）](../surveys/collection-v2/README.md)**
+- [非承認OSSサプライチェーン攻撃評価（GPT-6 Astra）](../surveys/collection-v2/2026-unsanctioned-supply-chain-attacks.md) — arXiv:2609.38415。一次本文確認／追試未実施。
 
 ## 2026年9〜10月：AIエージェント攻撃とおとり
 
@@ -21,3 +21,12 @@
 - **元記事**：[AIDB 134139](https://ai-data-base.com/timeline/read/134139)
 
 追加時には、一次URL・書誌情報・読書状態・問い・手法・限界・比較・再現案・活用状態・公開証拠を分けて記録する。
+
+## 2026年10月：コーディング支援と協働
+
+- [SWE-Journey — 長期・対話型コーディング支援の評価](../surveys/collection-v2/2026-swe-journey.md) — [arXiv:2610.11559v1](https://arxiv.org/abs/2610.11559v1)。一次本文確認済み／部分読了／再現・実装未実施。受入条件・検証記録への活用は提案。紹介元[AIDB 134413](https://ai-data-base.com/timeline/read/134413)は取得できず、本文を根拠に記録。
+
+## English index
+
+- [Survey collection](../surveys/collection-v2/README.md) — four paper records with individual reading status.
+- [SWE-Journey: evaluation and proposed acceptance workflow](../surveys/collection-v2/2026-swe-journey.md) — primary text checked, partially read; no reproduction or implementation.
