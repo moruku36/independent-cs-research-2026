@@ -54,7 +54,7 @@ Trivy公式は検出対象・advisory選択・検出優先度によって偽陽�
 
 ### 使える公開成果
 
-[multi-ai-workflow の独立レビュープロンプト](https://github.com/moruku36/multi-ai-workflow/blob/cbacf842a30ed1d485eb37ee8ce1fad555b7a444/configs/level4-claude/review_prompt.md)には、証拠と再現方法のある重要な指摘を優先し、不確実な主張を未確認とする方針がある。[ai-engineering-factory](https://github.com/moruku36/ai-engineering-factory/tree/2525cbbdaf17947dcdd20943afb9098b8cb30c5e)は、収集した証跡と検証・完了を区別する基盤候補。自動コード生成・自動merge・自動deployが実装済みだとは扱わない。
+[multi-ai-workflow の独立レビュープロンプト](https://github.com/moruku36/multi-ai-workflow/blob/cbacf842a30ed1d485eb37ee8ce1fad555b7a444/configs/level4-claude/review_prompt.md)には、証拠と再現方法のある重要な指摘を優先し、不確実な主張を未確認とする方針がある。[ai-engineering-factory](https://github.com/moruku36/ai-governance-control/tree/2525cbbdaf17947dcdd20943afb9098b8cb30c5e)は、収集した証跡と検証・完了を区別する基盤候補。自動コード生成・自動merge・自動deployが実装済みだとは扱わない。
 
 ### 先行研究との差を検証する
 
@@ -86,7 +86,7 @@ AIを使うクラウド運用で、コマンド終了、Terraform state、プロ
 
 [cloud-validation-level2-multicloud の最終レポート](https://github.com/moruku36/cloud-validation-level2-multicloud/blob/c5d25b637c2a71ffb84b6a7dab6c5f0f994062a0/docs/final-report.md)は、AWS/Azure/GCPでの構築からcleanupまでを事後分析し、実行記録、静的レビュー、考察を区別している。3クラウドを順番に試して前の知識を次へ持ち込んだ点や、再現時のコード上の課題も明記される。そのまま統制実験の性能比較とは扱えない。
 
-[ai-engineering-factory のJUnit検査](https://github.com/moruku36/ai-engineering-factory/blob/2525cbbdaf17947dcdd20943afb9098b8cb30c5e/orchestrator/core/junit.py)は、ゼロ件・全skip・壊れた集計等を拒否する例。ただし解析できたレポートが真に実行された証拠になるとは限らず、producerの信頼や外部状態の確認は別に必要。
+[ai-engineering-factory のJUnit検査](https://github.com/moruku36/ai-governance-control/blob/2525cbbdaf17947dcdd20943afb9098b8cb30c5e/orchestrator/core/junit.py)は、ゼロ件・全skip・壊れた集計等を拒否する例。ただし解析できたレポートが真に実行された証拠になるとは限らず、producerの信頼や外部状態の確認は別に必要。
 
 ### 先行研究との差を検証する
 
