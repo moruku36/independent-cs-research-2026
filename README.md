@@ -28,8 +28,46 @@
 
 ## English
 
-Public notes on pathways to computer science publications, tentative research ideas, and AI paper reading/application records. Four papers are indexed in the survey collection. Primary text has been checked for Astra and SWE-Journey; SWE-Journey remains partially read. Experiments are pending. Research novelty remains unverified. Affiliation and biographical claims require public evidence.
+Public notes for independent researchers and industry practitioners working on computer science research toward paper submissions and conference presentations. This repository accumulates publication pathways, candidate research topics, AI paper reading logs, and practical application ideas based on publicly available information.
 
-- [Survey collection / thematic index](surveys/collection-v2/README.md)
-- [SWE-Journey: coding collaboration evaluation](surveys/collection-v2/2026-swe-journey.md)
-- [Reading and application list](docs/reading-list.md)
+**2026-10-12 UTC Update:** Research plans are in the initial phase. Four papers are recorded in the survey collection; primary texts have been verified for Astra and SWE-Journey, and SWE-Journey remains partially read. Replication experiments and original research validations have not yet been conducted. Eligibility for presentation, acceptance precedents, biographical details, and affiliation formatting remain undecided.
+
+### Survey Collection v2
+
+-* [Survey Collection v2: Paper Logs & Thematic Index](docs/survey_collection_v2.md)
+  * [Unauthorized Supply Chain Attacks by AI Agents (UK AISI)](surveys/uk_aisi_unauthorized_supply_chain_agent.md)
+  *   * [AgentLSD — Guiding Agent Exploration via Deceptive Evidence](surveys/agentlsd_deceptive_evidence.md)
+      *   * [HoneyRoute  Routing Malicious Requests to Honeypot Models](surveys/honeyroute_honeypot_routing.md)
+          *   * [SWE-Journey — Evaluating Long-Horizon Interactive Coding Assistance](surveys/swe_journey_interactive_coding.md)
+              *
+              * ### Table of Contents
+              *
+              * * [Publication & Submission Pathways for Independent CS Research (Initial Survey Complete)](docs/publishing_pathways.md)
+                *   * 2026-10-11 JST Update: Domestic publication venues, acceptance precedents, and public research histories verified against primary sources. Target venues, affiliation formatting, and participation budget remain undecided.
+                    * * [Research Candidates (Unverified)](docs/research_candidates.md)
+                      * * [AI Paper Reading & Application List (Includes 2 Primary-Source Verified Papers)](docs/paper_reading_list.md)
+                        * * [AgentLSD: Guiding AI Agent Exploration via Deceptive Evidence](surveys/agentlsd_deceptive_evidence.md)
+                          * * [HoneyRoute: Routing Malicious LLM Requests to Honeypot Models](surveys/honeyroute_honeypot_routing.md)
+                            * * [AI Decoy Defense: Comparison of Two Papers and Research Theme Organization](docs/ai_decoy_defense_survey.md)
+                              * * [Survey Log Template](docs/survey_template.md)
+                                * * [Reproducibility, Ethics, and Pre-Publication Checklist](docs/ethics_reproducibility_checklist.md)
+                                  *
+                                  * Published content is strictly limited to publicly verifiable CS background, OSS contributions, research plans, and public paper information. Internal corporate information, private correspondence, confidential data, and non-public personal details are excluded. No biographical or degree claims are made without verified public sources, and neither employers nor alma maters are designated as current research affiliations.[Survey Collection v2: Paper Logs & Thematic Index](docs/survey_collection_v2.md)
+-   - [Unauthorized Supply Chain Attacks by AI Agents (UK AISI)](surveys/uk_aisi_unauthorized_supply_chain_agent.md)
+    -   - [AgentLSD — Guiding Agent Exploration via Deceptive Evidence](surveys/agentlsd_deceptive_evidence.md)
+        -   - [HoneyRoute — Routing Malicious Requests to Honeypot Models](surveys/honeyroute_honeypot_routing.md)
+            -   - [SWE-Journey — Evaluating Long-Horizon Interactive Coding Assistance](surveys/swe_journey_interactive_coding.md)
+                -
+                - ### Table of Contents
+                -
+                - - [Publication & Submission Pathways for Independent CS Research (Initial Survey Complete)](docs/publishing_pathways.md)
+                  -   - 2026-10-11 JST Update: Domestic publication venues, acceptance precedents, and public research histories verified against primary sources. Target venues, affiliation formatting, and participation budget remain undecided.
+                      - - [Research Candidates (Unverified)](docs/research_candidates.md)
+                        - - [AI Paper Reading & Application List (Includes 2 Primary-Source Verified Papers)](docs/paper_reading_list.md)
+                          - - [AgentLSD: Guiding AI Agent Exploration via Deceptive Evidence](surveys/agentlsd_deceptive_evidence.md)
+                            - - [HoneyRoute: Routing Malicious LLM Requests to Honeypot Models](surveys/honeyroute_honeypot_routing.md)
+                              - - [AI Decoy Defense: Comparison of Two Papers and Research Theme Organization](docs/ai_decoy_defense_survey.md)
+                                - - [Survey Log Template](docs/survey_template.md)
+                                  - - [Reproducibility, Ethics, and Pre-Publication Checklist](docs/ethics_reproducibility_checklist.md)
+                                    -
+                                    - Published content is strictly limited to publicly verifiable CS background, OSS contributions, research plans, and public paper information. Internal corporate information, private correspondence, confidential data, and non-public personal details are excluded. No biographical or degree claims are made without verified public sources, and neither employers nor alma maters are designated as current research affiliations.Pub
