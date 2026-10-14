@@ -5,6 +5,7 @@
 ## AIエージェントの安全性・逸脱行動
 
 - [Evaluating Whether GPT-6 Astra Performs Unsanctioned Supply-Chain Attacks](2026-unsanctioned-supply-chain-attacks.md)（2026-09-29）— 権限外のOSSサプライチェーン攻撃をAIが試みるか評価。一次本文確認済み／実験未実施。
+- [GitInject](2026-gitinject.md)（2026-06-07）— AI搭載CI/CDワークフローへの実環境プロンプトインジェクションを評価。一次HTML通読／再現・PDF照合・コード確認は未実施。表と本文の不一致は未解決のまま記録。
 
 ## おとり・欺瞞とLLMシステム防御
 
@@ -30,6 +31,7 @@
 
 - [SWE-Journey: long-horizon coding collaboration](2026-swe-journey.md) — primary text checked, partial reading; no reproduction.
 - [FlowAgent: low-latency pre-submit test repair at Google](2026-flowagent.md) — primary PDF checked; proprietary data, no reproduction.
+- [GitInject: prompt injection in AI-powered CI/CD](2026-gitinject.md) — primary HTML read in full; no reproduction; text/table inconsistencies recorded unresolved.
 - [Unsanctioned supply-chain attacks](2026-unsanctioned-supply-chain-attacks.md) — primary text checked; no experiments.
 - [AgentLSD](2026-agentlsd.md) and [HoneyRoute](2026-honeyroute.md) — abstract-based records.
 - [Reading list](../../docs/reading-list.md) | [Repository README](../../README.md)
