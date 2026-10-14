@@ -10,7 +10,7 @@
 
 ## サーベイ論文集 v2
 
-- **[サーベイ論文集 v2（4論文の索引）](../surveys/collection-v2/README.md)**
+- **[サーベイ論文集 v2（5論文の索引）](../surveys/collection-v2/README.md)**
 - [非承認OSSサプライチェーン攻撃評価（GPT-6 Astra）](../surveys/collection-v2/2026-unsanctioned-supply-chain-attacks.md) — arXiv:2609.38415。一次本文確認／追試未実施。
 
 ## 2026年9〜10月：AIエージェント攻撃とおとり
@@ -25,8 +25,10 @@
 ## 2026年10月：コーディング支援と協働
 
 - [SWE-Journey — 長期・対話型コーディング支援の評価](../surveys/collection-v2/2026-swe-journey.md) — [arXiv:2610.11559v1](https://arxiv.org/abs/2610.11559v1)。一次本文確認済み／部分読了／再現・実装未実施。受入条件・検証記録への活用は提案。紹介元[AIDB 134413](https://ai-data-base.com/timeline/read/134413)は取得できず、本文を根拠に記録。
+- [FlowAgent — 提出前テスト失敗の低遅延エージェント修復](../surveys/collection-v2/2026-flowagent.md) — [arXiv:2610.07289v1](https://arxiv.org/abs/2610.07289v1)。一次PDF確認済み／再現未実施（データ非公開）。作業委任の運用4点は採用済みだが効果未検証。紹介記事[AIDB 133569](https://ai-data-base.com/timeline/read/133569)は全文未読で、根拠は論文のみ。
 
 ## English index
 
-- [Survey collection](../surveys/collection-v2/README.md) — four paper records with individual reading status.
+- [Survey collection](../surveys/collection-v2/README.md) — five paper records with individual reading status.
+- [FlowAgent: pre-submit test repair at Google](../surveys/collection-v2/2026-flowagent.md) — primary PDF checked; no reproduction; adopted practices unverified.
 - [SWE-Journey: evaluation and proposed acceptance workflow](../surveys/collection-v2/2026-swe-journey.md) — primary text checked, partially read; no reproduction or implementation.

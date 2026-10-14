@@ -15,6 +15,7 @@
 ## コーディング支援と人・AI協働
 
 - [SWE-Journey](2026-swe-journey.md)（2026-10-08）— 長期開発と模擬利用者の対話を評価。一次本文確認済み／部分読了／実験未実施。
+- [FlowAgent](2026-flowagent.md)（2026-10-05）— Googleの提出前テスト失敗を低遅延で自動修復。一次PDF確認済み／再現未実施（非公開データによる制約）／運用方針採用・効果未検証。
 
 ## 研究メモの原則
 
@@ -28,6 +29,7 @@
 ## English index
 
 - [SWE-Journey: long-horizon coding collaboration](2026-swe-journey.md) — primary text checked, partial reading; no reproduction.
+- [FlowAgent: low-latency pre-submit test repair at Google](2026-flowagent.md) — primary PDF checked; proprietary data, no reproduction.
 - [Unsanctioned supply-chain attacks](2026-unsanctioned-supply-chain-attacks.md) — primary text checked; no experiments.
 - [AgentLSD](2026-agentlsd.md) and [HoneyRoute](2026-honeyroute.md) — abstract-based records.
 - [Reading list](../../docs/reading-list.md) | [Repository README](../../README.md)
