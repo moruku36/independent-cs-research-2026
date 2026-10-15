@@ -1,15 +1,17 @@
-# サーベイ記録テンプレート
+**English** | [日本語](template.ja.md)
 
-- 状態：識別待ち／一次資料確認済み／部分読了／全文読了／再現済み
-- 題名・著者・年・会場・DOI／arXiv ID・一次URL：
-- 確認日・対象version：
-- 研究の問い：
-- 手法・データ・比較条件：
-- 主張と証拠：
-- 限界・妥当性への脅威：
-- 関連研究との比較：
-- 無料で実施できる再現案：
-- 活用状態：提案／試行／実装採用（証拠URL）
-- 未確認点・次の確認：
+# Survey Record Template
 
-要旨の翻訳・コピーだけでサーベイを完成扱いしない。
+- Status: unidentified / primary source checked / partially read / fully read / reproduced
+- Title, authors, year, venue, DOI / arXiv ID, primary URL:
+- Date checked and version examined:
+- Research question:
+- Method, data, and comparison conditions:
+- Claims and evidence:
+- Limitations and threats to validity:
+- Comparison with related work:
+- Free-to-run reproduction plan:
+- Usage status: proposed / trialed / adopted (evidence URL)
+- Unconfirmed points and next checks:
+
+Do not treat a translation or copy of an abstract as a finished survey.

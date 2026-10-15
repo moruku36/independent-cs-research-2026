@@ -1,123 +1,125 @@
-# 公開成果から始める研究候補 2026
+**English** | [日本語](research-agenda.ja.md)
 
-確認日：2026-10-11 JST（2026-10-10 UTC）。**以下は研究計画案。新規性の網羅的確認、提案する比較実験、採択可能性の評価は未実施。** リポジトリの既存テストや過去の実行記録を、新しい研究実験の結果として扱わない。
+# Research Candidates Built on Public Work, 2026
 
-## 出発点
+Checked 2026-10-11 JST (2026-10-10 UTC). **Everything below is a research plan. An exhaustive novelty check, the proposed comparison experiments, and an assessment of acceptance likelihood have not been done.** Existing tests and past run records in the repositories are not treated as results of new research experiments.
 
-2023年の「DevSecOps スキームにおいて脆弱性逓減を可能にする OSS ベースの環境調査」は、[JAIST公式リポジトリ](https://dspace.jaist.ac.jp/dspace/handle/10119/18754)に森健太郎氏の課題研究報告書として収録されている。[本人の発表資料](https://speakerdeck.com/moruku36/devsecops-sukimunioitecui-ruo-xing-di-jian-woke-neng-nisuruoss-besunohuan-jing-diao-cha)では、Azure上のOSSによるDevSecOps環境と複数のセキュリティチェックを説明している。この研究歴を、現在の公開ツールの評価へつなげる。
+## Starting point
 
-公開repoを所有していることだけで、含まれる全コードを本人が単独で書いたとは推定しない。論文化の際は、上流OSS、本人・共同作業者の貢献、AI支援、ライセンスを区別し、引用するcommitを固定する。
+The 2023 report "DevSecOps スキームにおいて脆弱性逓減を可能にする OSS ベースの環境調査" (an OSS-based environment survey enabling vulnerability reduction in a DevSecOps scheme) is held in the [JAIST official repository](https://dspace.jaist.ac.jp/dspace/handle/10119/18754) as a project research report by Kentaro Mori. [The author's own slides](https://speakerdeck.com/moruku36/devsecops-sukimunioitecui-ruo-xing-di-jian-woke-neng-nisuruoss-besunohuan-jing-diao-cha) describe a DevSecOps environment built from OSS on Azure with multiple security checks. The aim is to connect this research history to evaluating today's public tools.
 
-## 優先順位の提案
+Owning a public repo is not taken to mean the author wrote all the code in it alone. When writing a paper, distinguish upstream OSS, the author's and collaborators' contributions, AI assistance, and licenses, and pin the commits that are cited.
 
-1. **スキャン差分の誤判定を減らす証拠条件**：過去の研究との接続が強く、既存のコードと合成fixtureを利用して小さく始められる。第一候補。
-2. **独立した複数AIレビューの追加効果と費用**：実務関心との接続は強いが、近接する先行研究が多く、既存手法との比較とデータの独立性が重要。
-3. **クラウドcleanupの完了を誤認しない判定**：クラウド運用経験を研究へ変えやすい。最初は模擬環境で指標と故障分類を固め、実クラウドの一般性は別段階にする。
+## Proposed priority
 
-この順序は準備しやすさと評価の明確さによる判断であり、学術的新規性の順位ではない。
+1. **Evidence conditions that reduce misjudgment of scan diffs**: strongly connected to past research, and it can start small using existing code and synthetic fixtures. First candidate.
+2. **Added effect and cost of independent multiple AI reviews**: strongly tied to practical interest, but there is a lot of close prior work, so comparison against existing methods and independence of data matter.
+3. **Judging cloud cleanup completion without misreading it**: easy to turn cloud-operations experience into research. Start by fixing metrics and failure taxonomy in a simulated environment, and treat generality to real clouds as a later stage.
 
-## 案1 スキャン差分の誤判定を減らす証拠条件
+This order reflects ease of preparation and clarity of evaluation, not ranking of academic novelty.
 
-### 研究質問
+## Idea 1: Evidence conditions that reduce misjudgment of scan diffs
 
-脆弱性スキャンの前後比較で、スキャナ版、DB、設定、対象範囲、実行完了の証拠を検査すると、単なる検出数差分や識別子差分に比べて「比較できないのに改善したと判定する」誤りをどれだけ減らせるか。その代わりに、比較可能な組をどれだけ拒否するか。
+### Research question
 
-### 使える公開成果
+When comparing vulnerability scans before and after, if we check scanner version, DB, configuration, scope, and evidence of completed execution, how much can we reduce the error of "judging it improved when the runs are not comparable", compared with just diffing detection counts or identifiers? And in exchange, how many comparable pairs do we reject?
 
-[trivy-remediation-evidence のREADME](https://github.com/moruku36/trivy-remediation-evidence/blob/2d29efa09f29869de68793231cc801765c98cf2b/README.md)は、前後のTrivy JSONと明示的なmanifestから決定的な比較結果を作り、証拠不足時には比較を拒否する設計を示す。[fixture索引](https://github.com/moruku36/trivy-remediation-evidence/blob/2d29efa09f29869de68793231cc801765c98cf2b/outputs/fixtures/index.json)にはDB変更、scope欠損、実行失敗、曖昧な同一性等の20例がある。[理由コード](https://github.com/moruku36/trivy-remediation-evidence/blob/2d29efa09f29869de68793231cc801765c98cf2b/outputs/schemas/reason-catalog.json)も公開されている。ここで確認したのは公開ファイルの内容であり、新たな実行結果ではない。
+### Public work that can be used
 
-### 先行研究との差を検証する
+The [README of trivy-remediation-evidence](https://github.com/moruku36/trivy-remediation-evidence/blob/2d29efa09f29869de68793231cc801765c98cf2b/README.md) shows a design that builds a deterministic comparison result from before/after Trivy JSON and an explicit manifest, and refuses comparison when evidence is lacking. The [fixture index](https://github.com/moruku36/trivy-remediation-evidence/blob/2d29efa09f29869de68793231cc801765c98cf2b/outputs/fixtures/index.json) has 20 cases covering DB changes, missing scope, execution failure, and ambiguous identity. The [reason codes](https://github.com/moruku36/trivy-remediation-evidence/blob/2d29efa09f29869de68793231cc801765c98cf2b/outputs/schemas/reason-catalog.json) are also public. What was confirmed here is the content of public files, not new execution results.
 
-Trivy公式は検出対象・advisory選択・検出優先度によって偽陽性と偽陰性が変わると説明し、終了コード0は脆弱性なしを意味しない。[検出仕様](https://trivy.dev/docs/latest/scanner/vulnerability/)・[終了コード](https://www.trivy.dev/docs/dev/guide/configuration/others/)
+### Verify the difference from prior work
 
-「A Reality Check on SBOM-based Vulnerability Management」（2025）はSBOM精度と到達不能コードに起因する警告を扱う。[一次論文の要旨](https://arxiv.org/abs/2511.20313)。本案は、個々の脆弱性が実際に悪用可能かを推定するのではなく、**前後の観測を比較できる条件を確かめる**ことを主題にする。ただしSBOM/VEX、scanner差分、測定再現性の既存研究と同じ問題を既に解いていないか、本文と公開実装の比較が必要。新しいツール名だけでは貢献にならない。
+The official Trivy docs explain that false positives and false negatives vary with detection targets, advisory selection, and detection priority, and that exit code 0 does not mean no vulnerabilities. [Detection spec](https://trivy.dev/docs/latest/scanner/vulnerability/) · [Exit codes](https://www.trivy.dev/docs/dev/guide/configuration/others/)
 
-### 必要データと最小実験
+"A Reality Check on SBOM-based Vulnerability Management" (2025) treats warnings caused by SBOM accuracy and unreachable code. [Abstract of the primary paper](https://arxiv.org/abs/2511.20313). This idea does not estimate whether an individual vulnerability is actually exploitable; its theme is **checking the conditions under which before/after observations are comparable**. Still, we need to compare full texts and public implementations to confirm it does not already solve the same problem as existing work on SBOM/VEX, scanner diffs, and measurement reproducibility. A new tool name alone is not a contribution.
 
-- 既存20fixtureは設計・動作確認用にする。評価用には、作成規則を先に定めた未使用の30組程度の合成before/afterを別に用意する。
-- 条件変更はDB、設定、scope、実行状態、同一性、正常な内容変更を含める。条件を変えていない正常対照も含める。
-- 比較する判定器は、検出件数のみ、安定したfinding identityの集合差分、manifestを伴う提案判定の3つ。単純な対照を実在製品の性能と混同しない。
-- 正解は生成時に埋め込んだ変更と、判定器の出力を見ずに作ったラベルに置く。可能なら第三者にラベルの一部を再確認してもらう。
-- 指標は比較不能組の誤受理率、比較可能組の誤拒否率、理由分類の一致率、処理時間。分母と症例別の誤りを必ず示す。
+### Required data and minimal experiment
 
-初回はすべてローカル合成データで実施可能。実イメージへ進む場合は、ライセンスを確認した固定digest、スキャナ版、DB snapshot、実効設定を揃える。新たなscanで検出されないことから、修復完了やアプリケーション全体の安全を断定しない。
+- Use the existing 20 fixtures for design and sanity checks. For evaluation, prepare separately about 30 unused synthetic before/after pairs whose creation rules are fixed in advance.
+- Condition changes include DB, configuration, scope, execution state, identity, and legitimate content changes. Include normal controls with no condition change.
+- Compare three judges: detection count only, set difference over stable finding identity, and the proposed manifest-based judgment. Do not confuse simple baselines with the performance of real products.
+- Ground truth is the change embedded at generation time and labels made without looking at judge output. If possible, have a third party recheck some labels.
+- Metrics are false-accept rate on non-comparable pairs, false-reject rate on comparable pairs, agreement of reason classification, and processing time. Always show denominators and per-case errors.
 
-### 限界と発表先
+The first round can run entirely on local synthetic data. If moving to real images, align license-checked pinned digests, scanner versions, DB snapshots, and effective configuration. Do not conclude remediation is complete, or the application is safe overall, from a new scan not detecting anything.
 
-合成ケースだけでは現実の発生頻度を推定できない。既存fixtureから作った評価だけでは設計に有利な漏洩が起きる。第一報は、CSEC向けに「比較可能性の条件・誤受理の分類・公開ベンチマーク」を中心にまとめ、実データ検証を次段階にする。
+### Limitations and venue
 
-## 案2 独立した複数AIレビューの追加効果と費用
+Synthetic cases alone cannot estimate real-world frequency. An evaluation built only from the existing fixtures leaks in the design's favor. The first report should center on "conditions of comparability, taxonomy of false accepts, and a public benchmark" for CSEC, with real-data validation as the next stage.
 
-### 研究質問
+## Idea 2: Added effect and cost of independent multiple AI reviews
 
-同じコード差分に対して、他者の指摘を見ないレビューは、実装者自身の再レビューや逐次レビューに比べて、再現できる重大な欠陥を追加で検出するか。モデルの違いによる効果と、単に推論回数・予算を増やした効果を区別できるか。
+### Research question
 
-### 使える公開成果
+For the same code diff, does a review that does not see others' findings detect additional reproducible serious defects compared with the implementer's own re-review or sequential review? Can we separate the effect of model differences from the effect of simply adding more inference runs or budget?
 
-[multi-ai-workflow の独立レビュープロンプト](https://github.com/moruku36/multi-ai-workflow/blob/cbacf842a30ed1d485eb37ee8ce1fad555b7a444/configs/level4-claude/review_prompt.md)には、証拠と再現方法のある重要な指摘を優先し、不確実な主張を未確認とする方針がある。[ai-engineering-factory](https://github.com/moruku36/ai-governance-control/tree/2525cbbdaf17947dcdd20943afb9098b8cb30c5e)は、収集した証跡と検証・完了を区別する基盤候補。自動コード生成・自動merge・自動deployが実装済みだとは扱わない。
+### Public work that can be used
 
-### 先行研究との差を検証する
+The [independent-review prompt in multi-ai-workflow](https://github.com/moruku36/multi-ai-workflow/blob/cbacf842a30ed1d485eb37ee8ce1fad555b7a444/configs/level4-claude/review_prompt.md) prioritizes important findings with evidence and reproduction steps and treats uncertain claims as unconfirmed. [ai-engineering-factory](https://github.com/moruku36/ai-governance-control/tree/2525cbbdaf17947dcdd20943afb9098b8cb30c5e) is a candidate base that distinguishes collected evidence from verification and completion. It is not treated as having implemented automatic code generation, automatic merge, or automatic deploy.
 
-[CodeAgent](https://arxiv.org/abs/2402.02172v5)は複数エージェントによるレビュー、[c-CRAB](https://arxiv.org/abs/2603.23448v3)は人間レビューを基にしたレビュー評価、[Adversarial Review](https://arxiv.org/abs/2608.18167v1)はreviewerとcriticの構造化された不一致を扱う。要旨で近接性を確認した段階であり、手法・データ・採点の本文比較は次工程。
+### Verify the difference from prior work
 
-従って「複数AIにレビューさせる」だけの新規性は主張できない。候補となる差は、**同一予算で独立性とモデル多様性を切り分け、重大指摘の再現性と追加検出の費用を測る**こと。既存研究が既に同じ統制を行っていれば、より限定したクラウド/IaCの欠陥群等へ問いを絞る必要がある。
+[CodeAgent](https://arxiv.org/abs/2402.02172v5) covers multi-agent review, [c-CRAB](https://arxiv.org/abs/2603.23448v3) covers review evaluation based on human review, and [Adversarial Review](https://arxiv.org/abs/2608.18167v1) covers structured disagreement between reviewer and critic. Proximity was checked only at the abstract level; comparing methods, data, and grading in the full texts is the next step.
 
-### 必要データと最小実験
+So novelty cannot be claimed for "having several AIs review" alone. A candidate difference is **separating independence from model diversity at the same budget, and measuring reproducibility of serious findings and the cost of additional detection**. If existing work already applies the same controls, the question must narrow to a more specific class of defects, such as cloud/IaC.
 
-- 本人の公開プロジェクトと利用条件を満たす公開benchmarkから、欠陥あり20件・なし10件程度の差分を固定。公開解説・修正答えを入力から除く。
-- 条件Aは1回レビュー、Bは同一モデルの独立2回、Cは異なるモデルの独立2回、Dは同じ2モデルだが2番目が1番目の指摘を読む逐次方式。
-- 主要比較B〜Dで総token・最大時間・差分・ツール権限を揃える。Aは低費用の基準として併記し、予算を揃えた比較と混ぜない。
-- 各条件を複数回試し、モデル/API ID、設定、実行日、実使用量、経過時間を記録する。別スレッドであることは統計的独立を保証しない。
-- 指摘を重複排除し、再現テストまたは盲検の人手判定で確認する。追加の真陽性、偽陽性、重大欠陥の再現率、1件追加発見当たりの実費、人手確認時間を測る。
+### Required data and minimal experiment
 
-既存契約の実行枠やローカルモデルを使う場合も、無料と断定せず時間・電力・利用量を分ける。有料APIやGPUを使う比較は予算を決めてから行う。本計画では起動・課金はしていない。
+- From the author's public projects and public benchmarks whose terms allow it, fix about 20 diffs with defects and 10 without. Remove public write-ups and fix answers from the input.
+- Condition A is one review, B is two independent reviews by the same model, C is two independent reviews by different models, D uses the same two models but the second reads the first's findings (sequential).
+- For the main comparison B–D, match total tokens, maximum time, diff, and tool permissions. Report A alongside as a low-cost baseline, without mixing it into the budget-matched comparison.
+- Run each condition several times and record model/API ID, settings, run date, actual usage, and elapsed time. Separate threads do not guarantee statistical independence.
+- Deduplicate findings and confirm them by reproduction tests or blinded human judgment. Measure additional true positives, false positives, recall of serious defects, actual cost per additional finding, and human verification time.
 
-### 限界と発表先
+If using existing contract run quotas or local models, do not assert they are free; account for time, power, and usage separately. Comparisons using paid APIs or GPUs should happen after a budget is decided. This plan does not start anything or incur charges.
 
-少数の自作repo、モデル更新、公開データの学習混入、severity判定の主観性が制約。初期結果はソフトウェア工学系研究会・workshopの候補になるが、具体的な次回募集は別途確認する。レビューの多数決を正解ラベルにして循環評価しない。
+### Limitations and venue
 
-## 案3 クラウドcleanupの完了を誤認しない判定
+Constraints are a small number of self-made repos, model updates, public-data contamination of training, and subjectivity of severity judgment. Early results are candidates for software-engineering study groups or workshops; the specific next call must be checked separately. Do not use a majority vote of reviews as the ground-truth label, which would be circular.
 
-### 研究質問
+## Idea 3: Judging cloud cleanup completion without misreading it
 
-AIを使うクラウド運用で、コマンド終了、Terraform state、プロバイダの対象リソース照会を分けて検証すると、部分失敗・遅延・証拠欠損時にcleanupの完了を誤報する頻度を減らせるか。正しい完了を確認するまでの時間やAPI負荷との関係はどうか。
+### Research question
 
-### 使える公開成果
+In AI-assisted cloud operations, if we verify command exit, Terraform state, and a provider query of the target resources separately, can we reduce how often cleanup completion is falsely reported under partial failure, delay, or missing evidence? How does this relate to the time to confirm correct completion and to API load?
 
-[cloud-validation-level2-multicloud の最終レポート](https://github.com/moruku36/cloud-validation-level2-multicloud/blob/c5d25b637c2a71ffb84b6a7dab6c5f0f994062a0/docs/final-report.md)は、AWS/Azure/GCPでの構築からcleanupまでを事後分析し、実行記録、静的レビュー、考察を区別している。3クラウドを順番に試して前の知識を次へ持ち込んだ点や、再現時のコード上の課題も明記される。そのまま統制実験の性能比較とは扱えない。
+### Public work that can be used
 
-[ai-engineering-factory のJUnit検査](https://github.com/moruku36/ai-governance-control/blob/2525cbbdaf17947dcdd20943afb9098b8cb30c5e/orchestrator/core/junit.py)は、ゼロ件・全skip・壊れた集計等を拒否する例。ただし解析できたレポートが真に実行された証拠になるとは限らず、producerの信頼や外部状態の確認は別に必要。
+The [final report of cloud-validation-level2-multicloud](https://github.com/moruku36/cloud-validation-level2-multicloud/blob/c5d25b637c2a71ffb84b6a7dab6c5f0f994062a0/docs/final-report.md) is a post-hoc analysis from build to cleanup on AWS/Azure/GCP, distinguishing execution records, static review, and discussion. It also notes that the three clouds were tried in sequence with earlier knowledge carried into the next, and code-level issues on reproduction. It is not to be treated as a performance comparison from a controlled experiment.
 
-### 先行研究との差を検証する
+The [JUnit check in ai-engineering-factory](https://github.com/moruku36/ai-governance-control/blob/2525cbbdaf17947dcdd20943afb9098b8cb30c5e/orchestrator/core/junit.py) is an example that rejects zero tests, all skipped, and malformed totals. However, a report that parses is not necessarily evidence that tests truly ran; trust in the producer and confirmation of external state are needed separately.
 
-[IaC-Eval](https://papers.nips.cc/paper_files/paper/2024/hash/f26b29298ae8acd94bd7e839688e329b-Abstract-Datasets_and_Benchmarks_Track.html)はAWSのIaC生成、[SWE-InfraBench](https://arxiv.org/abs/2606.05249)はAWS CDKの既存コード変更を評価する。本案では生成時の正解率から対象を絞り、**終了・削除・残存なしという運用上の主張と、その観測証拠**を扱う。
+### Verify the difference from prior work
 
-ただし、既存の分散システムの障害検出・状態整合性・IaC drift/teardown検証に同等手法がないかを調査する必要がある。名称にAIを付けるだけで新しい研究になるわけではない。モデルの行動改善まで主張するなら、同じ制御器とタスクでAI実行あり/なしを別に測る。
+[IaC-Eval](https://papers.nips.cc/paper_files/paper/2024/hash/f26b29298ae8acd94bd7e839688e329b-Abstract-Datasets_and_Benchmarks_Track.html) evaluates AWS IaC generation and [SWE-InfraBench](https://arxiv.org/abs/2606.05249) evaluates modifying existing AWS CDK code. This idea narrows the target from generation accuracy and deals with **the operational claims of termination, deletion, and nothing remaining, and the observation evidence for them**.
 
-### 必要データと最小実験
+We still need to investigate whether comparable methods already exist in failure detection for distributed systems, state consistency, and IaC drift/teardown verification. Adding "AI" to the name does not make it new research. If claiming improvement in model behavior, measure separately with and without AI execution under the same controller and tasks.
 
-- ローカル状態機械で30程度のシナリオを作る。正常削除、部分削除、一覧の反映遅延、認証期限切れ、rate limit、途中中断、stateから消えたが外部に残る対象、証跡の欠損を含める。
-- 比較はA「終了コードのみ」、B「終了コードとstate」、C「Bに対象を限定した外部状態の確認と期限付き再照会を加える」。外部照会の失敗をゼロ件扱いしない。
-- 正解は模擬プロバイダ内部の状態を採点器だけが保持する。制御器からは応答しか見えないようにする。
-- 指標は誤完了率、未完了の検出率、正常系の誤停止、確定までの時間、追加API回数。試験の上限内に確定しない場合は「不明」として独立集計する。
-- レポートには「プロセス停止」「リソース削除」「保存データ削除」「課金停止」を別項目で記録する。模擬APIの削除成功から実際の請求額までは推定しない。
+### Required data and minimal experiment
 
-初回は実クラウド・課金・削除を伴わない。実環境へ進む場合は対象・費用・保全・削除の承認を別に決め、他の作業で使っている環境へ触れない。
+- Build about 30 scenarios with a local state machine. Include normal deletion, partial deletion, delayed reflection in listings, expired credentials, rate limits, mid-run interruption, targets that vanish from state but remain externally, and missing evidence.
+- Compare A "exit code only", B "exit code and state", and C "B plus scoped external-state confirmation and time-bounded re-query". Do not treat failure of an external query as zero results.
+- Ground truth is held only by the grader inside the simulated provider. The controller sees only responses.
+- Metrics are false-completion rate, detection rate of non-completion, false stops in normal cases, time to determination, and additional API calls. Cases not determined within the trial limit are tallied separately as "unknown".
+- Record "process stopped," "resource deleted," "stored data deleted," and "billing stopped" as separate items in the report. Do not infer actual billing from a simulated API's deletion success.
 
-### 限界と発表先
+The first round involves no real cloud, billing, or deletion. If moving to real environments, decide approvals for targets, cost, preservation, and deletion separately, and do not touch environments used for other work.
 
-模擬モデルで想定した故障しか評価できない。プロバイダごとの反映遅延や対象列挙漏れは実証が必要。最初はIOTS非査読ポスターで、故障分類と判定指標の妥当性を議論する構成が合う。
+### Limitations and venue
 
-## 研究を始める前の共通チェック
+It can only evaluate failures assumed by the simulated model. Provider-specific propagation delays and enumeration gaps need empirical demonstration. A good starting point is an IOTS non-reviewed poster to discuss the validity of the failure taxonomy and judgment metrics.
 
-- 研究質問と仮説を1つに絞り、比較手法、主要指標、除外条件を実験前に固定する。
-- 先行研究の本文と公開artifactを読み、同じ問いと違う問いを表にする。上記は網羅的サーベイではない。
-- 設計用と評価用データを分け、失敗例や否定的な結果も残す。
-- 公開素材・合成データを基本とし、会社内部情報、私信、実在の認証情報を使用しない。
-- 実行時のcommit、依存版、モデルID、設定、種、件数、失敗分母を保存する。推測したモデル名は実行IDの代わりにしない。
-- 独立した再実行ができる手順と、再実行できなかった部分を分ける。
-- 権利・所属・発表経路は[投稿経路レポート](publication-pathways-2026.ja.md)を確認する。
+## Common checks before starting research
 
-## 保留する候補
+- Narrow to one research question and hypothesis; fix baselines, primary metrics, and exclusion criteria before experiments.
+- Read prior work's full text and public artifacts, and tabulate which questions are the same and which differ. The above is not an exhaustive survey.
+- Separate design data from evaluation data, and keep failures and negative results.
+- Use public materials and synthetic data as the baseline; do not use internal company information, private correspondence, or real credentials.
+- Save commits, dependency versions, model IDs, settings, seeds, counts, and failure denominators at run time. A guessed model name is not a substitute for a run ID.
+- Separate procedures that allow independent reruns from parts that could not be rerun.
+- For rights, affiliation, and publication pathways, see the [publication pathways report](publication-pathways-2026.md).
 
-既存の「秘密受け渡しライフサイクル」と「オンデマンドGPU cleanup」は撤回しない。前者は脅威モデル・秘密を含まない評価データの設計、後者は上記案3の証拠条件と実環境での確認を先に固める。どちらも現在の公開メモから有効性・安全性の実証済みとはしない。
+## Deferred candidates
+
+The existing "secret handoff lifecycle" and "on-demand GPU cleanup" are not withdrawn. For the former, first design the threat model and evaluation data that contain no secrets; for the latter, first fix the evidence conditions of Idea 3 above and confirmation in a real environment. Neither is treated as demonstrated effective or safe by the current public notes.

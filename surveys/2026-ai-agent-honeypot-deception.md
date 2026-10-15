@@ -1,61 +1,63 @@
-# AIエージェント攻撃とおとり・資源消費（2026年9〜10月）
+**English** | [日本語](2026-ai-agent-honeypot-deception.ja.md)
 
-- 記録日：2026-10-10
-- 状態：**一次資料の要旨確認済み／本文精読・実験再現は未実施**
-- 関連二次記事：[AIDB 134139](https://ai-data-base.com/timeline/read/134139)
-- キーワード：AI Agent Security / Deception / Honeypot / Task Contamination / Token Consumption
+# AI Agent Attacks, Decoys, and Resource Consumption (Sept–Oct 2026)
 
-## ひとことで
+- Recorded: 2026-10-10
+- Status: **abstracts of the primary sources checked / no close reading of full text, no experiment replication**
+- Related secondary article: [AIDB 134139](https://ai-data-base.com/timeline/read/134139)
+- Keywords: AI Agent Security / Deception / Honeypot / Task Contamination / Token Consumption
 
-攻撃・探索を行うAIエージェントに偽の手掛かりやおとり環境を示すことで、**不要なツール実行・探索ターン・推論トークンを増やす**研究領域。通常のハニーポットの観測・隔離に加え、AIの限られた予算・時間への影響を評価する。ただし防御側もコストを負うため、攻撃側と防御側の両方の費用・被害を比較する必要がある。
+## In one paragraph
 
-## 収録した一次論文
+A research area where attacking or exploring AI agents are shown false leads or decoy environments in order to **increase their unnecessary tool runs, exploration turns, and reasoning tokens**. On top of the observation and isolation of ordinary honeypots, it evaluates the effect on the AI's limited budget and time. Defenders also pay costs, so both attacker-side and defender-side cost and damage have to be compared.
 
-### 1. AgentLSD — 偽の証拠でAIエージェントの探索を遠回りさせる
+## Primary papers recorded
 
-- **論文**：[AgentLSD: Evaluating AI Security Agents Under Adversarial Task Contamination](https://arxiv.org/abs/2609.19140)
-- **著者**：Matteo Golinelli, Idilio Drago, Matteo Boffa, Francesco Bergadano, Bruno Crispo
-- **公開**：2026-09-16（arXiv初稿）
-- **状態**：要旨確認済み／本文未精読
-- **問い**：CTF等のセキュリティタスクで、虚偽の証拠・ヒント・エンドポイントがAIエージェントの判断や探索予算にどんな影響を与えるか。
-- **手法**：11のWeb CTF課題に偽flag、誤誘導ヒント、おとりエンドポイントなどを挿入し、6モデルでクリーン条件と比較。正規の解法は残す。
-- **主要結果（要旨記載）**：クリーン条件でflag取得率41%。おとりの存在下で、成功するケースでも探索ターンが **+20**、推論トークンが **約+2,000**。成功率への影響はモデル・課題ごとに異なる。
-- **読みどころ**：単純なprompt injection（命令）ではなく、**もっともらしい「証拠」の汚染**だけでもエージェントのリソース消費が増える。
-- **限界・注意**：CTFの制御環境での結果。一般の実運用攻撃や金銭コスト増加率を直接保証しない。増加値の統計処理や予算条件は本文で要確認。
-- **再現案（未実施）**：所有・許可されたローカルCTFでclean/trap条件を固定し、成功率、ターン数、ツール呼出数、トークン、総時間、両陣営コストを測る。
+### 1. AgentLSD: false evidence sends AI agents on detours
 
-### 2. HoneyRoute — 不正なLLMリクエストをおとりモデルへ転送する
+- **Paper**: [AgentLSD: Evaluating AI Security Agents Under Adversarial Task Contamination](https://arxiv.org/abs/2609.19140)
+- **Authors**: Matteo Golinelli, Idilio Drago, Matteo Boffa, Francesco Bergadano, Bruno Crispo
+- **Published**: 2026-09-16 (first arXiv version)
+- **Status**: abstract checked / full text not closely read
+- **Question**: in security tasks such as CTFs, how do false evidence, hints, and endpoints affect an AI agent's decisions and exploration budget?
+- **Method**: inserts fake flags, misleading hints, decoy endpoints, and similar into 11 web CTF challenges, and compares with the clean condition across 6 models. The legitimate solution is kept.
+- **Main results (as stated in the abstract)**: 41% flag-capture in the clean condition. With decoys present, even successful cases take **+20** exploration turns and **about +2,000** reasoning tokens. The effect on success rate varies by model and challenge.
+- **Why it's worth reading**: plausible "evidence" contamination alone, not simple prompt injection (commands), raises an agent's resource consumption.
+- **Limitations and cautions**: results come from a controlled CTF setting. They do not directly guarantee anything about real-world attacks or monetary cost increases. The statistics behind the increases and the budget conditions need checking in the full text.
+- **Reproduction plan (not done)**: in a CTF you own or are authorized to use, fix clean/trap conditions and measure success rate, turns, tool calls, tokens, total time, and both sides' costs.
 
-- **論文**：[HoneyRoute: Honeypot-Model Routing for Adversarial LLM Serving](https://arxiv.org/abs/2609.08306)
-- **著者**：Han Jin
-- **公開**：2026-09-08（arXiv初稿）
-- **状態**：要旨確認済み／本文未精読
-- **問い**：悪意あるリクエストを本番LLMから隔離しつつ、攻撃の観測データを検知改善に利用できるか。
-- **手法**：ストリーミング分類ルータ、ルール／プロンプト型または専用レプリカ型のおとりモデル、観測結果を使ったルータ再学習ループを構成。
-- **主要結果（要旨記載）**：検知F1 **0.911**、追加レイテンシ中央値 **38ms**。試験条件で悪意ある流入を迂回させ、本番モデルのトークン消費を **97.8%削減**。再学習後F1 **0.933**。
-- **読みどころ**：**防御側の本番モデル負荷を守る**アプローチ。AgentLSDの「攻撃・探索側の追加消費」とは測定対象が異なる。
-- **限界・注意**：防御側の別モデル運用・誤検知コストがある。97.8%は記載された負荷試験条件での本番モデルの削減率であり、システム全体のコスト削減率ではない。
-- **再現案（未実施）**：合成・許可済みリクエストでルータ有無を比較し、誤検知率、p95レイテンシ、本番モデルとおとりの合計トークン／費用を測る。
+### 2. HoneyRoute: forwarding malicious LLM requests to decoy models
 
-## 研究の違いを整理
+- **Paper**: [HoneyRoute: Honeypot-Model Routing for Adversarial LLM Serving](https://arxiv.org/abs/2609.08306)
+- **Author**: Han Jin
+- **Published**: 2026-09-08 (first arXiv version)
+- **Status**: abstract checked / full text not closely read
+- **Question**: can malicious requests be isolated from the production LLM while the observed attack data improves detection?
+- **Method**: a streaming classification router, a rule/prompt-based or dedicated replica-style decoy model, and a retraining loop that uses the observations.
+- **Main results (as stated in the abstract)**: detection F1 **0.911**, median added latency **38 ms**. Under the test conditions, diverting malicious traffic **cut production-model token consumption by 97.8%**. F1 **0.933** after retraining.
+- **Why it's worth reading**: an approach that **protects the defender's production model load**. It measures something different from AgentLSD's "extra consumption on the attacker/explorer side".
+- **Limitations and cautions**: running a separate model and handling false positives have costs. The 97.8% is the production-model reduction under the stated load-test conditions, not the cost reduction of the whole system.
+- **Reproduction plan (not done)**: compare with and without the router on synthetic or authorized requests, measuring false-positive rate, p95 latency, and combined production and decoy tokens/cost.
 
-| 観点 | AgentLSD | HoneyRoute |
+## How the two differ
+
+| Aspect | AgentLSD | HoneyRoute |
 |---|---|---|
-| 対象 | タスク実行・探索するセキュリティAI | LLMサービスに送られる悪意あるリクエスト |
-| おとり | 偽flag・ヒント・エンドポイント | 別のhoneypotモデル |
-| 主な目的 | 誤誘導の影響とAIの脆弱性を測定 | 本番環境の隔離・観測・負荷削減 |
-| 評価指標 | 解答成功、ターン、推論トークン | 検知F1、遅延、本番トークン消費 |
-| 注意 | CTFから一般攻撃への外挿 | 本番消費減 ≠ 攻撃側の費用増 |
+| Target | Security AI that performs tasks and explores | Malicious requests sent to an LLM service |
+| Decoy | Fake flags, hints, endpoints | A separate honeypot model |
+| Main goal | Measure the effect of misleading and the AI's weakness | Isolate and observe on the production side, cut load |
+| Metrics | Solve success, turns, reasoning tokens | Detection F1, latency, production token consumption |
+| Caution | Extrapolating from CTFs to general attacks | Lower production consumption ≠ higher attacker cost |
 
-## 次に読むときのチェックポイント
+## Checkpoints for the next read
 
-1. 「攻撃側のコスト増加」と「防御側のコスト削減」を区別する。
-2. おとりを見破るエージェントへの耐性、長時間試行時の効果、誤検知を確かめる。
-3. 論文本文・付録・コードを確認し、実験条件、信頼区間、再現性を記録する。
-4. 実験は自身のCTF・明示許可されたテスト環境に限定する。
+1. Keep "higher attacker cost" and "lower defender cost" apart.
+2. Check robustness against agents that see through decoys, effects over long attempts, and false positives.
+3. Check the full text, appendix, and code, and record experimental conditions, confidence intervals, and reproducibility.
+4. Limit experiments to your own CTFs or explicitly authorized test environments.
 
-## 追加調査候補（未検証）
+## Further candidates (unverified)
 
-前回の会話で挙がった「AgentTrap: Stateful Feedback Deception against Autonomous Penetration Testing Agents」（arXiv:2610.02869）および「LLM-Based Penetration Testing in the Presence of Honeypots」（arXiv:2609.08093）は、今回一次資料の実在・書誌情報を確認できなかったため**正式な収録論文から除外**。タイトル・ID・実験数値を再確認してから追記する。
+Two papers raised in an earlier conversation, "AgentTrap: Stateful Feedback Deception against Autonomous Penetration Testing Agents" (arXiv:2610.02869) and "LLM-Based Penetration Testing in the Presence of Honeypots" (arXiv:2609.08093), could not be confirmed to exist with matching bibliographic information from primary sources this time, so they are **excluded from the formal entries**. Recheck titles, IDs, and experimental numbers before adding them.
 
-> 本ノートは2026-10-10時点の要旨ベースの読書メモ。レビュー論文や再現結果ではない。
+> This note is a reading memo based on abstracts as of 2026-10-10. It is neither a review paper nor a replication result.

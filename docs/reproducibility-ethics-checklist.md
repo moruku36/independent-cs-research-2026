@@ -1,14 +1,16 @@
-# 再現性・倫理・公開前の確認票
+**English** | [日本語](reproducibility-ethics-checklist.ja.md)
 
-状態：設計用テンプレート。確認済みを意味しない。
+# Reproducibility, Ethics, and Pre-Publication Checklist
 
-- [ ] 公開許可された本人のCS経歴・OSS実績・研究計画・公開論文情報だけを含む。
-- [ ] 学位・経歴・本人の貢献を公開sourceで確認し、過去所属を現所属にしない。
-- [ ] 社内許可、知財・ライセンス、利益相反、所属表記を確認する。
-- [ ] 投稿先のAI執筆支援・著者資格・開示規定を確認する。
-- [ ] 匿名査読の規定と公開repo・preprintの扱いを確認する。
-- [ ] 先行研究、仮説、比較対象、評価指標、失敗条件を実験前に記録する。
-- [ ] データ・コードの権利、個人情報、秘密・ログ漏えいを確認する。
-- [ ] commit、依存関係、seed、環境、実行方法、費用、失敗結果を記録する。
-- [ ] 計画・実行・再現・採択を区別し、未検証事項を明記する。
-- [ ] GPU・API課金、新規登録、応募・投稿・学会連絡は別途明示許可を得る。
+Status: a design template. It does not mean anything has been checked.
+
+- [ ] Contains only the author's CS background, OSS work, research plans, and public paper information that are cleared for publication.
+- [ ] Degrees, background, and the author's own contributions are verified against public sources; past affiliations are not presented as current ones.
+- [ ] Employer permission, IP and licensing, conflicts of interest, and affiliation wording are confirmed.
+- [ ] The target venue's rules on AI writing assistance, authorship eligibility, and disclosure are checked.
+- [ ] The venue's anonymous-review rules and its stance on public repos and preprints are checked.
+- [ ] Prior work, hypotheses, baselines, metrics, and failure conditions are written down before experiments.
+- [ ] Rights to data and code, personal information, and leakage of secrets or logs are checked.
+- [ ] Commits, dependencies, seeds, environments, run instructions, costs, and failed results are recorded.
+- [ ] Plans, executions, reproductions, and acceptances are kept distinct, and unverified items are stated.
+- [ ] GPU or API spend, new sign-ups, submissions, and contact with conferences each need explicit separate permission.

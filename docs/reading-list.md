@@ -1,48 +1,42 @@
-# AI論文の読書・活用一覧
+**English** | [日本語](reading-list.ja.md)
 
-状態：既存の二次記事seedは一次論文の識別待ち。読書状態は論文別に記録する。Astra・SWE-Journey・FlowAgent・GitInjectは一次本文（FlowAgentは一次PDF）確認済み、SWE-Journeyは部分読了（再現・実装は未実施）。活用案を実施済みの成果と扱いません。
+# AI Paper Reading and Application List
 
-| 二次記事seed | 関心・活用案 | 一次論文／読了／実装 |
+Status: the existing secondary-article seeds are awaiting identification of primary papers. Reading status is recorded per paper. Astra, SWE-Journey, FlowAgent, and GitInject have primary text checked (FlowAgent via the primary PDF); SWE-Journey is partially read (no reproduction or implementation). Application ideas are not treated as completed results.
+
+| Secondary-article seed | Interest / application idea | Primary paper / read / implemented |
 |---|---|---|
-| https://ai-data-base.com/timeline/read/125022 | 工数予測シミュレーションへの活用案 | 識別待ち／未確認／未確認 |
-| https://ai-data-base.com/timeline/read/127145 | Qwenによる独立レビュー・A100への適用案 | 識別待ち／未確認／未確認 |
-| https://ai-data-base.com/timeline/read/122219 | 内容理解・解説の対象 | 識別待ち／未確認／未確認 |
+| https://ai-data-base.com/timeline/read/125022 | Applying to effort-estimation simulation | Awaiting identification / unconfirmed / unconfirmed |
+| https://ai-data-base.com/timeline/read/127145 | Independent review with Qwen; applying to A100 | Awaiting identification / unconfirmed / unconfirmed |
+| https://ai-data-base.com/timeline/read/122219 | Subject for understanding and explanation | Awaiting identification / unconfirmed / unconfirmed |
 
-## サーベイ論文集 v2
+## Survey Collection v2
 
-- **[サーベイ論文集 v2（7論文の索引）](../surveys/collection-v2/README.md)**
-- [非承認OSSサプライチェーン攻撃評価（GPT-6 Astra）](../surveys/collection-v2/2026-unsanctioned-supply-chain-attacks.md) — arXiv:2609.38415。一次本文確認／追試未実施。
+- **[Survey Collection v2 (index of 7 papers)](../surveys/collection-v2/README.md)**
+- [Evaluation of unsanctioned OSS supply-chain attacks (GPT-6 Astra)](../surveys/collection-v2/2026-unsanctioned-supply-chain-attacks.md): arXiv:2609.38415. Primary text checked; no replication.
 
-## 2026年9〜10月：AIエージェント攻撃とおとり
+## Sept–Oct 2026: AI agent attacks and decoys
 
-- [おとり・偽の証拠による探索誘導とLLM本番系の保護（詳細メモ）](../surveys/2026-ai-agent-honeypot-deception.md)
-- **[AgentLSD — テンプレート準拠の個別メモ](../surveys/collection-v2/2026-agentlsd.md)**（2026-09-16）：偽の手掛かりでAIの探索ターン・推論トークンが増えるかを評価。一次要旨確認済み／再現未実施。[一次論文](https://arxiv.org/abs/2609.19140)
-- **[HoneyRoute — テンプレート準拠の個別メモ](../surveys/collection-v2/2026-honeyroute.md)**（2026-09-08）：不正なLLMリクエストをおとりモデルへ分岐し本番側を保護。一次要旨確認済み／再現未実施。[一次論文](https://arxiv.org/abs/2609.08306)
-- **元記事**：[AIDB 134139](https://ai-data-base.com/timeline/read/134139)
+- [Exploration steering with decoys and false evidence, and protecting production LLMs (detailed note)](../surveys/2026-ai-agent-honeypot-deception.md)
+- **[AgentLSD: template-conformant individual note](../surveys/collection-v2/2026-agentlsd.md)** (2026-09-16): evaluates whether false leads increase an AI's exploration turns and reasoning tokens. Primary abstract checked; not reproduced. [Primary paper](https://arxiv.org/abs/2609.19140).
+- **[HoneyRoute: template-conformant individual note](../surveys/collection-v2/2026-honeyroute.md)** (2026-09-08): routes malicious LLM requests to a decoy model to protect production. Primary abstract checked; not reproduced. [Primary paper](https://arxiv.org/abs/2609.08306).
+- **Source article**: [AIDB 134139](https://ai-data-base.com/timeline/read/134139)
 
-追加時には、一次URL・書誌情報・読書状態・問い・手法・限界・比較・再現案・活用状態・公開証拠を分けて記録する。
+When adding an entry, record the primary URL, bibliographic information, reading status, question, method, limitations, comparison, reproduction plan, usage status, and public evidence separately.
 
-## 2026年10月：コーディング支援と協働
+## October 2026: Coding assistance and collaboration
 
-- [SWE-Journey — 長期・対話型コーディング支援の評価](../surveys/collection-v2/2026-swe-journey.md) — [arXiv:2610.11559v1](https://arxiv.org/abs/2610.11559v1)。一次本文確認済み／部分読了／再現・実装未実施。受入条件・検証記録への活用は提案。紹介元[AIDB 134413](https://ai-data-base.com/timeline/read/134413)は取得できず、本文を根拠に記録。
-- [FlowAgent — 提出前テスト失敗の低遅延エージェント修復](../surveys/collection-v2/2026-flowagent.md) — [arXiv:2610.07289v1](https://arxiv.org/abs/2610.07289v1)。一次PDF確認済み／再現未実施（データ非公開）。作業委任の運用4点は採用済みだが効果未検証。紹介記事[AIDB 133569](https://ai-data-base.com/timeline/read/133569)は全文未読で、根拠は論文のみ。
+- [SWE-Journey: evaluating long-horizon, interactive coding assistance](../surveys/collection-v2/2026-swe-journey.md): [arXiv:2610.11559v1](https://arxiv.org/abs/2610.11559v1). Primary text checked / partially read / no reproduction or implementation. Use for acceptance conditions and verification records is a proposal. The introducing article [AIDB 134413](https://ai-data-base.com/timeline/read/134413) could not be retrieved; the record rests on the paper's text.
+- [FlowAgent: low-latency agentic repair of pre-submit test failures](../surveys/collection-v2/2026-flowagent.md): [arXiv:2610.07289v1](https://arxiv.org/abs/2610.07289v1). Primary PDF checked / not reproduced (data non-public). Four operating practices for delegating work are adopted but their effect is unverified. The introducing article [AIDB 133569](https://ai-data-base.com/timeline/read/133569) was not read in full; the paper alone is the basis.
 
-## 2026年6月：CI/CDのAIエージェント防御
+## June 2026: Defending AI agents in CI/CD
 
-- [GitInject — AI搭載CI/CDへの実環境プロンプトインジェクション評価](../surveys/collection-v2/2026-gitinject.md) — [arXiv:2606.09935v1](https://arxiv.org/abs/2606.09935v1)。一次HTML通読／再現・PDF照合・コード確認は未実施。試した構成の結果で、全モデルへの一般化ではない。表と本文の不一致は未解決のまま記録。活用案は提案のみ。
+- [GitInject: real-world prompt injection against AI-powered CI/CD](../surveys/collection-v2/2026-gitinject.md): [arXiv:2606.09935v1](https://arxiv.org/abs/2606.09935v1). Primary HTML read in full; no reproduction, PDF cross-check, or code check. Results are for the configurations tried and do not generalize to all models. Table/text mismatches are recorded unresolved. Application ideas are proposals only.
 
-## 2026年4月：暗号アジリティ・PQC移行の評価
+## April 2026: Evaluating crypto-agility and PQC migration
 
-- [CAMMの実用評価](../surveys/collection-v2/2026-camm-practical-evaluation.md) — [arXiv:2604.12428v1](https://arxiv.org/abs/2604.12428v1)、2026-04-14。一次PDF本文確認済み／再現未実施。PQCラボへの適用は改善提案のみ。
+- [Practical evaluation of CAMM](../surveys/collection-v2/2026-camm-practical-evaluation.md): [arXiv:2604.12428v1](https://arxiv.org/abs/2604.12428v1), 2026-04-14. Primary PDF text checked / not reproduced. Application to a PQC lab is an improvement proposal only.
 
-## English index
+## Reference candidate: quantum annealing cryptanalysis
 
-- [CAMM: practical evaluation of crypto-agility maturity](../surveys/collection-v2/2026-camm-practical-evaluation.md) — primary PDF reviewed; no reproduction or new implementation.
-- [Survey collection](../surveys/collection-v2/README.md) — seven paper records with individual reading status.
-- [FlowAgent: pre-submit test repair at Google](../surveys/collection-v2/2026-flowagent.md) — primary PDF checked; no reproduction; adopted practices unverified.
-- [GitInject: prompt injection in AI-powered CI/CD](../surveys/collection-v2/2026-gitinject.md) — primary HTML read; no reproduction; kept as a defensive survey with unresolved text/table inconsistencies.
-- [SWE-Journey: evaluation and proposed acceptance workflow](../surveys/collection-v2/2026-swe-journey.md) — primary text checked, partially read; no reproduction or implementation.
-
-## 参考文献候補：量子アニーリングによる暗号解析
-
-- [D-Wave AdvantageとRSA整数分解](reference-candidates/2024-dwave-annealing-rsa.md) — [紹介記事](https://gigazine.net/news/20241015-rsa-encryption-quantum-computer/)が示す[一次PDF](http://cjc.ict.ac.cn/online/onlinepaper/wc-202458160402.pdf)は取得失敗。本文未読・書誌未確定・追試未実施。実用RSA解読や量子優位の証明として扱わず、既存サーベイ7件と分けて管理します。
+- [D-Wave Advantage and RSA integer factorization](reference-candidates/2024-dwave-annealing-rsa.md): the [introducing article](https://gigazine.net/news/20241015-rsa-encryption-quantum-computer/) points to a [primary PDF](http://cjc.ict.ac.cn/online/onlinepaper/wc-202458160402.pdf) that could not be retrieved. Text unread, bibliography unconfirmed, no replication. Not treated as a practical RSA break or as proof of quantum advantage, and managed separately from the seven existing surveys.

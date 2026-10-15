@@ -1,17 +1,17 @@
-# HoneyRoute — 不正LLMリクエストをおとりモデルに振り分ける
+**English** | [日本語](2026-honeyroute.ja.md)
 
-- **状態**：一次書誌情報・要旨の確認済み／本文未精読／再現未実施
-- **題名・著者・年・会場・DOI／arXiv ID・一次URL**：*HoneyRoute: Honeypot-Model Routing for Adversarial LLM Serving*／Han Jin／2026／arXiv preprint（査読会議未確認）／arXiv:2609.08306／[一次論文](https://arxiv.org/abs/2609.08306)
-- **確認日・対象version**：2026-10-10／公開要旨（arXivに複数版あり。再現時は版固定が必要）
-- **研究の問い**：悪意あるLLMリクエストを本番モデルから切り離し、攻撃観測と分類器の改善を両立できるか。
-- **手法・データ・比較条件**：0.8B埋め込みバックボーン＋ドメイン別分類ヘッドのルータで判定。ルール／プロンプト方式または同系統モデルのレプリカ型honeypotへ転送し、観測した攻撃特徴で再学習。運用トレースと7ドメインの攻撃データを利用。
-- **主張と証拠**：要旨では検知F1=0.911、遅延中央値+38ms、悪意ある流入の迂回による同時負荷試験で**本番モデル**のトークン消費97.8%削減、再学習後F1=0.933と報告。
-- **限界・妥当性への脅威**：本番モデル側の削減率はhoneypotを含む全体費用の削減率ではない。誤検知、レプリカの運用負担、データ分布の差や攻撃側の適応に要注意。数値の評価母集団と信頼区間は本文で再確認する。
-- **関連研究との比較**：[AgentLSD](2026-agentlsd.md)はセキュリティAIが偽証拠に惑わされて費やす探索資源を評価する。本論文はLLMサービング基盤の保護・リクエスト振り分けが中心。
-- **無料で実施できる再現案**：ローカルの模擬LLMエンドポイント＋合成リクエストでルータ有無を比較し、F1、誤検知、p50/p95遅延、本番／おとり各トークンと合計計算費用を計測。**未実施**。
-- **活用状態**：提案（LLMゲートウェイ構成の検討）。試行・実装採用はしていない。
-- **未確認点・次の確認**：論文本文と版番号・データ公開状況、分類器の学習条件、偽陽性への対応、運用コストを精査する。
+# HoneyRoute: Routing Malicious LLM Requests to Decoy Models
 
-関連：[テーマ別比較](../2026-ai-agent-honeypot-deception.md)／[論文一覧](../../docs/reading-list.md)
+- **Status**: primary bibliographic information and abstract checked / full text not closely read / not reproduced
+- **Title, authors, year, venue, ID, primary URL**: *HoneyRoute: Honeypot-Model Routing for Adversarial LLM Serving* / Han Jin / 2026 / arXiv preprint (peer-reviewed venue not confirmed) / arXiv:2609.08306 / [primary paper](https://arxiv.org/abs/2609.08306)
+- **Date checked and version**: 2026-10-10 / public abstract (arXiv lists several versions; pin one before reproducing)
+- **Research question**: can malicious LLM requests be separated from the production model while still improving attack observation and the classifier?
+- **Method, data, comparison conditions**: a router with a 0.8B embedding backbone plus per-domain classification heads makes the call. Flagged requests go to a rule/prompt-based honeypot or a replica-style honeypot of a similar model, and the router is retrained on the observed attack features. Uses operational traces and attack data from 7 domains.
+- **Claims and evidence**: the abstract reports detection F1 = 0.911, median added latency of +38 ms, a 97.8% reduction in **production-model** token consumption in a concurrent load test where malicious traffic is diverted, and F1 = 0.933 after retraining.
+- **Limitations and threats to validity**: the production-side reduction is not the reduction in total cost including the honeypot. Watch false positives, the operational burden of replicas, distribution shift, and attacker adaptation. The evaluation population and confidence intervals behind the numbers need checking in the full text.
+- **Comparison with related work**: [AgentLSD](2026-agentlsd.md) measures the exploration resources a security AI wastes when misled by false evidence. This paper centers on protecting LLM-serving infrastructure and routing requests.
+- **Free-to-run reproduction plan**: with a local mock LLM endpoint and synthetic requests, compare with and without the router, measuring F1, false positives, p50/p95 latency, production vs. decoy tokens, and total compute cost. **Not done.**
+- **Usage status**: proposed (for considering LLM gateway designs). Not trialed or adopted.
+- **Unconfirmed points and next checks**: examine the full text, version number, data availability, classifier training conditions, handling of false positives, and operating cost.
 
-> このファイルはサーベイ論文集v2に再編した版です。元の個別メモは互換性のため保持しています。
+Related: [thematic comparison](../2026-ai-agent-honeypot-deception.md) / [reading list](../../docs/reading-list.md)
