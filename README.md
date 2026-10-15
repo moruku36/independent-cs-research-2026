@@ -16,6 +16,10 @@
 
   - [CAMM — 暗号アジリティ成熟度モデルの実用評価](surveys/collection-v2/2026-camm-practical-evaluation.md)
 
+## 参考文献候補（一次本文未確認）
+
+- [D-Wave Advantageによる量子アニーリングとRSA整数分解](docs/reference-candidates/2024-dwave-annealing-rsa.md) — 2024年の紹介記事から一次PDFへたどるための記録。本文未読・書誌未確定・追試未実施。上記サーベイ7件には含めません。
+
 ## 目次
 
 - [個人によるCS研究の発表と論文投稿（初回調査済み）](docs/publication-pathways-2026.ja.md)
