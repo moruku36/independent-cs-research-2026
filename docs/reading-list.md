@@ -10,7 +10,7 @@
 
 ## サーベイ論文集 v2
 
-- **[サーベイ論文集 v2（6論文の索引）](../surveys/collection-v2/README.md)**
+- **[サーベイ論文集 v2（7論文の索引）](../surveys/collection-v2/README.md)**
 - [非承認OSSサプライチェーン攻撃評価（GPT-6 Astra）](../surveys/collection-v2/2026-unsanctioned-supply-chain-attacks.md) — arXiv:2609.38415。一次本文確認／追試未実施。
 
 ## 2026年9〜10月：AIエージェント攻撃とおとり
@@ -31,9 +31,14 @@
 
 - [GitInject — AI搭載CI/CDへの実環境プロンプトインジェクション評価](../surveys/collection-v2/2026-gitinject.md) — [arXiv:2606.09935v1](https://arxiv.org/abs/2606.09935v1)。一次HTML通読／再現・PDF照合・コード確認は未実施。試した構成の結果で、全モデルへの一般化ではない。表と本文の不一致は未解決のまま記録。活用案は提案のみ。
 
+## 2026年4月：暗号アジリティ・PQC移行の評価
+
+- [CAMMの実用評価](../surveys/collection-v2/2026-camm-practical-evaluation.md) — [arXiv:2604.12428v1](https://arxiv.org/abs/2604.12428v1)、2026-04-14。一次PDF本文確認済み／再現未実施。PQCラボへの適用は改善提案のみ。
+
 ## English index
 
-- [Survey collection](../surveys/collection-v2/README.md) — six paper records with individual reading status.
+- [CAMM: practical evaluation of crypto-agility maturity](../surveys/collection-v2/2026-camm-practical-evaluation.md) — primary PDF reviewed; no reproduction or new implementation.
+- [Survey collection](../surveys/collection-v2/README.md) — seven paper records with individual reading status.
 - [FlowAgent: pre-submit test repair at Google](../surveys/collection-v2/2026-flowagent.md) — primary PDF checked; no reproduction; adopted practices unverified.
 - [GitInject: prompt injection in AI-powered CI/CD](../surveys/collection-v2/2026-gitinject.md) — primary HTML read; no reproduction; kept as a defensive survey with unresolved text/table inconsistencies.
 - [SWE-Journey: evaluation and proposed acceptance workflow](../surveys/collection-v2/2026-swe-journey.md) — primary text checked, partially read; no reproduction or implementation.
