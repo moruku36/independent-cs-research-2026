@@ -1,56 +1,58 @@
-# SWE-Journey — 長期・対話型コーディング支援の評価
+**English** | [日本語](2026-swe-journey.ja.md)
 
-## 人・PMO向けの要点
+# SWE-Journey: Evaluating Long-Horizon, Interactive Coding Assistance
 
-- **何が分かった**：同じ課題でも模擬利用者の協働条件で機能テストの通過率が大きく変わる。AIの完了報告だけでは成果を判断できない。
-- **何に使える**：AI開発の受入基準、要求の引継ぎ、変更後の検証を設計する際の論点になる。
-- **注意点**：模擬利用者による評価であり、職種別の実利用者の成功率や、専門知識だけの因果効果を示すものではない。
-- **次の一手**：要求・検証結果・残課題を分けた受入記録を用意する。以下の運用案は未検証で、実験は行っていない。
+## Key points for people and PMOs
 
-## サーベイ記録
+- **What we learned**: even on the same task, the pass rate of functional tests changes a lot with the simulated user's collaboration style. An AI's own completion report is not enough to judge the outcome.
+- **What it's useful for**: a source of points when designing acceptance criteria for AI development, handoff of requirements, and verification after changes.
+- **Caution**: this is an evaluation with simulated users. It does not show success rates for real users by job role, nor the causal effect of expertise alone.
+- **Next step**: prepare an acceptance record that separates requirements, verification results, and open issues. The operating ideas below are untested and no experiment was run.
 
-- **状態**：一次本文確認済み／部分読了。本文§1–5、付録A.3–A.4、B.1–B.3、B.5、Cの説明を確認。全付録の逐語精読・再現は未実施。
-- **題名・著者・年・会場・DOI／arXiv ID・一次URL**：*SWE-Journey: Towards More Realistic Evaluation of Coding Assistants through Long-Horizon, Multi-Turn Interaction*／Hexuan Dengほか／2026／arXivプレプリント（査読採択は未確認）。[arXiv:2610.11559v1](https://arxiv.org/abs/2610.11559v1)、[本文HTML](https://arxiv.org/html/2610.11559v1)、[PDF](https://arxiv.org/pdf/2610.11559v1)、[DOI](https://doi.org/10.48550/arXiv.2610.11559)（arXiv掲載値。登録待ち表記があり、転送先は未確認）。
-- **確認日・対象version**：2026-10-12 UTC／v1（2026-10-08投稿）。紹介元[AIDB 134413](https://ai-data-base.com/timeline/read/134413)は取得できず、内容は引用しない。以下の根拠は原論文。
-- **研究の問い**：要求が順次変わる長期開発で、AIは利用者と協働して機能を実装し、既存機能を維持できるか。
-- **手法・データ・比較条件**：課題を段階的に合成し、SWE-Chat由来の4ペルソナをGLM-5.2で模擬。30課題・594サブタスクを13モデルで評価。mini-swe-agentと持続するDocker環境を用いる（§3–4、B.1）。市販のClaude Code／Codex製品そのものの比較ではない。
-- **主張と証拠**：Final F2Pのペルソナ別平均は下表。要求の聞き取り、変更箇所の特定、根拠ある修正を課題として分析する（§4.2）。
-- **限界・妥当性への脅威**：小規模な合成課題、模擬利用者、生成モデルの偏り。専門知識・制御・要求変化・検証の条件が同時に変わる。Non-coder条件は網羅性のため目標を変更しやすく設定され、実人口の分布を再現しない（§5、A.3）。実現した対話量・計算量も等しくない（B.1）。行動分析はLLM判定で、推論記録がないモデルのFix指標は欠測（B.3）。
-- **関連研究との比較**：従来の単発修正評価に、段階的要求と継続するコード状態を加える（§2）。既存の[権限逸脱評価](2026-unsanctioned-supply-chain-attacks.md)とは、許可の遵守と成果の正しさという別の観点で併用できる。防御効果の数値を横並び比較しない。
-- **無料で実施できる再現案**：下記の受入記録を、架空の小さな変更と既知の正解で手動点検する。論文のモデル実験の再現にはならない。
-- **活用状態**：提案／未試行／未採用。公開論文を読んだ記録であり、運用改善の実証ではない。
-- **未確認点・次の確認**：公開実装・データの入手先と再現手順、反復実行でのばらつき、実ユーザーへの一般化。今回、実験・有料実行・環境設定変更は行っていない。
+## Survey record
 
-### 数値と評価単位
+- **Status**: primary text checked / partially read. Checked body §1–5, Appendix A.3–A.4, B.1–B.3, B.5, and the description of C. A verbatim close read of all appendices and reproduction not done.
+- **Title, authors, year, venue, ID, primary URL**: *SWE-Journey: Towards More Realistic Evaluation of Coding Assistants through Long-Horizon, Multi-Turn Interaction* / Hexuan Deng et al. / 2026 / arXiv preprint (peer-reviewed acceptance not confirmed). [arXiv:2610.11559v1](https://arxiv.org/abs/2610.11559v1), [HTML](https://arxiv.org/html/2610.11559v1), [PDF](https://arxiv.org/pdf/2610.11559v1), [DOI](https://doi.org/10.48550/arXiv.2610.11559) (value shown by arXiv; it carries a pending-registration notice and the redirect target is unconfirmed).
+- **Date checked and version**: 2026-10-12 UTC / v1 (submitted 2026-10-08). The introducing article [AIDB 134413](https://ai-data-base.com/timeline/read/134413) could not be retrieved and its content is not cited. Everything below is based on the original paper.
+- **Research question**: in long-horizon development where requirements change step by step, can an AI work with the user to implement features while keeping existing ones intact?
+- **Method, data, comparison conditions**: tasks are composed in stages, and four personas derived from SWE-Chat are simulated with GLM-5.2. 30 tasks and 594 subtasks are evaluated on 13 models, using mini-swe-agent and a persistent Docker environment (§3–4, B.1). This is not a comparison of the commercial Claude Code or Codex products themselves.
+- **Claims and evidence**: per-persona mean Final F2P is in the table below. The paper analyzes requirement elicitation, locating changes, and grounded fixes as tasks (§4.2).
+- **Limitations and threats to validity**: small synthetic tasks, simulated users, and bias of the generating model. Expertise, control, requirement change, and verification conditions vary at once. The Non-coder condition is set to change goals easily for coverage and does not reproduce real population distributions (§5, A.3). Realized interaction volume and compute are not equal either (B.1). Behavior analysis is LLM-judged, and the Fix metric is missing for models without reasoning traces (B.3).
+- **Comparison with related work**: adds staged requirements and persistent code state to earlier one-shot fix evaluations (§2). It can be used together with the existing [permission-deviation evaluation](2026-unsanctioned-supply-chain-attacks.md), as they view different aspects: adherence to permissions versus correctness of outcomes. Do not compare defensive-effect numbers side by side.
+- **Free-to-run reproduction plan**: manually check the acceptance record below against a small fictional change with a known correct answer. This does not reproduce the paper's model experiments.
+- **Usage status**: proposed / not trialed / not adopted. This is a record of reading the published paper, not demonstration of operational improvement.
+- **Unconfirmed points and next checks**: where the public implementation and data are and how to reproduce, variance across repeated runs, and generalization to real users. No experiments, paid runs, or environment configuration changes were made this time.
 
-| 模擬利用者条件 | Final F2P（%） |
+### Numbers and evaluation unit
+
+| Simulated user condition | Final F2P (%) |
 |---|---:|
 | Non-coder | 23.00 |
 | Product Manager | 30.48 |
 | New Developer | 35.57 |
 | Software Architect | 78.50 |
 
-出典：原論文Table 2。各条件は13モデルの平均。モデル・ペルソナごとに課題間の記録されたテストノードを集計する。Table 1のモデル全体の値は4ペルソナの等重み平均。**テスト通過率であり、課題を完全解決した割合ではない**（§3.4）。Final F2Pは要求機能、Final P2Pは既存機能の維持。Proc. F2Pは利用者が段階の完了を信じた時点で測る。論文のAverageはこの3指標の平均で、機能完成率と異なる。費用の比較にも模擬利用者側のトークン費用は含まれない（B.1）。
+Source: Table 2 of the original paper. Each condition is the mean over 13 models. Recorded test nodes are aggregated across tasks per model and persona. The model-level values in Table 1 are equal-weight means of the four personas. **These are test pass rates, not the share of tasks fully solved** (§3.4). Final F2P is the requested feature; Final P2P is preservation of existing features. Proc. F2P is measured at the point where the user believes a stage is complete. The paper's Average is the mean of these three metrics and differs from feature completion rate. Cost comparisons also exclude the simulated user's token cost (B.1).
 
-## 自分たちのAI運用への応用案
+## Applying this to our own AI operations
 
-以下は本リポジトリの設計案であり、論文が効果を実証した施策ではない。
+These are design ideas of this repository, not measures whose effect the paper demonstrated.
 
-1. **目的を検証可能にする**：依頼に「利用者が見たい結果」「変えてはいけない動作」「受入例」を添える。実装を左右する曖昧さだけを具体例で確認し、質問数を目標にしない。
-2. **変更と証拠を結び付ける**：要求ごとに対象箇所・差分・検証結果を記録する。成功した局所テストを全体の完成証拠へ拡張しない。
-3. **段階と最終を分ける**：段階完了後に新機能を確認し、最終時には以前の要求と既存動作も再確認する。非技術者が確認できる画面・出力例と、技術担当の検証を対応付ける。
-4. **訂正を引き継ぐ**：目的、受入条件、変更理由、既知の失敗を短く残す。後続のAIにも渡し、「対応済み」と「未確認」を区別する。
+1. **Make the goal verifiable**: attach "the result the user wants to see," "behavior that must not change," and "acceptance examples" to the request. Clarify only the ambiguities that steer implementation, with concrete examples; do not make the number of questions a goal.
+2. **Tie changes to evidence**: for each requirement, record the affected location, the diff, and the verification result. Do not stretch a passing local test into evidence that the whole is complete.
+3. **Separate stages from the final**: after a stage, check the new feature; at the end, recheck earlier requirements and existing behavior. Match screens and output examples that a non-technical person can check with the technical owner's verification.
+4. **Carry corrections forward**: leave a short note of goals, acceptance conditions, reasons for changes, and known failures. Pass it to later AIs and distinguish "handled" from "unconfirmed."
 
-PMO向け受入記録の例：
+Example acceptance record for a PMO:
 
-| 要求 | 期待する結果 | 差分・成果物 | 検証方法と結果 | 未確認・残課題 |
+| Requirement | Expected result | Diff / artifacts | Verification method and result | Unconfirmed / open items |
 |---|---|---|---|---|
-| 架空例：一覧に絞り込みを追加 | 指定条件だけ表示する | 対象画面と変更箇所 | 条件あり／なしの出力を比較 | 境界条件・既存操作は未確認 |
+| Fictional example: add filtering to a list | Shows only items matching the given condition | Target screen and changed locations | Compare output with and without the condition | Boundary conditions and existing operations unconfirmed |
 
-手動点検では、意図と違う変更、受入例だけ通る変更、後続変更で戻る不具合をこの記録で見つけられるか確認する。成功を仮定せず、見逃した条件を記録の改善に使う。
+In the manual check, see whether this record can catch changes that differ from intent, changes that only pass the acceptance example, and defects that come back after later changes. Do not assume success; use the conditions that were missed to improve the record.
 
-## English
+## Summary
 
 SWE-Journey evaluates long-horizon coding collaboration with simulated users. The reported persona differences combine expertise, control, changing goals, and verification; they do not isolate expertise or estimate real-user success rates. Scores measure test-node passes, not fully solved tasks. Primary text checked; partial reading, no reproduction. The acceptance-record workflow above is our untested proposal.
 
-[日本語・英語索引 / Collection index](README.md) | [読書一覧 / Reading list](../../docs/reading-list.md)
+[Collection index](README.md) | [Reading list](../../docs/reading-list.md)

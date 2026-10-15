@@ -1,113 +1,115 @@
-# FlowAgent — 提出前テスト失敗の低遅延エージェント修復（Google規模）
+**English** | [日本語](2026-flowagent.ja.md)
 
-## 人・PMO向けの要点
+# FlowAgent: Low-Latency Agentic Repair of Pre-Submit Test Failures (Google Scale)
 
-- **何が分かった**：Googleの社内環境で、提出前（pre-submit）のテスト失敗を自動修復して提案するエージェントが、手動評価195件のうち131件（67.18%）で正しい修正を提案した。本番では295,508件の変更に修正を提示し、28,554件で適用された。
-- **何に使える**：AIへの作業委任で「範囲を絞る」「時間・試行の上限を置く」「完了前に検証し直す」「偽の成功を除く」を設計する際の具体例になる。
-- **注意点**：Google内部のインフラ・モデル・テストでの結果で、データは非公開、外部再現は困難。評価は3人の開発者による手動判定。採用率は品質率ではない。人の次編集までの時間と修復完了時間は別の指標で、時短の因果効果は示されていない。
-- **次の一手**：下記の運用案（未検証）を、架空の小さな変更で手動点検する。実装・再現・実験は行っていない。
+## Key points for people and PMOs
 
-## サーベイ記録
+- **What we learned**: in Google's internal environment, an agent that automatically repairs and proposes fixes for pre-submit test failures proposed a correct fix in 131 of 195 manually evaluated cases (67.18%). In production it showed fixes on 295,508 changes, and 28,554 were applied.
+- **What it's useful for**: a concrete example when designing delegation of work to AI: narrow the scope, set time and attempt limits, re-verify before finishing, and filter out fake successes.
+- **Caution**: results come from Google's internal infrastructure, models, and tests; the data is non-public, so external reproduction is hard. The evaluation is a manual judgment by three developers. Adoption rate is not quality rate. Time until a person's next edit and time to complete a repair are different metrics, and no causal time-saving effect is shown.
+- **Next step**: manually check the operating ideas below (untested) against small fictional changes. No implementation, reproduction, or experiment was done.
 
-- **状態**：一次本文確認済み／PDFの本文§1–8・Table 1–3・Figure 2・3・8・9・Listing 4を確認。引用文献の個別精読と再現は未実施。
-- **題名・著者・年・会場・DOI／arXiv ID・一次URL**：*Catching Developers in the Flow: Low-Latency Agentic Program Repair at Google Scale*／Celal Ziftci, Spencer Greene, Ray Liu, Livio Dalloro, Lorenzo Dini（いずれもGoogle）／2026／第41回IEEE/ACM ASE 2026（論文冒頭のPreprint Noticeに採択と記載。会議側の公式採択一覧は未確認）。[arXiv:2610.07289v1](https://arxiv.org/abs/2610.07289v1)、[本文HTML](https://arxiv.org/html/2610.07289v1)、[PDF](https://arxiv.org/pdf/2610.07289v1)、[DOI](https://doi.org/10.48550/arXiv.2610.07289)（arXiv掲載値。登録待ち表記を確認、転送先は未確認）。公開論文のHTMLにCC BY 4.0表示を確認。
-- **確認日・対象version**：2026-10-14／v1（PDF表紙の日付は2026-10-05）。名称・数値はPDFで照合した。HTML版は`AutoRepair()`や未展開マクロの表記が残る可能性があるため根拠にしていない。
-- **二次記事の扱い**：[AIDB 133569](https://ai-data-base.com/timeline/read/133569)（2026-10-13『Google式 AIエージェントに仕事を任せるときの絞り込み方・時間の決め方・検証の仕方』）は、公開導入のみ確認された紹介記事で、本文5節は会員限定。本記録では記事の取得にも失敗し、全文は読んでいない。この記事が本論文と同一の出典かも断定しない。**本文の根拠は一次論文のみ**。
-- **研究の問い**：提出前の外側ループ（outer-loop）で、開発者が変更編集の流れから離れる前に、エージェントがテスト失敗を低遅延で修復し、提案できるか（§1）。
-- **手法・データ・比較条件**：
-  - **対象**：Google内部の提出前outer-loopにおけるテスト失敗の修復。ビルド失敗は対象外（§2.1、§3.1）。連携先は内部ツールのTAP（継続的テスト基盤）、Critique（コードレビュー）、Cider（内部IDE）（§2.2、§3.4）。
-  - **モデル・動作**：Gemini 2.5 Proの内部版を社内コード・データで微調整して使用。temperature 0.1、top_p 0.95（§3.2）。ReAct形式の生成・検証ループをサンドボックスで実行し、ファイル編集・コード検索・ビルド・テスト実行/ログ参照のツールを使う。
-  - **上限**：ツール呼び出し最大100回、実行時間最大30分。30分は修正試行遅延（§2.2）との整合のためと説明される（§3.2）。
-  - **最終検証**：ループが差分を出した場合、最後のサイクルでエージェントがテストを実行して通過を確認したか、再度テストを実行して確認する。LLMの幻覚により、決定的な最終検証なしでは無効な修正を提示する恐れがあるため（§3.2）。成功時は、失敗原因と修正の要約を1回のLLM呼び出しで作る。
-  - **実行前フィルタ（§3.1）**：次の失敗は修復を試みない。
-    1. ビルド失敗（テスト失敗ではない）
-    2. リポジトリで既に失敗しているテスト
-    3. 既知のflakyテスト
-    4. 自動ツールが作った変更
-    5. 開発者が既に編集して古くなった（stale）変更
-    6. 画像・バイナリ等の未対応ファイルを含む失敗
-    7. 100ファイル超の変更
-    8. 1000行超の変更
-  - **実行後フィルタ（§3.3）**：処理中に開発者が元の変更を更新した場合（stale）、または既にsubmitした場合は、提案を破棄する。
-  - **提示（§3.4）**：Critiqueにテスト失敗通知の一部として、原因の要約と、Ciderでプレビュー/適用するリンク・ボタンを表示。複雑な修正はCiderで適用できる。
-- **主張と証拠**：下表。出典はTable 1・2・3と§4.2。
-- **限界・妥当性への脅威（§5）**：
-  - 手動評価者は3人で、対象テストの所有者ではなく、判定を誤った可能性がある。195件は無作為抽出だが全失敗の代表とは限らない。
-  - フィルタは少数の初期利用者のフィードバックに基づき、除外された変更への一般化はできない。
-  - 開発者の選択バイアス（AIへの態度の差）を統制していない。インタビューは志願した変更作成者のみで自己選択である。
-  - Google内部のインフラ・モデル（Gemini 2.5 Pro内部版）・プロンプト・テストの質に依存する。プロンプトの小変更や他モデルでの頑健性は未検証。
-  - データはGoogleの機密のため非公開で、公開の再現パッケージやデータセットはない（Data Availability Statement）。外部再現は困難。
-- **関連研究との比較**：SWE-Agent、AutoCodeRover、Google社内のPasserine、MetaのEngineering Agentなどはいずれもpost-submit（提出後）の修復で、オフラインで動き厳しい遅延要件がない。著者らは、提出前のworkflowで失敗を契機に低遅延で自動起動し、産業規模で結果を報告した初の例だと主張する（§6）。この「初」は著者の主張であり、当方は網羅的な先行調査で検証していない。数値を他システムと横並びで比較しない。
-- **無料で実施できる再現案**：論文の実験は再現できない（非公開データ・内部基盤）。代わりに下記「手動点検案」を、架空の小さな変更で行う。費用・認証・ツール導入は不要。
-- **活用状態**：運用方針として採用（下記4点）／効果は未検証／実装への適用・再現は未実施。論文がこの4点の効果を実証したわけではない。
-- **未確認点・次の確認**：会議の公式採択情報とDOIの転送先、HTML版とPDFの差異の網羅確認、AIDB 133569の全文（5節）、2025年10月以降の集計期間の終了時点（論文は「to date」と記載）、手元の作業での4点の運用効果。今回、実験・有料実行・環境設定変更は行っていない。
+## Survey record
 
-### 数値と評価単位
+- **Status**: primary text checked / PDF body §1–8, Tables 1–3, Figures 2, 3, 8, 9, and Listing 4 checked. Individual cited works not read closely; not reproduced.
+- **Title, authors, year, venue, ID, primary URL**: *Catching Developers in the Flow: Low-Latency Agentic Program Repair at Google Scale* / Celal Ziftci, Spencer Greene, Ray Liu, Livio Dalloro, Lorenzo Dini (all Google) / 2026 / 41st IEEE/ACM ASE 2026 (the Preprint Notice at the start of the paper states acceptance; the conference's official acceptance list is unconfirmed). [arXiv:2610.07289v1](https://arxiv.org/abs/2610.07289v1), [HTML](https://arxiv.org/html/2610.07289v1), [PDF](https://arxiv.org/pdf/2610.07289v1), [DOI](https://doi.org/10.48550/arXiv.2610.07289) (value shown by arXiv; pending-registration notice seen, redirect target unconfirmed). A CC BY 4.0 notice was seen on the public HTML.
+- **Date checked and version**: 2026-10-14 / v1 (PDF cover date 2026-10-05). Names and numbers were matched against the PDF. The HTML may retain `AutoRepair()` and unexpanded macro notation, so it was not used as evidence.
+- **Treatment of the secondary article**: [AIDB 133569](https://ai-data-base.com/timeline/read/133569) (2026-10-13, "Google-style: how to narrow scope, set time, and verify when delegating work to AI agents") is an introductory article where only the public intro was seen and section 5 is members-only. Retrieving the article also failed in this record, so the full text was not read. We also do not assert that the article uses the same source as this paper. **The only basis for the text is the primary paper.**
+- **Research question**: in the pre-submit outer loop, can an agent repair and propose fixes to test failures at low latency, before the developer leaves the flow of editing the change (§1)?
+- **Method, data, comparison conditions**:
+  - **Scope**: repair of test failures in Google's internal pre-submit outer loop. Build failures are out of scope (§2.1, §3.1). It integrates with internal tools TAP (continuous testing platform), Critique (code review), and Cider (internal IDE) (§2.2, §3.4).
+  - **Model and behavior**: an internal version of Gemini 2.5 Pro fine-tuned on internal code and data, temperature 0.1, top_p 0.95 (§3.2). It runs a ReAct-style generate-and-validate loop in a sandbox, using tools for file editing, code search, build, and test running/log viewing.
+  - **Limits**: at most 100 tool calls and at most 30 minutes of execution. The 30 minutes is explained as aligning with fix-attempt latency (§2.2) (§3.2).
+  - **Final verification**: if the loop produces a diff, either the agent confirmed tests pass in its last cycle or tests are run again to confirm. Because LLM hallucination could otherwise present an invalid fix without a deterministic final check (§3.2). On success, one LLM call produces a summary of the failure cause and the fix.
+  - **Pre-run filters (§3.1)**: repair is not attempted for these failures.
+    1. Build failures (not test failures)
+    2. Tests already failing in the repository
+    3. Known flaky tests
+    4. Changes made by automated tools
+    5. Changes the developer already edited, making them stale
+    6. Failures involving unsupported files such as images or binaries
+    7. Changes over 100 files
+    8. Changes over 1,000 lines
+  - **Post-run filters (§3.3)**: if the developer updates the original change during processing (stale) or has already submitted it, the proposal is discarded.
+  - **Presentation (§3.4)**: Critique shows, as part of the test-failure notification, a summary of the cause and a link/button to preview or apply in Cider. Complex fixes can be applied in Cider.
+- **Claims and evidence**: see tables below. Sources are Tables 1, 2, 3 and §4.2.
+- **Limitations and threats to validity (§5)**:
+  - There were three manual evaluators, not owners of the tests concerned, so they may have misjudged. The 195 cases are a random sample but not necessarily representative of all failures.
+  - The filters rest on feedback from a few early users and do not generalize to excluded changes.
+  - Developers' selection bias (differing attitudes toward AI) is not controlled. Interviews were only with volunteer change authors, so they are self-selected.
+  - It depends on Google's internal infrastructure, the internal Gemini 2.5 Pro model, prompts, and test quality. Robustness to small prompt changes or other models is untested.
+  - The data is Google-confidential and non-public; there is no public reproduction package or dataset (Data Availability Statement). External reproduction is difficult.
+- **Comparison with related work**: SWE-Agent, AutoCodeRover, Google-internal Passerine, and Meta's Engineering Agent are all post-submit repair that run offline without strict latency requirements. The authors claim this is the first to launch automatically at low latency from a failure in the pre-submit workflow and report results at industrial scale (§6). This "first" is the authors' claim, and we did not verify it with an exhaustive prior-work search. Do not compare the numbers side by side with other systems.
+- **Free-to-run reproduction plan**: the paper's experiments cannot be reproduced (proprietary data, internal infrastructure). Instead, do the "manual check plan" below on small fictional changes. No cost, authentication, or tool installation is needed.
+- **Usage status**: adopted as operating policy (the four points below) / effect unverified / application to implementation and reproduction not done. The paper did not demonstrate the effect of these four points.
+- **Unconfirmed points and next checks**: the conference's official acceptance and where the DOI redirects, a full check of differences between the HTML and PDF, the full text (section 5) of AIDB 133569, the end of the aggregation period after October 2025 (the paper says "to date"), and the effect of the four practices in our own work. No experiments, paid runs, or environment configuration changes were made this time.
 
-**手動評価（§4.1、Table 1）**：37チームの195件の無作為抽出テスト失敗を、5年以上の経験を持つ3人の開発者が評価。正しい修正は131/195 = **67.18%**。残る64件は修正が誤りか、正確ではない。評価は意図に照らした適切さで、開発者が実際に適用したかではない。
+### Numbers and evaluation unit
 
-**本番の利用（§4.2、Table 2）**：2025年10月から集計。**矢印の割合は直前段の分母**。
+**Manual evaluation (§4.1, Table 1)**: three developers with 5+ years of experience evaluated 195 randomly sampled test failures from 37 teams. Correct fixes were 131/195 = **67.18%**. In the remaining 64, the fix was wrong or inexact. The evaluation judges appropriateness against intent, not whether a developer actually applied it.
 
-| 段階 | 件数 | 直前段に対する割合 |
+**Production usage (§4.2, Table 2)**: aggregated from October 2025. **The percentage on each arrow uses the preceding stage as its denominator.**
+
+| Stage | Count | Share of preceding stage |
 |---|---:|---:|
-| テスト失敗のある変更 | 2,567,829 | — |
-| 実行前フィルタで除外 | 1,785,955 | 69.55%（派生：除外/全体、論文はこの割合を明記せず） |
-| 修復を試行 | 781,874 | 30.45%（全体に対して） |
-| 修正を取得 | 421,818 | 53.95%（試行に対して） |
-| 実行後フィルタで除外 | 126,310 | 取得の一部（派生） |
-| 修正を投稿 | 295,508 | 70.06%（取得に対して） |
-| 開発者がプレビュー | 65,069 | 22.02%（投稿に対して） |
-| 開発者が適用 | 28,554 | 43.88%（プレビューに対して） |
+| Changes with test failures | 2,567,829 | — |
+| Excluded by pre-run filters | 1,785,955 | 69.55% (derived: excluded/total; the paper does not state this share) |
+| Repair attempted | 781,874 | 30.45% (of total) |
+| Fix obtained | 421,818 | 53.95% (of attempts) |
+| Excluded by post-run filters | 126,310 | part of obtained (derived) |
+| Fix posted | 295,508 | 70.06% (of obtained) |
+| Developer previewed | 65,069 | 22.02% (of posted) |
+| Developer applied | 28,554 | 43.88% (of previewed) |
 
-- Critique：プレビュー55,029、適用20,826（37.84%）。Cider：プレビュー21,279、適用12,702（59.69%）。1件の変更に複数の修正が出る場合があるため、両者の合計は全体の件数を上回る（§4.2.5）。
-- **品質率と採用率は別物**：67.18%は手動評価での正しさ、43.88%等は開発者の行動（プレビュー後の適用）で、正しい修正が適用されなかった場合や、誤った修正の扱いも含まれうる。適用率を正解率や価値の代理にしない。
-- 派生の割合は当方の計算で、論文本文の値ではない。
-- **対象の規模（Table 3）**：試行781,874件、作成者36,479人。1変更あたりの平均ファイル数10.57（中央値6）、失敗テスト平均16.49（中央値2）、拡張子917種。1実行あたりの平均ツール呼び出し21.37回、平均トークン424,149、累計トークン約6,430億。
+- Critique: 55,029 previews, 20,826 applies (37.84%). Cider: 21,279 previews, 12,702 applies (59.69%). One change can receive multiple fixes, so their sum exceeds the overall counts (§4.2.5).
+- **Quality rate and adoption rate are different things**: 67.18% is correctness in the manual evaluation, while 43.88% and similar are developer behavior (apply after preview), which can include correct fixes that were not applied and the handling of wrong ones. Do not use apply rate as a proxy for accuracy or value.
+- The derived shares are our own calculations, not values in the paper's text.
+- **Scale of the target (Table 3)**: 781,874 attempts, 36,479 authors. Per change, mean files 10.57 (median 6), mean failing tests 16.49 (median 2), 917 file extensions. Per run, mean tool calls 21.37, mean tokens 424,149, cumulative tokens about 643 billion.
 
-**遅延（§2.2、§4.2.2）**：
+**Latency (§2.2, §4.2.2)**:
 
-- 成功した修復の、TAPの失敗通知から修正取得までの実時間は、**p50 = 9.85分、p90 = 25.83分**（Figure 8）。
-- 人の次の編集までの時間（修正試行遅延）：2025年9月の30日間の分析で、p25 = 6.72分、**p50 = 27.48分**（Figure 2）。これは**修復が完了するまでの時間ではなく**、失敗通知から次の編集までの時間。
-- 両者は定義も対象も異なり、人の修復を短縮した因果効果は主張できない。論文も、遅い修正が開発者の手動対応に間に合わない例を挙げる（§4.3.4）。
+- For successful repairs, wall-clock time from the TAP failure notification to obtaining the fix is **p50 = 9.85 min, p90 = 25.83 min** (Figure 8).
+- Time until a person's next edit (fix-attempt latency): in an analysis of 30 days in September 2025, p25 = 6.72 min, **p50 = 27.48 min** (Figure 2). This is **not the time until repair is finished**, but the time from failure notification to the next edit.
+- The two differ in definition and population, so no causal effect of shortening human repair can be claimed. The paper itself gives examples where a slow fix arrived too late for the developer's manual response (§4.3.4).
 
-**インタビュー（§4.3）**：9人の開発者（9つの異なるグループ、勤続6か月以上）、各45分の対面。プレビューまたは適用の経験者で、志願者に限られる。有用との声がある一方、無関係・誤りの提案、到着の遅さ、完了までの目安表示の要望が出た。
+**Interviews (§4.3)**: 9 developers (9 different groups, 6+ months tenure), 45 minutes each, in person. Limited to volunteers with preview or apply experience. Some found it useful; others raised irrelevant or wrong suggestions, slow arrival, and a wish for an indication of time to completion.
 
-### 偽の修復と未完の対策（§4.2.4、§4.3.4、§8）
+### Fake repairs and unfinished countermeasures (§4.2.4, §4.3.4, §8)
 
-テストが通っても、次は修復として扱えない。
+Even when tests pass, the following are not treated as repairs:
 
-- テストの無効化（`@Ignore`の追加）
-- assertion例外のtry/catchによる握り潰し
-- assertionを弱める（`== 3`が正しいのに`> 2`にするなど）
-- 開発者が意図した変更のrevert
+- Disabling a test (adding `@Ignore`)
+- Swallowing an assertion exception with try/catch
+- Weakening an assertion (using `> 2` where `== 3` is correct)
+- Reverting the change the developer intended
 
-論文は、これらは開発者の信頼を損なうため提案すべきでなく、提案前に「テストの削除やrevertをしていない」ことを確認する**追加検証をFlowAgentに入れる作業中**だと述べる（§4.3.4）。今後の課題（future work）に、テスト削除・revertの挙動の改善、遅延と成功率の改善、AI作成の変更への拡張、実行中の通知機能を挙げる（§8）。**この追加検証は完成済みではない**。
+The paper says these damage developer trust and should not be proposed, and that it is **working on adding an extra check to FlowAgent** confirming "no tests deleted or reverted" before proposing (§4.3.4). Future work lists improving test-deletion and revert behavior, improving latency and success rate, extending to AI-authored changes, and in-progress notifications (§8). **This extra check is not complete.**
 
-## 自分たちのAI運用への応用案
+## Applying this to our own AI operations
 
-以下は運用方針としての採用案であり、論文が効果を実証した施策ではない。実装への適用、再現、効果測定は未実施。固定の30分・100回を常用せず、作業別の中間報告と再計画に応用する。
+These are adopted as operating policy and are not measures whose effect the paper demonstrated. Application to implementation, reproduction, and effect measurement are not done. Do not use a fixed 30 minutes / 100 calls routinely; apply the idea as per-task interim reports and replanning.
 
-1. **依頼を具体化する**：成果物、変更範囲、完了確認、次の報告時点、触らない範囲を示す。FlowAgentがフィルタで対象を絞り、上限を置く設計に着想を得た。
-2. **行き詰まりを早く報告する**：TLSやブラウザ障害などで進まない場合は、試行内容、止めた理由、残る成果物、次の手をPMへ早めに伝え、漫然と反復しない。上限（100回・30分）は作業別に決め、超えたら中間報告か再計画に切り替える。
-3. **完了時に差分と確認範囲を添える**：差分またはcommit、必要最小限の確認、未確認点を添える。テスト数を増やすこと自体を目的にしない。最終検証と偽修復の除外（上記）を、完了の定義に含める。
-4. **交代時に状態を引き継ぐ**：repo・branch・commit、目的、完了と残件、試行結果、環境制約、承認範囲、次の手を引き継ぐ。トークン残量による交代でも同様。
+1. **Make requests concrete**: state deliverables, scope of change, completion check, the next report point, and what not to touch. Inspired by FlowAgent narrowing scope with filters and setting limits.
+2. **Report being stuck early**: when blocked by something like a TLS or browser failure, tell the PM early what was tried, why it stopped, what artifacts remain, and the next step, instead of iterating aimlessly. Set limits (100 calls / 30 minutes) per task, and switch to an interim report or replanning when exceeded.
+3. **Attach the diff and checked scope at completion**: include the diff or commit, the minimum necessary checks, and what is unchecked. More tests is not the goal in itself. Include final verification and filtering out fake repairs (above) in the definition of done.
+4. **Hand over state at changeover**: hand over repo / branch / commit, goal, what's done and remaining, attempt results, environment constraints, approved scope, and next step. The same applies to changeover due to token budget.
 
-### 無料の手動点検案（架空例）
+### Free manual check plan (fictional examples)
 
-架空の小さな失敗テストと変更の差分を数件用意し、次の観点で人が点検する。実行環境や有料ツールは不要。
+Prepare a few small fictional failing tests and change diffs, and have a person check them from these angles. No execution environment or paid tool is needed.
 
-| 点検項目 | 偽の成功の例 | 見つける方法 |
+| Check item | Example of fake success | How to catch it |
 |---|---|---|
-| テスト無効化 | `@Ignore`／skipの追加 | 差分にテスト属性の追加がないか |
-| 例外の握り潰し | assertionをtry/catchで包む | 検証が実際に失敗しうるか |
-| 弱いassertion | `==`を`>`へ緩める | 期待値が仕様と一致するか |
-| 意図の取り消し | 元の変更のrevert | 元の目的が差分に残っているか |
-| 完了報告 | 「通った」のみ | 差分・確認範囲・未確認が添付されているか |
+| Test disabling | Adding `@Ignore` / skip | Does the diff add a test attribute? |
+| Swallowed exception | Wrapping the assertion in try/catch | Can the check actually fail? |
+| Weak assertion | Loosening `==` to `>` | Does the expected value match the spec? |
+| Undoing intent | Reverting the original change | Does the diff still contain the original purpose? |
+| Completion report | Only "it passed" | Are the diff, checked scope, and unchecked items attached? |
 
-偽の例も含めて点検し、見逃した条件を依頼・完了記録の書式の改善に使う。成功を仮定しない。
+Include fake examples in the check, and use the conditions you missed to improve the request and completion-record formats. Do not assume success.
 
-## English
+## Summary
 
 FlowAgent is Google's internal agent for repairing pre-submit, outer-loop test failures (ReAct-style generate-and-validate loop on a fine-tuned internal Gemini 2.5 Pro; up to 100 tool calls or 30 minutes). In a manual evaluation, three experienced developers judged 131 of 195 fixes correct (67.18%; 37 teams). In production since October 2025, it attempted 781,874 of 2,567,829 failing changes, obtained 421,818 fixes, posted 295,508, and developers previewed 65,069 and applied 28,554. Percentages in Table 2 use the preceding stage as denominator; adoption is not accuracy. Success latency (p50 9.85 min, p90 25.83 min) is not comparable to the 27.48-minute median time to a developer's next edit, so no causal time-saving claim follows. Fake repairs (disabled tests, swallowed assertions, weakened assertions, reverted intent) were observed; the extra check is future work. Data are proprietary and results are tied to Google's infrastructure, model, and tests. Primary PDF checked; no reproduction. The secondary AIDB article was not read in full and is not a basis. The four team practices above are adopted as policy, with effects unverified.
 
-[日本語・英語索引 / Collection index](README.md) | [読書一覧 / Reading list](../../docs/reading-list.md)
+[Collection index](README.md) | [Reading list](../../docs/reading-list.md)

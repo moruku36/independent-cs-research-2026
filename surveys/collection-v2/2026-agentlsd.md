@@ -1,17 +1,17 @@
-# AgentLSD — AIセキュリティエージェントへの偽情報混入
+**English** | [日本語](2026-agentlsd.ja.md)
 
-- **状態**：一次資料（arXiv要旨）確認済み／本文未精読／再現未実施
-- **題名・著者・年・会場・DOI／arXiv ID・一次URL**：*AgentLSD: Evaluating AI Security Agents Under Adversarial Task Contamination*／Matteo Golinelli, Idilio Drago, Matteo Boffa, Francesco Bergadano, Bruno Crispo／2026／AISec 2026 発表予定（要確認）／arXiv:2609.19140／[一次論文](https://arxiv.org/abs/2609.19140)
-- **確認日・対象version**：2026-10-10／arXiv要旨（版の固定・全文照合は未実施）
-- **研究の問い**：タスク環境内に置かれた偽の証拠は、セキュリティAIの成功率と探索資源をどう変えるか。
-- **手法・データ・比較条件**：11のWeb CTF課題、6モデル。通常環境（clean）と偽flag、誤誘導ヒント、おとりエンドポイント等を混入した条件をペアで比較。正規の解法は維持。
-- **主張と証拠**：要旨ではclean条件でflag取得率41%。罠があっても正解できる場合にターン数が約20、推論トークンが約2,000増えたと報告。影響はモデルと課題で異なる。
-- **限界・妥当性への脅威**：CTF環境と実ネットワークでは条件が異なる。増分の集計方法・ばらつき、再現手順、モデル別差は本文確認が必要。「攻撃側のAPI費用が必ず増える」という証明ではない。
-- **関連研究との比較**：[HoneyRoute](2026-honeyroute.md)は本番LLMへの不正リクエストをおとりモデルへ分岐する運用方式。本論文はセキュリティタスクの偽証拠に対する耐性・資源消費を評価する。
-- **無料で実施できる再現案**：所有するローカルCTFに正当な解法を残し、clean/trap条件を同一モデル・同一予算で比較。成功率・ターン数・ツール呼び出し数・推論トークン・時間を記録。**未実施**。
-- **活用状態**：提案（AIセキュリティエージェントの耐性評価項目）。試行・実装採用はしていない。
-- **未確認点・次の確認**：本文・付録・公開コードとライセンスを確認し、平均／中央値と統計的有意性、再現性、発表会場を確定。
+# AgentLSD: Injecting False Information into AI Security Agents
 
-関連：[テーマ別比較](../2026-ai-agent-honeypot-deception.md)／[論文一覧](../../docs/reading-list.md)
+- **Status**: primary source (arXiv abstract) checked / full text not closely read / not reproduced
+- **Title, authors, year, venue, ID, primary URL**: *AgentLSD: Evaluating AI Security Agents Under Adversarial Task Contamination* / Matteo Golinelli, Idilio Drago, Matteo Boffa, Francesco Bergadano, Bruno Crispo / 2026 / AISec 2026 (announced; to be confirmed) / arXiv:2609.19140 / [primary paper](https://arxiv.org/abs/2609.19140)
+- **Date checked and version**: 2026-10-10 / arXiv abstract (version not pinned; full text not cross-checked)
+- **Research question**: how does false evidence planted in a task environment change a security AI's success rate and exploration resources?
+- **Method, data, comparison conditions**: 11 web CTF challenges, 6 models. A clean environment is compared in pairs with conditions that inject fake flags, misleading hints, decoy endpoints, and similar. The legitimate solution path is kept intact.
+- **Claims and evidence**: the abstract reports a 41% flag-capture rate in the clean condition. Even when the agent still solves the challenge, traps added about 20 turns and about 2,000 reasoning tokens. The effect differs by model and challenge.
+- **Limitations and threats to validity**: CTF settings differ from real networks. How the increments were aggregated, their variance, the reproduction procedure, and per-model differences need the full text. This is not proof that an attacker's API cost always rises.
+- **Comparison with related work**: [HoneyRoute](2026-honeyroute.md) is an operational scheme that routes malicious requests to a production LLM into a decoy model. This paper measures the robustness and resource use of security agents against false evidence.
+- **Free-to-run reproduction plan**: keep the legitimate solution in a CTF you own, then compare clean vs. trap conditions with the same model and budget. Record success rate, turns, tool calls, reasoning tokens, and time. **Not done.**
+- **Usage status**: proposed (an item for evaluating AI security agent robustness). Not trialed or adopted.
+- **Unconfirmed points and next checks**: check the full text, appendix, public code and license; settle mean vs. median, statistical significance, reproducibility, and venue.
 
-> このファイルはサーベイ論文集v2に再編した版です。元の個別メモは互換性のため保持しています。
+Related: [thematic comparison](../2026-ai-agent-honeypot-deception.md) / [reading list](../../docs/reading-list.md)
