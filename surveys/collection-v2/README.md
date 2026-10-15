@@ -18,6 +18,10 @@
 - [SWE-Journey](2026-swe-journey.md)（2026-10-08）— 長期開発と模擬利用者の対話を評価。一次本文確認済み／部分読了／実験未実施。
 - [FlowAgent](2026-flowagent.md)（2026-10-05）— Googleの提出前テスト失敗を低遅延で自動修復。一次PDF確認済み／再現未実施（非公開データによる制約）／運用方針採用・効果未検証。
 
+## 暗号アジリティ・PQC移行の評価
+
+- [CAMMの実用評価](2026-camm-practical-evaluation.md)（v1、2026-04-14）— 一次PDF本文確認済み／再現未実施。評価条件・限界と、PQCラボ向けの未実施の演習案を記録。
+
 ## 研究メモの原則
 
 - 実験を行っていない場合は「再現済み」と記載しない。
@@ -29,6 +33,7 @@
 
 ## English index
 
+- [CAMM: practical evaluation of crypto-agility maturity](2026-camm-practical-evaluation.md) — primary PDF reviewed; no reproduction; evidence-review exercise proposed.
 - [SWE-Journey: long-horizon coding collaboration](2026-swe-journey.md) — primary text checked, partial reading; no reproduction.
 - [FlowAgent: low-latency pre-submit test repair at Google](2026-flowagent.md) — primary PDF checked; proprietary data, no reproduction.
 - [GitInject: prompt injection in AI-powered CI/CD](2026-gitinject.md) — primary HTML read in full; no reproduction; text/table inconsistencies recorded unresolved.
