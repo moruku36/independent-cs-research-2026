@@ -42,3 +42,7 @@
 - [FlowAgent: pre-submit test repair at Google](../surveys/collection-v2/2026-flowagent.md) — primary PDF checked; no reproduction; adopted practices unverified.
 - [GitInject: prompt injection in AI-powered CI/CD](../surveys/collection-v2/2026-gitinject.md) — primary HTML read; no reproduction; kept as a defensive survey with unresolved text/table inconsistencies.
 - [SWE-Journey: evaluation and proposed acceptance workflow](../surveys/collection-v2/2026-swe-journey.md) — primary text checked, partially read; no reproduction or implementation.
+
+## 参考文献候補：量子アニーリングによる暗号解析
+
+- [D-Wave AdvantageとRSA整数分解](reference-candidates/2024-dwave-annealing-rsa.md) — [紹介記事](https://gigazine.net/news/20241015-rsa-encryption-quantum-computer/)が示す[一次PDF](http://cjc.ict.ac.cn/online/onlinepaper/wc-202458160402.pdf)は取得失敗。本文未読・書誌未確定・追試未実施。実用RSA解読や量子優位の証明として扱わず、既存サーベイ7件と分けて管理します。
