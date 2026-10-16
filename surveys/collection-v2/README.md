@@ -20,6 +20,8 @@ Reading records for 2026 computer science and AI-security papers. Each file foll
 - [SWE-Journey](2026-swe-journey.md) (2026-10-08): long-horizon development with simulated user dialogue. Primary text checked; partially read; no experiments.
 - [FlowAgent](2026-flowagent.md) (2026-10-05): low-latency automatic repair of pre-submit test failures at Google. Primary PDF checked; no reproduction (proprietary data); team practices adopted, effect unverified.
 
+- [From Human-Centric to Agentic Code Review](2026-agentic-code-review-eras.md) (v1, 2026-07-14): 1.02M reviewed PRs from 207 GitHub projects across pre-LLM, LLM, and agent eras. Primary HTML read in full; no PDF cross-check, replication-package check, or reproduction; regression results are explanatory, not causal.
+
 ## Privacy and organizational policy in GenAI use
 
 - [Chat First, Worry Later](2026-chat-first-worry-later.md) (v1, 2026-08-21): questionnaire study of 224 European ChatGPT users at work on policies, privacy concerns, and knowledge. Primary HTML read in full and PDF figures checked; no reproduction; text/table mismatches recorded as unresolved.
