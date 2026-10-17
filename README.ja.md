@@ -17,6 +17,9 @@
   - [GitInject — AI搭載CI/CDへの実環境プロンプトインジェクション評価](surveys/collection-v2/2026-gitinject.ja.md)
 
   - [CAMM — 暗号アジリティ成熟度モデルの実用評価](surveys/collection-v2/2026-camm-practical-evaluation.ja.md)
+  - [人中心からエージェント型コードレビューへ](surveys/collection-v2/2026-agentic-code-review-eras.ja.md)
+  - [Chat First, Worry Later — 職場のChatGPT利用とプライバシー](surveys/collection-v2/2026-chat-first-worry-later.ja.md)
+  - [コマンドラインAIコーディングエージェントの導入と影響（Microsoft調査）](surveys/collection-v2/2026-cli-coding-agents-adoption-impact.ja.md)
 
 ## 参考文献候補（一次本文未確認）
 

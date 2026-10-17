@@ -16,6 +16,9 @@ Public notes for independent researchers and industry practitioners who do compu
   - [FlowAgent: low-latency pre-submit test repair at Google](surveys/collection-v2/2026-flowagent.md)
   - [GitInject: real-world prompt injection in AI-powered CI/CD](surveys/collection-v2/2026-gitinject.md)
   - [CAMM: practical evaluation of the crypto-agility maturity model](surveys/collection-v2/2026-camm-practical-evaluation.md)
+  - [From Human-Centric to Agentic Code Review](surveys/collection-v2/2026-agentic-code-review-eras.md)
+  - [Chat First, Worry Later: workplace ChatGPT privacy study](surveys/collection-v2/2026-chat-first-worry-later.md)
+  - [Adoption and impact of command-line AI coding agents at Microsoft](surveys/collection-v2/2026-cli-coding-agents-adoption-impact.md)
 
 ## Reference candidates (primary text not yet checked)
 
