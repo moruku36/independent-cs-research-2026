@@ -21,6 +21,7 @@ Reading records for 2026 computer science and AI-security papers. Each file foll
 - [FlowAgent](2026-flowagent.md) (2026-10-05): low-latency automatic repair of pre-submit test failures at Google. Primary PDF checked; no reproduction (proprietary data); team practices adopted, effect unverified.
 
 - [From Human-Centric to Agentic Code Review](2026-agentic-code-review-eras.md) (v1, 2026-07-14): 1.02M reviewed PRs from 207 GitHub projects across pre-LLM, LLM, and agent eras. Primary HTML read in full; no PDF cross-check, replication-package check, or reproduction; regression results are explanatory, not causal.
+- [Adoption and Impact of Command-Line AI Coding Agents](2026-cli-coding-agents-adoption-impact.md) (v1, 2026-07-01): tens of thousands of Microsoft engineers over an early-2026 rollout of Copilot CLI and Claude Code. Primary HTML read in full; no reproduction (proprietary telemetry); PR throughput increased +24% and persisted over 4 months; adoption driven by social exposure while prior IDE use reduced retention.
 
 ## Privacy and organizational policy in GenAI use
 
