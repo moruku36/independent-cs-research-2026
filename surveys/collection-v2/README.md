@@ -17,23 +17,24 @@ Reading records for 2026 computer science and AI-security papers. Each file foll
 
 ## Coding assistants and human-AI collaboration
 
-- [SWE-Journey](2026-swe-journey.md) (2026-10-08): long-horizon development with simulated user dialogue. Primary text checked; partially read; no experiments.
-- [FlowAgent](2026-flowagent.md) (2026-10-05): low-latency automatic repair of pre-submit test failures at Google. Primary PDF checked; no reproduction (proprietary data); team practices adopted, effect unverified.
-
-- [From Human-Centric to Agentic Code Review](2026-agentic-code-review-eras.md) (v1, 2026-07-14): 1.02M reviewed PRs from 207 GitHub projects across pre-LLM, LLM, and agent eras. Primary HTML read in full; no PDF cross-check, replication-package check, or reproduction; regression results are explanatory, not causal.
-- [Adoption and Impact of Command-Line AI Coding Agents](2026-cli-coding-agents-adoption-impact.md) (v1, 2026-07-01): tens of thousands of Microsoft engineers over an early-2026 rollout of Copilot CLI and Claude Code. Primary HTML read in full; no reproduction (proprietary telemetry); PR throughput increased +24% and persisted over 4 months; adoption driven by social exposure while prior IDE use reduced retention.
+- [SWE-Journey](2026-swe-journey.md) (2026-10-08): long-horizon development with simulated user dialogue. Primary text checked; partially read.
+- [FlowAgent](2026-flowagent.md) (2026-10-05): low-latency automatic repair of pre-submit test failures at Google. Primary HTML read in full; no reproduction.
+- [From Human-Centric to Agentic Code Review](2026-agentic-code-review-eras.md) (v1, 2026-07-14): 1.02M reviewed PRs across human-centric, assistant-augmented, and agentic review eras. Primary PDF text checked.
+- [Adoption and Impact of Command-Line AI Coding Agents](2026-cli-coding-agents-adoption-impact.md) (v1, 2026-07-01): telemetry and survey (n=3,812) on terminal coding agents at Microsoft. Primary PDF text checked.
+- [What Makes a Great Co-Worker in an AI-Native Workplace?](2026-ai-native-coworker-qualities.md) (v1, 2026-09-12): 22 interviews and two-referent survey (N=1,534) at Microsoft producing the 75-quality BACI framework, 11 co-worker archetypes, and AI work etiquette taxonomy. Primary PDF text checked.
+- [Automating Low-Risk Code Review at Meta: RADAR](2026-radar-low-risk-code-review.md) (v2, 2026-06-12): risk-stratified automated review and landing across 535K+ diffs at Meta (DRS + LLM ACR). Primary PDF text checked.
 
 ## Privacy and organizational policy in GenAI use
 
-- [Chat First, Worry Later](2026-chat-first-worry-later.md) (v1, 2026-08-21): questionnaire study of 224 European ChatGPT users at work on policies, privacy concerns, and knowledge. Primary HTML read in full and PDF figures checked; no reproduction; text/table mismatches recorded as unresolved.
+- [Chat First, Worry Later](2026-chat-first-worry-later.md) (v1, 2026-08-21): questionnaire study of 224 European enterprise employees on ChatGPT privacy habits and shadow GenAI. Primary PDF text checked.
 
 ## Crypto-agility and PQC migration assessment
 
-- [Practical evaluation of CAMM](2026-camm-practical-evaluation.md) (v1, 2026-04-14): primary PDF text checked; no reproduction. Records evaluation conditions, limitations, and an unperformed exercise for a PQC lab.
+- [Practical evaluation of CAMM](2026-camm-practical-evaluation.md) (v1, 2026-04-14): primary PDF text checked; no experimental verification.
 
 ## Related reference candidates (outside the survey count)
 
-- [2024 reports on D-Wave quantum annealing and RSA integer factorization](../../docs/reference-candidates/2024-dwave-annealing-rsa.md): records the path from the article to the official PDF. Primary text unread, bibliography unconfirmed, no replication.
+- [2024 reports on D-Wave quantum annealing and RSA integer factorization](../../docs/reference-candidates/2024-dwave-annealing-rsa.md)
 
 ## Principles for research notes
 
