@@ -4,7 +4,7 @@
 
 Public notes for independent researchers and industry practitioners who do computer science research and want to turn it into papers and conference talks. This repository accumulates publication pathways, candidate research topics, AI paper reading logs, and practical application ideas, all based on publicly available information.
 
-**2026-10-15 UTC update:** Research plans are in the initial phase. The survey collection holds seven papers. Primary texts have been checked for Astra, SWE-Journey, FlowAgent, GitInject, and the CAMM evaluation; SWE-Journey is only partially read. Replication experiments and original-research validation have not been done. Eligibility for presentation, acceptance precedents, biographical details, and affiliation wording are still undecided.
+**2026-10-18 UTC update:** Research plans are in the initial phase. The survey collection holds 12 papers. Primary texts have been checked for Astra, SWE-Journey, FlowAgent, GitInject, the CAMM evaluation, Agentic Code Review Eras, Chat First Worry Later, CLI Coding Agents, AI-Native Co-Worker Qualities (BACI), and Meta RADAR; SWE-Journey is only partially read. Replication experiments and original-research validation have not been done. Eligibility for presentation, acceptance precedents, biographical details, and affiliation wording are still undecided.
 
 ## Survey Collection v2
 
@@ -19,10 +19,12 @@ Public notes for independent researchers and industry practitioners who do compu
   - [From Human-Centric to Agentic Code Review](surveys/collection-v2/2026-agentic-code-review-eras.md)
   - [Chat First, Worry Later: workplace ChatGPT privacy study](surveys/collection-v2/2026-chat-first-worry-later.md)
   - [Adoption and impact of command-line AI coding agents at Microsoft](surveys/collection-v2/2026-cli-coding-agents-adoption-impact.md)
+  - [What Makes a Great Co-Worker in an AI-Native Workplace? (Microsoft BACI study)](surveys/collection-v2/2026-ai-native-coworker-qualities.md)
+  - [Automating Low-Risk Code Review at Meta: RADAR](surveys/collection-v2/2026-radar-low-risk-code-review.md)
 
 ## Reference candidates (primary text not yet checked)
 
-- [Quantum annealing and RSA integer factorization on D-Wave Advantage](docs/reference-candidates/2024-dwave-annealing-rsa.md): a 2024 news article, recorded as a lead toward the primary PDF. Full text unread, bibliography unconfirmed, no replication. Not counted among the seven surveys above.
+- [Quantum annealing and RSA integer factorization on D-Wave Advantage](docs/reference-candidates/2024-dwave-annealing-rsa.md): a 2024 news article, recorded as a lead toward the primary PDF. Full text unread, bibliography unconfirmed, no replication. Not counted among the surveys above.
 
 ## Contents
 
@@ -31,7 +33,7 @@ Public notes for independent researchers and industry practitioners who do compu
 - [Research candidates (unverified)](docs/research-agenda.md)
 - [AI paper reading and application list (includes five papers checked against primary text)](docs/reading-list.md)
 - [AgentLSD: guiding AI agent exploration with fake evidence](surveys/2026-agentlsd.md)
-- [HoneyRoute: routing malicious LLM requests to decoy models](surveys/2026-honeyroute.md)
+- [HoneyRoute: routing LLM requests to decoy models](surveys/2026-honeyroute.md)
 - [AI decoy defenses: comparing two papers and sorting research themes](surveys/2026-ai-agent-honeypot-deception.md)
 - [Survey record template](surveys/template.md)
 - [Reproducibility, ethics, and pre-publication checklist](docs/reproducibility-ethics-checklist.md)
