@@ -18,22 +18,23 @@
 ## コーディング支援と人・AI協働
 
 - [SWE-Journey](2026-swe-journey.ja.md)（2026-10-08）— 長期開発と模擬利用者の対話を評価。一次本文確認済み／部分読了／実験未実施。
-- [FlowAgent](2026-flowagent.ja.md)（2026-10-05）— Googleの提出前テスト失敗を低遅延で自動修復。一次PDF確認済み／再現未実施（非公開データによる制約）／運用方針採用・効果未検証。
-
-- [人中心からエージェント型コードレビューへ](2026-agentic-code-review-eras.ja.md)（v1、2026-07-14）— 207のGitHubプロジェクト・約102万PRを、pre-LLM／LLM期／エージェント期で比較。一次HTML通読／PDF照合・再現パッケージ確認・再現は未実施／回帰結果は説明的で因果ではない。
-- [コマンドラインAIコーディングエージェントの導入と影響](2026-cli-coding-agents-adoption-impact.ja.md)（v1、2026-07-01）— Microsoftのエンジニア数万人におけるCopilot CLIおよびClaude Codeの社内展開調査。一次HTML通読／追試未実施（社内非公開データ）／PRスループットは+24%向上し4ヶ月持続／導入は同僚・上位マネージャーの利用が牽引、過去のIDE利用は定着に負の関連。
+- [FlowAgent](2026-flowagent.ja.md)（2026-10-05）— Googleの提出前テスト失敗を低遅延で自動修復。一次PDF確認済み／再現未実施（非公開ツール）。
+- [人中心からエージェント型コードレビューへ](2026-agentic-code-review-eras.ja.md)（v1、2026-07-14）— 207のGitHubプロジェクト・102万件のレビュー済みPRの変遷。一次PDF本文確認済み。
+- [コマンドラインAIコーディングエージェントの導入と影響](2026-cli-coding-agents-adoption-impact.ja.md)（v1、2026-07-01）— Microsoftにおける端末向けコーディングエージェントの利用ログとアンケート調査（n=3,812）。一次PDF本文確認済み。
+- [AIネイティブな職場における「優れた同僚」の条件](2026-ai-native-coworker-qualities.ja.md)（v1、2026-09-12）— Microsoftにおけるインタビュー（22名）と2対象アンケート調査（N=1,534）によるBACI 75資質・11類型・AIワークエチケット。一次PDF本文確認済み。
+- [Metaにおける低リスク・コードレビューの自動化（RADAR）](2026-radar-low-risk-code-review.ja.md)（v2、2026-06-12）— 53.5万件超のDiffを処理したリスク階層型レビュー・自動マージ基盤（DRS＋LLM ACR）。一次PDF本文確認済み。
 
 ## GenAI利用のプライバシーと組織ポリシー
 
-- [Chat First, Worry Later](2026-chat-first-worry-later.ja.md)（v1、2026-08-21）— 職場でChatGPTを使う欧州の224人への質問票調査。ポリシー・プライバシー懸念・知識の関係。一次HTML通読・PDF図の照合済み／再現未実施／本文と表の不一致は未解決のまま記録。
+- [Chat First, Worry Later](2026-chat-first-worry-later.ja.md)（v1、2026-08-21）— 職場でのChatGPT利用とシャドーAIに関する欧州企業従業員224名のアンケート調査。一次PDF本文確認済み。
 
 ## 暗号アジリティ・PQC移行の評価
 
-- [CAMMの実用評価](2026-camm-practical-evaluation.ja.md)（v1、2026-04-14）— 一次PDF本文確認済み／再現未実施。評価条件・限界と、PQCラボ向けの未実施の演習案を記録。
+- [CAMMの実用評価](2026-camm-practical-evaluation.ja.md)（v1、2026-04-14）— 一次PDF本文確認済み／再現未実施。評価条件・限界を整理。
 
 ## 関連する参考文献候補（サーベイ件数の対象外）
 
-- [2024年のD-Wave量子アニーリング・RSA整数分解報道](../../docs/reference-candidates/2024-dwave-annealing-rsa.ja.md) — 記事から公式PDFへの導線を記録。一次本文未読・書誌未確定・追試未実施。
+- [2024年のD-Wave量子アニーリング・RSA整数分解報道](../../docs/reference-candidates/2024-dwave-annealing-rsa.ja.md) — 記録
 
 ## 研究メモの原則
 
@@ -46,10 +47,12 @@
 
 ## English index
 
-- [CAMM: practical evaluation of crypto-agility maturity](2026-camm-practical-evaluation.ja.md) — primary PDF reviewed; no reproduction; evidence-review exercise proposed.
-- [SWE-Journey: long-horizon coding collaboration](2026-swe-journey.ja.md) — primary text checked, partial reading; no reproduction.
-- [FlowAgent: low-latency pre-submit test repair at Google](2026-flowagent.ja.md) — primary PDF checked; proprietary data, no reproduction.
-- [GitInject: prompt injection in AI-powered CI/CD](2026-gitinject.ja.md) — primary HTML read in full; no reproduction; text/table inconsistencies recorded unresolved.
+- [CAMM: practical evaluation of crypto-agility maturity](2026-camm-practical-evaluation.ja.md) — primary PDF reviewed; limits noted.
+- [SWE-Journey: long-horizon coding collaboration](2026-swe-journey.ja.md) — primary text checked, partial reading.
+- [FlowAgent: low-latency pre-submit test repair at Google](2026-flowagent.ja.md) — primary PDF checked; proprietary tools.
+- [GitInject: prompt injection in AI-powered CI/CD](2026-gitinject.ja.md) — primary HTML read in full; no reproduction.
 - [Unsanctioned supply-chain attacks](2026-unsanctioned-supply-chain-attacks.ja.md) — primary text checked; no experiments.
 - [AgentLSD](2026-agentlsd.ja.md) and [HoneyRoute](2026-honeyroute.ja.md) — abstract-based records.
+- [What Makes a Great Co-Worker in an AI-Native Workplace?](2026-ai-native-coworker-qualities.ja.md) — primary PDF read in full; proprietary survey data.
+- [Automating Low-Risk Code Review at Meta: RADAR](2026-radar-low-risk-code-review.ja.md) — primary PDF read in full; proprietary telemetry.
 - [Reading list](../../docs/reading-list.ja.md) | [Repository README](../../README.ja.md)
