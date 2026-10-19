@@ -6,6 +6,12 @@
 
 **2026-10-18 UTC更新：研究計画は初期段階。サーベイ集に12本を記録し、Astra・SWE-Journey・FlowAgent・GitInject・CAMM評価論文・Agentic Code Review・Chat First Worry Later・CLI Coding Agents・AIネイティブ職場の同僚資質（BACI）・Meta RADARは一次本文を確認済みです。SWE-Journeyは部分読了です。再現実験・独自研究の検証は未実施です。発表資格・採択例・経歴・所属は未確定です。**
 
+## リポジトリ構成図
+
+![リポジトリ構成図：ルートREADMEから docs/（発表経路・計画・確認票）と surveys/（論文の読書記録）へ。collection-v2 が正のテーマ別索引](docs/diagrams/architecture.ja.svg)
+
+<sub>[Pele](https://pele.run/) で [Mermaidソース](docs/diagrams/architecture.ja.mmd) から描画。English version: [README.md](README.md)。</sub>
+
 ## サーベイ論文集 v2
 
 - **[サーベイ論文集 v2：論文別記録・テーマ別索引](surveys/collection-v2/README.ja.md)**

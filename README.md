@@ -6,6 +6,12 @@ Public notes for independent researchers and industry practitioners who do compu
 
 **2026-10-18 UTC update:** Research plans are in the initial phase. The survey collection holds 12 papers. Primary texts have been checked for Astra, SWE-Journey, FlowAgent, GitInject, the CAMM evaluation, Agentic Code Review Eras, Chat First Worry Later, CLI Coding Agents, AI-Native Co-Worker Qualities (BACI), and Meta RADAR; SWE-Journey is only partially read. Replication experiments and original-research validation have not been done. Eligibility for presentation, acceptance precedents, biographical details, and affiliation wording are still undecided.
 
+## Repository architecture
+
+![Repository architecture: root README leads to docs/ (pathways, plans, checklists) and surveys/ (paper reading records), where collection-v2 is the canonical thematic index](docs/diagrams/architecture.en.svg)
+
+<sub>Rendered with [Pele](https://pele.run/) from the [Mermaid source](docs/diagrams/architecture.en.mmd). Japanese version: [README.ja.md](README.ja.md).</sub>
+
 ## Survey Collection v2
 
 - **[Survey Collection v2: per-paper records and thematic index](surveys/collection-v2/README.md)**
