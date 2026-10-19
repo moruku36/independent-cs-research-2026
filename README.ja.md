@@ -21,7 +21,8 @@
   - [コマンドラインAIコーディングエージェントの導入と影響（Microsoft調査）](surveys/collection-v2/2026-cli-coding-agents-adoption-impact.ja.md)
   - [AIネイティブな職場における「優れた同僚」の条件（Microsoft BACI調査）](surveys/collection-v2/2026-ai-native-coworker-qualities.ja.md)
   - [Metaにおける低リスク・コードレビューの自動化（RADAR）](surveys/collection-v2/2026-radar-low-risk-code-review.ja.md)
-
+  - [How employment is changing at Anthropic（Anthropicにおける雇用の変化）](surveys/collection-v2/d2026-anthropic-employment-changes.ja.md) ([ソース](https://www.anthropic.com/research/employment-at-anthropic))
+  - [Anthropic Economic Index report: Cadences（経済指標レポート：ケイデンス）](surveys/collection-v2/d2026-anthropic-economic-index-cadences.ja.md) ([ソース](https://www.anthropic.com/research/economic-index-june-2026-report))
 ## 参考文献候補（一次本文確認）
 
 - [D-Wave Advantageによる量子アニーリングとRSA整数分解](docs/reference-candidates/2024-dwave-annealing-rsa.ja.md) — 2026-10-14 追加
