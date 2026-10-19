@@ -21,7 +21,8 @@ Public notes for independent researchers and industry practitioners who do compu
   - [Adoption and impact of command-line AI coding agents at Microsoft](surveys/collection-v2/2026-cli-coding-agents-adoption-impact.md)
   - [What Makes a Great Co-Worker in an AI-Native Workplace? (Microsoft BACI study)](surveys/collection-v2/2026-ai-native-coworker-qualities.md)
   - [Automating Low-Risk Code Review at Meta: RADAR](surveys/collection-v2/2026-radar-low-risk-code-review.md)
-
+  - [How employment is changing at Anthropic](surveys/collection-v2/d2026-anthropic-employment-changes.md) ([Source](https://www.anthropic.com/research/employment-at-anthropic))
+   - [Anthropic Economic Index report: Cadences](surveys/collection-v2/d2026-anthropic-economic-index-cadences.md) ([Source](https://www.anthropic.com/research/economic-index-june-2026-report))
 ## Reference candidates (primary text not yet checked)
 
 - [Quantum annealing and RSA integer factorization on D-Wave Advantage](docs/reference-candidates/2024-dwave-annealing-rsa.md): a 2024 news article, recorded as a lead toward the primary PDF. Full text unread, bibliography unconfirmed, no replication. Not counted among the surveys above.
