@@ -1,0 +1,42 @@
+flowchart TD
+  ROOT["README.md ・ README.ja.md<br/>入口と日英切り替え"]
+
+  subgraph DOCS["docs/ — 発表経路・計画・確認票"]
+    PUB["publication-pathways-2026<br/>発表と投稿の経路"]
+    AGENDA["research-agenda<br/>研究候補（未検証）"]
+    READ["reading-list<br/>AI論文の読書・活用一覧"]
+    CHECK["reproducibility-ethics-checklist<br/>公開前の確認票"]
+    REFC["reference-candidates/<br/>参考文献候補（一次本文未確認）"]
+  end
+
+  subgraph SURV["surveys/ — 論文の読書記録"]
+    TPL["template<br/>サーベイ記録の書式"]
+    OLD["従来の論文別ノート<br/>AgentLSD ・ HoneyRoute ・ おとり比較"]
+    subgraph CV2["collection-v2/ — 正の索引"]
+      IDX["collection-v2/README<br/>テーマ別索引"]
+      T1["AIエージェントの安全性（2本）<br/>Astra供給網攻撃 ・ GitInject"]
+      T2["おとり・欺瞞（2本）<br/>AgentLSD ・ HoneyRoute"]
+      T3["コーディング支援と協働（6本）<br/>SWE-Journey ・ FlowAgent ・ レビューの変遷<br/>CLIエージェント ・ BACI ・ RADAR"]
+      T4["生成AIのプライバシーと組織方針（1本）<br/>Chat First, Worry Later"]
+      T5["暗号アジリティ（1本）<br/>CAMM"]
+      T6["Anthropic調査ノート（2本）<br/>雇用の変化 ・ Economic Index"]
+    end
+  end
+
+  ROOT --> DOCS
+  ROOT --> SURV
+  ROOT -->|"サーベイ論文集 v2"| IDX
+  ROOT -->|"ルートREADMEのみ掲載"| T6
+  IDX --> T1
+  IDX --> T2
+  IDX --> T3
+  IDX --> T4
+  IDX --> T5
+  AGENDA <--> PUB
+  IDX <--> READ
+  TPL -.->|"各記録が準拠"| IDX
+  OLD -.->|"外部リンク維持のため残置"| IDX
+  IDX -.->|"関連・数に含めない"| REFC
+  T1 ~~~ T2
+  T2 ~~~ T3
+  T4 ~~~ T5

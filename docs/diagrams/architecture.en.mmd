@@ -1,0 +1,42 @@
+flowchart TD
+  ROOT["README.md · README.ja.md<br/>Entry point and EN/JA switcher"]
+
+  subgraph DOCS["docs/ — pathways, plans, checklists"]
+    PUB["publication-pathways-2026<br/>Venues and routes"]
+    AGENDA["research-agenda<br/>Research candidates (unverified)"]
+    READ["reading-list<br/>AI paper reading and applications"]
+    CHECK["reproducibility-ethics-checklist<br/>Pre-publication checks"]
+    REFC["reference-candidates/<br/>Leads, primary text unchecked"]
+  end
+
+  subgraph SURV["surveys/ — paper reading records"]
+    TPL["template<br/>Survey record format"]
+    OLD["Older per-paper notes<br/>AgentLSD · HoneyRoute · decoy comparison"]
+    subgraph CV2["collection-v2/ — canonical index"]
+      IDX["collection-v2/README<br/>Thematic index"]
+      T1["AI agent safety (2)<br/>Astra supply chain · GitInject"]
+      T2["Decoys and deception (2)<br/>AgentLSD · HoneyRoute"]
+      T3["Coding assistants and collaboration (6)<br/>SWE-Journey · FlowAgent · Review eras<br/>CLI agents · BACI · RADAR"]
+      T4["GenAI privacy and policy (1)<br/>Chat First, Worry Later"]
+      T5["Crypto-agility (1)<br/>CAMM"]
+      T6["Anthropic research notes (2)<br/>Employment · Economic Index"]
+    end
+  end
+
+  ROOT --> DOCS
+  ROOT --> SURV
+  ROOT -->|"Survey Collection v2"| IDX
+  ROOT -->|"listed in root README only"| T6
+  IDX --> T1
+  IDX --> T2
+  IDX --> T3
+  IDX --> T4
+  IDX --> T5
+  AGENDA <--> PUB
+  IDX <--> READ
+  TPL -.->|"each record follows"| IDX
+  OLD -.->|"kept for external links"| IDX
+  IDX -.->|"related, not counted"| REFC
+  T1 ~~~ T2
+  T2 ~~~ T3
+  T4 ~~~ T5
