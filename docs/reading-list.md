@@ -44,3 +44,7 @@ When adding an entry, record the primary URL, bibliographic information, reading
 ## March–May 2026: iterative development and code quality
 
 - [SlopCodeBench: code degradation under iterative agent development](../surveys/collection-v2/2026-slopcodebench.md): [arXiv:2603.24755v2](https://arxiv.org/abs/2603.24755v2). Primary PDF body, main tables, and execution conditions checked. Includes unresolved reporting inconsistencies, comparison with SWE-Journey, and an unexecuted pilot plan. No reproduction or implementation.
+
+## October 2026: Black Hat conference article
+
+- [Black Hat USA 2026: NRI Secure article review](../surveys/collection-v2/2026-black-hat-usa-nri-secure.md): Five-session synthesis, primary-source verification scope, and enterprise review proposals. Article checked; no reproduction or implementation. Excluded from academic paper counts. [Source article](https://www.nri-secure.co.jp/blog/black-hat-usa-2026)

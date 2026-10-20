@@ -52,3 +52,7 @@
 ## 2026年3〜5月：反復開発とコード品質
 
 - [SlopCodeBench — 反復開発におけるAI生成コードの品質劣化](../surveys/collection-v2/2026-slopcodebench.ja.md): [arXiv:2603.24755v2](https://arxiv.org/abs/2603.24755v2). 一次PDF本文・主要表・実行条件確認済み。原文の不整合、SWE-Journeyとの比較、未実施の検証案を記録。再現・実装は未実施。
+
+## 2026年10月：Black Hat参加記事
+
+- [Black Hat USA 2026 — NRIセキュア記事レビュー](../surveys/collection-v2/2026-black-hat-usa-nri-secure.ja.md): 5セッションの要約、一次資料の確認範囲、企業向け検討案。記事本文確認済み／再現・実装未実施。学術論文件数には含めない。 [原記事](https://www.nri-secure.co.jp/blog/black-hat-usa-2026)

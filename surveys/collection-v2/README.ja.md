@@ -58,3 +58,7 @@
 - [What Makes a Great Co-Worker in an AI-Native Workplace?](2026-ai-native-coworker-qualities.ja.md) — primary PDF read in full; proprietary survey data.
 - [Automating Low-Risk Code Review at Meta: RADAR](2026-radar-low-risk-code-review.ja.md) — primary PDF read in full; proprietary telemetry.
 - [Reading list](../../docs/reading-list.ja.md) | [Repository README](../../README.ja.md)
+
+## イベント・技術記事（学術論文件数の対象外）
+
+- [Black Hat USA 2026 — NRIセキュア記事レビュー](2026-black-hat-usa-nri-secure.ja.md) (2026-10-20): 5セッションの要約、一次資料の確認範囲、企業向け検討案。記事本文確認済み／再現・実装未実施。学術論文件数には含めない。

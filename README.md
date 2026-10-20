@@ -54,3 +54,7 @@ Published content is limited to publicly verifiable CS background, OSS contribut
 ## Languages
 
 English is the primary language. Every page has a Japanese counterpart (`*.ja.md`), linked from the switcher at the top of each page. Where the two differ, the Japanese originals are authoritative for Japan-specific details (venues, deadlines, fees).
+
+## Conference and technical article reviews
+
+- [Black Hat USA 2026: NRI Secure article review](surveys/collection-v2/2026-black-hat-usa-nri-secure.md) (2026-10-20): Five-session synthesis, primary-source verification scope, and enterprise review proposals. Article checked; no reproduction or implementation. Excluded from academic paper counts.
