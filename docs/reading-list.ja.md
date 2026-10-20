@@ -48,3 +48,7 @@
 ## 参考文献候補：量子アニーリングによる暗号解析
 
 - [D-Wave AdvantageとRSA整数分解](reference-candidates/2024-dwave-annealing-rsa.ja.md) — [紹介記事](https://gigazine.net/news/20241015-rsa-encryption-quantum-computer/)が示す[一次PDF](http://cjc.ict.ac.cn/online/onlinepaper/wc-202458160402.pdf)は取得失敗。本文未読・書誌未確定・追試未実施。実用RSA解読や量子優位の証明として扱わず、既存サーベイ7件と分けて管理します。
+
+## 2026年3〜5月：反復開発とコード品質
+
+- [SlopCodeBench — 反復開発におけるAI生成コードの品質劣化](../surveys/collection-v2/2026-slopcodebench.ja.md): [arXiv:2603.24755v2](https://arxiv.org/abs/2603.24755v2). 一次PDF本文・主要表・実行条件確認済み。原文の不整合、SWE-Journeyとの比較、未実施の検証案を記録。再現・実装は未実施。

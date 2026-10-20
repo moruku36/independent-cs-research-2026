@@ -12,6 +12,8 @@ Public notes for independent researchers and industry practitioners who do compu
 
 <sub>Rendered with [Pele](https://pele.run/) from the [Mermaid source](docs/diagrams/architecture.en.mmd). Japanese version: [README.ja.md](README.ja.md).</sub>
 
+**2026-10-20 JST addition:** Added the [SlopCodeBench survey](surveys/collection-v2/2026-slopcodebench.md), covering primary PDF findings, execution conditions, related-work comparison, limitations, and an unexecuted pilot plan.
+
 ## Survey Collection v2
 
 - **[Survey Collection v2: per-paper records and thematic index](surveys/collection-v2/README.md)**
@@ -29,6 +31,8 @@ Public notes for independent researchers and industry practitioners who do compu
   - [Automating Low-Risk Code Review at Meta: RADAR](surveys/collection-v2/2026-radar-low-risk-code-review.md)
   - [How employment is changing at Anthropic](surveys/collection-v2/d2026-anthropic-employment-changes.md) ([Source](https://www.anthropic.com/research/employment-at-anthropic))
    - [Anthropic Economic Index report: Cadences](surveys/collection-v2/d2026-anthropic-economic-index-cadences.md) ([Source](https://www.anthropic.com/research/economic-index-june-2026-report))
+  - [SlopCodeBench: code degradation under iterative agent development](surveys/collection-v2/2026-slopcodebench.md)
+
 ## Reference candidates (primary text not yet checked)
 
 - [Quantum annealing and RSA integer factorization on D-Wave Advantage](docs/reference-candidates/2024-dwave-annealing-rsa.md): a 2024 news article, recorded as a lead toward the primary PDF. Full text unread, bibliography unconfirmed, no replication. Not counted among the surveys above.

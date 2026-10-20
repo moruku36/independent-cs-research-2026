@@ -40,3 +40,7 @@ When adding an entry, record the primary URL, bibliographic information, reading
 ## Reference candidate: quantum annealing cryptanalysis
 
 - [D-Wave Advantage and RSA integer factorization](reference-candidates/2024-dwave-annealing-rsa.md): the [introducing article](https://gigazine.net/news/20241015-rsa-encryption-quantum-computer/) points to a [primary PDF](http://cjc.ict.ac.cn/online/onlinepaper/wc-202458160402.pdf) that could not be retrieved. Text unread, bibliography unconfirmed, no replication. Not treated as a practical RSA break or as proof of quantum advantage, and managed separately from the seven existing surveys.
+
+## March–May 2026: iterative development and code quality
+
+- [SlopCodeBench: code degradation under iterative agent development](../surveys/collection-v2/2026-slopcodebench.md): [arXiv:2603.24755v2](https://arxiv.org/abs/2603.24755v2). Primary PDF body, main tables, and execution conditions checked. Includes unresolved reporting inconsistencies, comparison with SWE-Journey, and an unexecuted pilot plan. No reproduction or implementation.

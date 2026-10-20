@@ -17,6 +17,8 @@ Reading records for 2026 computer science and AI-security papers. Each file foll
 
 ## Coding assistants and human-AI collaboration
 
+- [SlopCodeBench: code degradation under iterative agent development](2026-slopcodebench.md) (v2, 2026-05-07): 36 problems and 196 checkpoints measuring correctness, structural erosion, and verbosity. Primary PDF body, main tables, and execution conditions checked; no reproduction.
+
 - [SWE-Journey](2026-swe-journey.md) (2026-10-08): long-horizon development with simulated user dialogue. Primary text checked; partially read.
 - [FlowAgent](2026-flowagent.md) (2026-10-05): low-latency automatic repair of pre-submit test failures at Google. Primary HTML read in full; no reproduction.
 - [From Human-Centric to Agentic Code Review](2026-agentic-code-review-eras.md) (v1, 2026-07-14): 1.02M reviewed PRs across human-centric, assistant-augmented, and agentic review eras. Primary PDF text checked.
