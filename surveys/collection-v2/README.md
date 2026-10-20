@@ -46,3 +46,7 @@ Reading records for 2026 computer science and AI-security papers. Each file foll
 - Existing per-paper notes are kept so external links keep working; this directory is the **canonical index from now on**.
 
 [Repository README](../../README.md) | [Full reading list](../../docs/reading-list.md)
+
+## Conference and technical articles (outside academic paper counts)
+
+- [Black Hat USA 2026: NRI Secure article review](2026-black-hat-usa-nri-secure.md) (2026-10-20): Five-session synthesis, primary-source verification scope, and enterprise review proposals. Article checked; no reproduction or implementation. Excluded from academic paper counts.
