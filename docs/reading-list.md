@@ -48,3 +48,7 @@ When adding an entry, record the primary URL, bibliographic information, reading
 ## October 2026: Black Hat conference article
 
 - [Black Hat USA 2026: NRI Secure article review](../surveys/collection-v2/2026-black-hat-usa-nri-secure.md): Five-session synthesis, primary-source verification scope, and enterprise review proposals. Article checked; no reproduction or implementation. Excluded from academic paper counts. [Source article](https://www.nri-secure.co.jp/blog/black-hat-usa-2026)
+
+## October 2026: OpenAI company research article
+
+- [Research acceleration: The view inside OpenAI](../surveys/collection-v2/2026-10-21-openai-research-acceleration.md) (recorded 2026-10-21 JST): article reading record with a separate author reflection; outside academic paper counts.

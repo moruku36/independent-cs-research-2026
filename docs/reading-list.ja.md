@@ -56,3 +56,7 @@
 ## 2026年10月：Black Hat参加記事
 
 - [Black Hat USA 2026 — NRIセキュア記事レビュー](../surveys/collection-v2/2026-black-hat-usa-nri-secure.ja.md): 5セッションの要約、一次資料の確認範囲、企業向け検討案。記事本文確認済み／再現・実装未実施。学術論文件数には含めない。 [原記事](https://www.nri-secure.co.jp/blog/black-hat-usa-2026)
+
+## 2026年10月：OpenAIの自社調査記事
+
+- [Research acceleration: The view inside OpenAI — 調査記事の読書記録](../surveys/collection-v2/2026-10-21-openai-research-acceleration.ja.md)（記録日2026-10-21 JST）：筆者の感想を別節に分けた記事の読書記録。学術論文の件数には含めない。

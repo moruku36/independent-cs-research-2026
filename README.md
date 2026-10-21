@@ -58,3 +58,5 @@ English is the primary language. Every page has a Japanese counterpart (`*.ja.md
 ## Conference and technical article reviews
 
 - [Black Hat USA 2026: NRI Secure article review](surveys/collection-v2/2026-black-hat-usa-nri-secure.md) (2026-10-20): Five-session synthesis, primary-source verification scope, and enterprise review proposals. Article checked; no reproduction or implementation. Excluded from academic paper counts.
+
+- [Research acceleration: The view inside OpenAI](surveys/collection-v2/2026-10-21-openai-research-acceleration.md) (recorded 2026-10-21 JST): company research article; author reflection kept separate. Excluded from academic paper counts.

@@ -50,3 +50,5 @@ Reading records for 2026 computer science and AI-security papers. Each file foll
 ## Conference and technical articles (outside academic paper counts)
 
 - [Black Hat USA 2026: NRI Secure article review](2026-black-hat-usa-nri-secure.md) (2026-10-20): Five-session synthesis, primary-source verification scope, and enterprise review proposals. Article checked; no reproduction or implementation. Excluded from academic paper counts.
+
+- [Research acceleration: The view inside OpenAI](2026-10-21-openai-research-acceleration.md) (recorded 2026-10-21 JST): company research article; author reflection kept separate. Excluded from academic paper counts.

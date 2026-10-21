@@ -62,3 +62,5 @@
 ## イベント・技術記事（学術論文件数の対象外）
 
 - [Black Hat USA 2026 — NRIセキュア記事レビュー](2026-black-hat-usa-nri-secure.ja.md) (2026-10-20): 5セッションの要約、一次資料の確認範囲、企業向け検討案。記事本文確認済み／再現・実装未実施。学術論文件数には含めない。
+
+- [Research acceleration: The view inside OpenAI — 調査記事の読書記録](2026-10-21-openai-research-acceleration.ja.md)（記録日2026-10-21 JST）：自社調査記事。筆者の感想を別節に分離。学術論文の件数には含めない。
