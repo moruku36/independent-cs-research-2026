@@ -26,6 +26,12 @@ Reading records for 2026 computer science and AI-security papers. Each file foll
 - [What Makes a Great Co-Worker in an AI-Native Workplace?](2026-ai-native-coworker-qualities.md) (v1, 2026-09-12): 22 interviews and two-referent survey (N=1,534) at Microsoft producing the 75-quality BACI framework, 11 co-worker archetypes, and AI work etiquette taxonomy. Primary PDF text checked.
 - [Automating Low-Risk Code Review at Meta: RADAR](2026-radar-low-risk-code-review.md) (v2, 2026-06-12): risk-stratified automated review and landing across 535K+ diffs at Meta (DRS + LLM ACR). Primary PDF text checked.
 
+- [Too Long to Watch, Too Short to Leave: Designing for Agent Micro-Waits](2026-agent-micro-waits-sidecar.md) ([arXiv:2610.27170](https://arxiv.org/abs/2610.27170), v1, 2026-10-19): Sidecar, a same-tab side assistant for the 1-2 minute waits while an agent works; formative interviews (n=12) and a within-subjects study (N=16). Primary HTML checked through an extraction tool (last ~4,000 characters unread); venue unconfirmed; no reproduction.
+
+## LLM serving infrastructure and cost-efficiency
+
+- [Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs](2025-heterogeneous-gpu-llm-serving.md) ([arXiv:2502.00722](https://arxiv.org/abs/2502.00722), v2, 2025): benchmark of six GPU types and a MILP scheduler for GPU composition, deployment, and workload assignment under a price budget. Partially read (stops mid-§4.2); venue unconfirmed; no reproduction.
+
 ## Privacy and organizational policy in GenAI use
 
 - [Chat First, Worry Later](2026-chat-first-worry-later.md) (v1, 2026-08-21): questionnaire study of 224 European enterprise employees on ChatGPT privacy habits and shadow GenAI. Primary PDF text checked.

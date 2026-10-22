@@ -26,6 +26,12 @@
 - [AIネイティブな職場における「優れた同僚」の条件](2026-ai-native-coworker-qualities.ja.md)（v1、2026-09-12）— Microsoftにおけるインタビュー（22名）と2対象アンケート調査（N=1,534）によるBACI 75資質・11類型・AIワークエチケット。一次PDF本文確認済み。
 - [Metaにおける低リスク・コードレビューの自動化（RADAR）](2026-radar-low-risk-code-review.ja.md)（v2、2026-06-12）— 53.5万件超のDiffを処理したリスク階層型レビュー・自動マージ基盤（DRS＋LLM ACR）。一次PDF本文確認済み。
 
+- [Too Long to Watch, Too Short to Leave — エージェントのマイクロ待ち時間の設計](2026-agent-micro-waits-sidecar.ja.md)（[arXiv:2610.27170](https://arxiv.org/abs/2610.27170)、v1、2026-10-19）— エージェントが動く1〜2分の待ち時間向けに、同じタブ内の脇アシスタントSidecarを提案。予備インタビュー（n=12）と被験者内比較（N=16）。一次HTMLを抽出ツール経由で確認（末尾約4,000字は未読）／会場未確認／再現未実施。
+
+## LLM推論基盤と費用対効果
+
+- [Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs](2025-heterogeneous-gpu-llm-serving.ja.md)（[arXiv:2502.00722](https://arxiv.org/abs/2502.00722)、v2、2025）— 6種類のGPUの計測と、価格予算のもとでGPU構成・配置・負荷割り当てを決めるMILPスケジューラ。部分読了（§4.2の途中まで）／会場未確認／再現未実施。
+
 ## GenAI利用のプライバシーと組織ポリシー
 
 - [Chat First, Worry Later](2026-chat-first-worry-later.ja.md)（v1、2026-08-21）— 職場でのChatGPT利用とシャドーAIに関する欧州企業従業員224名のアンケート調査。一次PDF本文確認済み。
@@ -57,6 +63,8 @@
 - [AgentLSD](2026-agentlsd.ja.md) and [HoneyRoute](2026-honeyroute.ja.md) — abstract-based records.
 - [What Makes a Great Co-Worker in an AI-Native Workplace?](2026-ai-native-coworker-qualities.ja.md) — primary PDF read in full; proprietary survey data.
 - [Automating Low-Risk Code Review at Meta: RADAR](2026-radar-low-risk-code-review.ja.md) — primary PDF read in full; proprietary telemetry.
+- [Too Long to Watch, Too Short to Leave: agent micro-waits](2026-agent-micro-waits-sidecar.ja.md) — primary HTML checked via extraction; venue unconfirmed.
+- [Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs](2025-heterogeneous-gpu-llm-serving.ja.md) — partially read; no reproduction.
 - [Reading list](../../docs/reading-list.ja.md) | [Repository README](../../README.ja.md)
 
 ## イベント・技術記事（学術論文件数の対象外）
