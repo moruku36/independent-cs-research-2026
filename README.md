@@ -27,11 +27,13 @@ Public notes for independent researchers and industry practitioners who do compu
   - [From Human-Centric to Agentic Code Review](surveys/collection-v2/2026-agentic-code-review-eras.md)
   - [Chat First, Worry Later: workplace ChatGPT privacy study](surveys/collection-v2/2026-chat-first-worry-later.md)
   - [Adoption and impact of command-line AI coding agents at Microsoft](surveys/collection-v2/2026-cli-coding-agents-adoption-impact.md)
-  - [What Makes a Great Co-Worker in an AI-Native Workplace? (Microsoft BACI study)](surveys/collection-v2/2026-ai-native-coworker-qualities.md)
+  - [What Makes a Great Co-Worker in an AI-Native Workplace? (Microsoft BACI study)](surveys/collection-v2/2026-ai-native-coworker-qualities.md) ([arXiv:2609.13786](https://arxiv.org/abs/2609.13786))
   - [Automating Low-Risk Code Review at Meta: RADAR](surveys/collection-v2/2026-radar-low-risk-code-review.md)
   - [How employment is changing at Anthropic](surveys/collection-v2/d2026-anthropic-employment-changes.md) ([Source](https://www.anthropic.com/research/employment-at-anthropic))
    - [Anthropic Economic Index report: Cadences](surveys/collection-v2/d2026-anthropic-economic-index-cadences.md) ([Source](https://www.anthropic.com/research/economic-index-june-2026-report))
   - [SlopCodeBench: code degradation under iterative agent development](surveys/collection-v2/2026-slopcodebench.md)
+  - [Too Long to Watch, Too Short to Leave: designing for agent micro-waits (Sidecar)](surveys/collection-v2/2026-agent-micro-waits-sidecar.md) ([arXiv:2610.27170](https://arxiv.org/abs/2610.27170)): primary HTML checked via extraction; no reproduction.
+  - [Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs](surveys/collection-v2/2025-heterogeneous-gpu-llm-serving.md) ([arXiv:2502.00722](https://arxiv.org/abs/2502.00722)): partially read; no reproduction.
 
 ## Reference candidates (primary text not yet checked)
 

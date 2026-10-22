@@ -27,11 +27,13 @@
   - [人中心からエージェント型コードレビューへ](surveys/collection-v2/2026-agentic-code-review-eras.ja.md)
   - [Chat First, Worry Later — 職場のChatGPT利用とプライバシー](surveys/collection-v2/2026-chat-first-worry-later.ja.md)
   - [コマンドラインAIコーディングエージェントの導入と影響（Microsoft調査）](surveys/collection-v2/2026-cli-coding-agents-adoption-impact.ja.md)
-  - [AIネイティブな職場における「優れた同僚」の条件（Microsoft BACI調査）](surveys/collection-v2/2026-ai-native-coworker-qualities.ja.md)
+  - [AIネイティブな職場における「優れた同僚」の条件（Microsoft BACI調査）](surveys/collection-v2/2026-ai-native-coworker-qualities.ja.md)（[arXiv:2609.13786](https://arxiv.org/abs/2609.13786)）
   - [Metaにおける低リスク・コードレビューの自動化（RADAR）](surveys/collection-v2/2026-radar-low-risk-code-review.ja.md)
   - [How employment is changing at Anthropic（Anthropicにおける雇用の変化）](surveys/collection-v2/d2026-anthropic-employment-changes.ja.md) ([ソース](https://www.anthropic.com/research/employment-at-anthropic))
   - [Anthropic Economic Index report: Cadences（経済指標レポート：ケイデンス）](surveys/collection-v2/d2026-anthropic-economic-index-cadences.ja.md) ([ソース](https://www.anthropic.com/research/economic-index-june-2026-report))
   - [SlopCodeBench — 反復開発におけるAI生成コードの品質劣化](surveys/collection-v2/2026-slopcodebench.ja.md)
+  - [Too Long to Watch, Too Short to Leave — エージェントのマイクロ待ち時間の設計（Sidecar）](surveys/collection-v2/2026-agent-micro-waits-sidecar.ja.md)（[arXiv:2610.27170](https://arxiv.org/abs/2610.27170)）：一次HTMLを抽出経由で確認／再現未実施。
+  - [Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs — 異種GPUでのLLM推論の費用対効果](surveys/collection-v2/2025-heterogeneous-gpu-llm-serving.ja.md)（[arXiv:2502.00722](https://arxiv.org/abs/2502.00722)）：部分読了／再現未実施。
 
 ## 参考文献候補（一次本文確認）
 
