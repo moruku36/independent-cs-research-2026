@@ -14,4 +14,4 @@
 - **活用状態**：提案（LLMゲートウェイ構成の検討）。試行・実装採用はしていない。
 - **未確認点・次の確認**：論文本文と版番号・データ公開状況、分類器の学習条件、偽陽性への対応、運用コストを精査する。
 
-関連：[テーマ別比較](2026-ai-agent-honeypot-deception.ja.md)／[論文一覧](../docs/reading-list.ja.md)
+関連：[テーマ別比較](2026-ai-agent-honeypot-deception.ja.md)／[論文一覧](../../../docs/reading-list.ja.md)

@@ -14,4 +14,4 @@
 - **Usage status**: proposed (for considering LLM gateway designs). Not trialed or adopted.
 - **Unconfirmed points and next checks**: examine the full text, version number, data availability, classifier training conditions, handling of false positives, and operating cost.
 
-Related: [thematic comparison](../2026-ai-agent-honeypot-deception.md) / [reading list](../../docs/reading-list.md)
+Related: [thematic comparison](legacy/2026-ai-agent-honeypot-deception.md) / [reading list](../../docs/reading-list.md)

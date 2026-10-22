@@ -14,4 +14,4 @@
 - **活用状態**：提案（AIセキュリティエージェントの耐性評価項目）。試行・実装採用はしていない。
 - **未確認点・次の確認**：本文・付録・公開コードとライセンスを確認し、平均／中央値と統計的有意性、再現性、発表会場を確定。
 
-関連：[テーマ別比較](2026-ai-agent-honeypot-deception.ja.md)／[論文一覧](../docs/reading-list.ja.md)
+関連：[テーマ別比較](2026-ai-agent-honeypot-deception.ja.md)／[論文一覧](../../../docs/reading-list.ja.md)

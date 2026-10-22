@@ -57,9 +57,9 @@ NRI proposes shifts toward infrastructure enforcement, continued authentication/
 
 | Existing record | Complementary perspective |
 |---|---|
-| [GitInject](2026-gitinject.md) | Pair CI/CD instruction-injection risks with enforceable execution and permission boundaries |
-| [Unsanctioned supply-chain attacks](2026-unsanctioned-supply-chain-attacks.md) | Evaluate agent behavior separately from infrastructure restrictions on possible actions |
-| [SlopCodeBench](2026-slopcodebench.md) | Treat security boundaries and secret handling as acceptance axes alongside correctness and code quality |
+| [GitInject](../agent-safety/2026-gitinject.md) | Pair CI/CD instruction-injection risks with enforceable execution and permission boundaries |
+| [Unsanctioned supply-chain attacks](../agent-safety/2026-unsanctioned-supply-chain-attacks.md) | Evaluate agent behavior separately from infrastructure restrictions on possible actions |
+| [SlopCodeBench](../coding-agents/2026-slopcodebench.md) | Treat security boundaries and secret handling as acceptance axes alongside correctness and code quality |
 
 This is a thematic comparison, not a comparison of success rates under equivalent conditions.
 

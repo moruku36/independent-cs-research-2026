@@ -61,9 +61,9 @@ NRI記事によるRoblox事例は、行動ルール、ホスト隔離、通信�
 
 | 既存記録 | 今回追加する視点 |
 |---|---|
-| [GitInject](2026-gitinject.ja.md) | CI/CDへの不正指示という攻撃面に対し、実行環境と権限をどこで強制するか |
-| [非承認サプライチェーン攻撃評価](2026-unsanctioned-supply-chain-attacks.ja.md) | エージェントの逸脱行動と、可能な操作を制限する基盤設計を分けて評価 |
-| [SlopCodeBench](2026-slopcodebench.ja.md) | 機能・コード品質に加え、実行境界と秘密情報の取扱いを別の受入軸にする |
+| [GitInject](../agent-safety/2026-gitinject.ja.md) | CI/CDへの不正指示という攻撃面に対し、実行環境と権限をどこで強制するか |
+| [非承認サプライチェーン攻撃評価](../agent-safety/2026-unsanctioned-supply-chain-attacks.ja.md) | エージェントの逸脱行動と、可能な操作を制限する基盤設計を分けて評価 |
+| [SlopCodeBench](../coding-agents/2026-slopcodebench.ja.md) | 機能・コード品質に加え、実行境界と秘密情報の取扱いを別の受入軸にする |
 
 比較はテーマの整理であり、実験条件や成功率を直接比較したものではない。
 

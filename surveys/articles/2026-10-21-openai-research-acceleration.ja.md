@@ -34,7 +34,7 @@
 
 上の数値は発行元による自己報告である。この記録は計測を独立に検証せず、別の勤務先にも一般化しない。意思決定に使う前に、追加の方法説明、対象者と分母、集計期間、同時セッションの数え方、結果不明例と介入の扱いを確認する必要がある。比較条件と因果を識別する介入は今後定義する。
 
-関連する読書記録：[CLI型コーディングエージェントの導入](2026-cli-coding-agents-adoption-impact.ja.md)、[SlopCodeBench](2026-slopcodebench.ja.md)。参照先の案内であり、結果をこの記事と合算しない。
+関連する読書記録：[CLI型コーディングエージェントの導入](../coding-agents/2026-cli-coding-agents-adoption-impact.ja.md)、[SlopCodeBench](../coding-agents/2026-slopcodebench.ja.md)。参照先の案内であり、結果をこの記事と合算しない。
 
 下書き支援：MiMo V2.6 Pro。原文照合・英日整理・配置・筆者感想のローカル挿入：Codex。感想はMiMoに送信していない。記事の図表・全文は転載していない。
 
