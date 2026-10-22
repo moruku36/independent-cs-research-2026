@@ -32,4 +32,4 @@
 
 Reference candidate identified through a news article; the linked primary PDF could not be retrieved. Full text, complete bibliography and DOI remain unverified; no reproduction. Reported small-instance factoring is not treated as practical RSA-2048 decryption or proof of quantum advantage.
 
-[読書・活用一覧](../reading-list.ja.md) | [論文集索引](../../surveys/collection-v2/README.ja.md) | [README](../../README.ja.md)
+[読書・活用一覧](../reading-list.ja.md) | [論文集索引](../../surveys/README.ja.md) | [README](../../README.ja.md)

@@ -28,4 +28,4 @@ Before a close reading with the [survey template](../../surveys/template.md), ma
 
 The intended use is finding references when assessing reports about cryptanalysis. It is not adopting new attack code or PQC features. The next free step is matching the bibliography against the public text and building a conditions table. No access to D-Wave hardware and no experiments have been started.
 
-[Reading list](../reading-list.md) | [Collection index](../../surveys/collection-v2/README.md) | [README](../../README.md)
+[Reading list](../reading-list.md) | [Collection index](../../surveys/README.md) | [README](../../README.md)

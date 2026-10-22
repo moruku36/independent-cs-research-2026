@@ -34,7 +34,7 @@ This records the author's impressions and interests, rather than an empirical re
 
 The figures above remain the publisher's self-report. This record does not independently validate the measurements or generalize them to another employer. Before using them for a decision, check the additional methods, population and denominators, time windows, concurrent-session accounting, and handling of uncertain outcomes and interventions. Comparison conditions and any causal intervention remain to be specified.
 
-Related reading records: [CLI coding-agent adoption](2026-cli-coding-agents-adoption-impact.md) and [SlopCodeBench](2026-slopcodebench.md). These are reading pointers; their results are not pooled with this article.
+Related reading records: [CLI coding-agent adoption](../coding-agents/2026-cli-coding-agents-adoption-impact.md) and [SlopCodeBench](../coding-agents/2026-slopcodebench.md). These are reading pointers; their results are not pooled with this article.
 
 Draft assistance: MiMo V2.6 Pro. Source checks, bilingual editing, placement, and local insertion of the author's reflection: Codex. The reflection was not sent to MiMo. No article figures or full text are reproduced.
 

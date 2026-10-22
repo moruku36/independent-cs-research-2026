@@ -14,4 +14,4 @@
 - **Usage status**: proposed (an item for evaluating AI security agent robustness). Not trialed or adopted.
 - **Unconfirmed points and next checks**: check the full text, appendix, public code and license; settle mean vs. median, statistical significance, reproducibility, and venue.
 
-Related: [thematic comparison](../2026-ai-agent-honeypot-deception.md) / [reading list](../../docs/reading-list.md)
+Related: [thematic comparison](legacy/2026-ai-agent-honeypot-deception.md) / [reading list](../../docs/reading-list.md)

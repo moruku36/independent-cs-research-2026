@@ -4,57 +4,31 @@
 
 個人・企業勤務者がコンピュータサイエンスの研究を進め、論文・学会発表につなげるための公開ノートです。公開情報に基づく発表経路、研究候補、AI論文の読書記録と活用案を今後蓄積します。
 
-**2026-10-18 UTC更新：研究計画は初期段階。サーベイ集に12本を記録し、Astra・SWE-Journey・FlowAgent・GitInject・CAMM評価論文・Agentic Code Review・Chat First Worry Later・CLI Coding Agents・AIネイティブ職場の同僚資質（BACI）・Meta RADARは一次本文を確認済みです。SWE-Journeyは部分読了です。再現実験・独自研究の検証は未実施です。発表資格・採択例・経歴・所属は未確定です。**
+**現状（2026-10-22 JST）：研究計画は初期段階。各論文ノートに、実際に確認した範囲（一次本文・部分読了・要旨のみ）を明記しています。再現実験・独自研究の検証は未実施です。発表資格・採択例・経歴・所属は未確定です。**
 
-## リポジトリ構成図
+## テーマ別の論文ノート
 
-![リポジトリ構成図：ルートREADMEから docs/（発表経路・計画・確認票）と surveys/（論文の読書記録）へ。collection-v2 が正のテーマ別索引](docs/diagrams/architecture.ja.svg)
+まずテーマを選んでください。各フォルダのREADMEに、論文の一覧と確認状態があります。[全テーマと運用ルール](surveys/README.ja.md)。
 
-<sub>[Pele](https://pele.run/) で [Mermaidソース](docs/diagrams/architecture.ja.mmd) から描画。English version: [README.md](README.md)。</sub>
+- [AIエージェントの安全性・逸脱行動](surveys/agent-safety/README.ja.md)（2本）: AIエージェントが権限外の行動をとるか、実際のワークフローがどう攻撃されうるか。
+- [おとり・欺瞞とLLMシステム防御](surveys/deception-defense/README.ja.md)（2本）: 偽の証拠やおとりモデルで、悪意あるエージェントや要求を誘導・隔離する研究。
+- [コーディングエージェント・コードレビュー・開発現場](surveys/coding-agents/README.ja.md)（6本）: AIコーディング支援・自動修復・自動レビューのベンチマークと企業での実証研究。
+- [職場での人とAIの協働](surveys/human-ai-collaboration/README.ja.md)（2本）: AIの同僚に人が何を求めるか、エージェントツールが待ち時間や注意をどう扱うべきか。
+- [セキュリティ・ガバナンス（プライバシー・組織ポリシー・暗号アジリティ）](surveys/security-governance/README.ja.md)（2本）: GenAI利用と暗号移行をめぐる、組織・ポリシー面のセキュリティの問い。
+- [LLM推論基盤と費用対効果](surveys/llm-infrastructure/README.ja.md)（1本）: LLM推論のハードウェアの選び方とスケジューリング。
+- [イベント・技術記事（学術論文には含めない）](surveys/articles/README.ja.md)（4本）: 企業レポート・学会イベント記事・会社の調査記事。論文とは分けて記録する。
 
-**2026-10-20 JST追記：** [SlopCodeBenchサーベイ](surveys/collection-v2/2026-slopcodebench.ja.md)を追加。一次PDF本文と実行条件を確認し、既存研究との比較・限界・未実施の検証案を整理。
+## 計画・ガイド
 
-## サーベイ論文集 v2
-
-- **[サーベイ論文集 v2：論文別記録・テーマ別索引](surveys/collection-v2/README.ja.md)**
-  - [AIエージェントの非承認サプライチェーン攻撃（UK AISI）](surveys/collection-v2/2026-unsanctioned-supply-chain-attacks.ja.md)
-  - [AgentLSD — 偽証拠による探索誘導](surveys/collection-v2/2026-agentlsd.ja.md)
-  - [HoneyRoute — おとりモデルへの分岐](surveys/collection-v2/2026-honeyroute.ja.md)
-  - [SWE-Journey — 長期・対話型コーディング支援の評価](surveys/collection-v2/2026-swe-journey.ja.md)
-  - [FlowAgent — 提出前テスト失敗の低遅延エージェント修復](surveys/collection-v2/2026-flowagent.ja.md)
-  - [GitInject — AI搭載CI/CDへの実環境プロンプトインジェクション評価](surveys/collection-v2/2026-gitinject.ja.md)
-  - [CAMM — 暗号アジリティ成熟度モデルの実用評価](surveys/collection-v2/2026-camm-practical-evaluation.ja.md)
-  - [人中心からエージェント型コードレビューへ](surveys/collection-v2/2026-agentic-code-review-eras.ja.md)
-  - [Chat First, Worry Later — 職場のChatGPT利用とプライバシー](surveys/collection-v2/2026-chat-first-worry-later.ja.md)
-  - [コマンドラインAIコーディングエージェントの導入と影響（Microsoft調査）](surveys/collection-v2/2026-cli-coding-agents-adoption-impact.ja.md)
-  - [AIネイティブな職場における「優れた同僚」の条件（Microsoft BACI調査）](surveys/collection-v2/2026-ai-native-coworker-qualities.ja.md)（[arXiv:2609.13786](https://arxiv.org/abs/2609.13786)）
-  - [Metaにおける低リスク・コードレビューの自動化（RADAR）](surveys/collection-v2/2026-radar-low-risk-code-review.ja.md)
-  - [How employment is changing at Anthropic（Anthropicにおける雇用の変化）](surveys/collection-v2/d2026-anthropic-employment-changes.ja.md) ([ソース](https://www.anthropic.com/research/employment-at-anthropic))
-  - [Anthropic Economic Index report: Cadences（経済指標レポート：ケイデンス）](surveys/collection-v2/d2026-anthropic-economic-index-cadences.ja.md) ([ソース](https://www.anthropic.com/research/economic-index-june-2026-report))
-  - [SlopCodeBench — 反復開発におけるAI生成コードの品質劣化](surveys/collection-v2/2026-slopcodebench.ja.md)
-  - [Too Long to Watch, Too Short to Leave — エージェントのマイクロ待ち時間の設計（Sidecar）](surveys/collection-v2/2026-agent-micro-waits-sidecar.ja.md)（[arXiv:2610.27170](https://arxiv.org/abs/2610.27170)）：一次HTMLを抽出経由で確認／再現未実施。
-  - [Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs — 異種GPUでのLLM推論の費用対効果](surveys/collection-v2/2025-heterogeneous-gpu-llm-serving.ja.md)（[arXiv:2502.00722](https://arxiv.org/abs/2502.00722)）：部分読了／再現未実施。
-
-## 参考文献候補（一次本文確認）
-
-- [D-Wave Advantageによる量子アニーリングとRSA整数分解](docs/reference-candidates/2024-dwave-annealing-rsa.ja.md) — 2026-10-14 追加
-
-## 目次
-
-- [個人によるCS研究の発表と論文投稿（初回調査済み）](docs/publication-pathways-2026.ja.md)
-  - 2026-10-11 JST更新：国内の発表経路、採録例、公開研究意図を一次資料で確認。本人の投稿先・所属表記・参加予算は未決定。
+- [個人によるCS研究の発表と論文投稿](docs/publication-pathways-2026.ja.md)：2026-10-11 JST更新。国内の発表経路、採録例、公開研究意図を一次資料で確認。本人の投稿先・所属表記・参加予算は未決定。
 - [研究候補（未検証）](docs/research-agenda.ja.md)
-  - [AI論文の読書・活用一覧（一次本文確認済み5本を含む）](docs/reading-list.ja.md)
-  - [AgentLSD：偽の証拠によるAIエージェントの探索誘導](surveys/2026-agentlsd.ja.md)
-  - [HoneyRoute：悪意あるLLM要求をおとりモデルへ分岐](surveys/2026-honeyroute.ja.md)
-  - [AIおとり防御：2論文の比較と研究テーマ整理](surveys/2026-ai-agent-honeypot-deception.ja.md)
-  - [サーベイ記録のテンプレート](surveys/template.ja.md)
-  - [再現性・倫理・公開前の確認票](docs/reproducibility-ethics-checklist.ja.md)
+- [AI論文の読書・活用一覧](docs/reading-list.ja.md)
+- [再現性・倫理・公開前の確認票](docs/reproducibility-ethics-checklist.ja.md)
+- [サーベイ記録のテンプレート](surveys/template.ja.md)
+- [参考文献候補（一次本文確認）](docs/reference-candidates/2024-dwave-annealing-rsa.ja.md)：D-Wave Advantageによる量子アニーリングとRSA整数分解（2026-10-14 追加）。論文ノートの件数には含めない。
+
+## このリポジトリについて
 
 公開内容は本人の公開CS経歴・OSS実績・研究計画と公開論文情報に限定します。会社内部情報、私信、秘密、非公開の個人情報は掲載しません。公開前の誤認防止のため、本プロジェクトの構成・主張・図表・調査結果の他媒体への転載・再利用・引用・要約はお控えください。
 
-## イベント・技術記事レビュー
-
-- [Black Hat USA 2026 — NRIセキュア記事レビュー](surveys/collection-v2/2026-black-hat-usa-nri-secure.ja.md) (2026-10-20): 5セッションの要約、一次資料の確認範囲、企業向け検討案。記事本文確認済み／再現・実装未実施。学術論文件数には含めない。
-
-- [Research acceleration: The view inside OpenAI — 調査記事の読書記録](surveys/collection-v2/2026-10-21-openai-research-acceleration.ja.md)（記録日2026-10-21 JST）：自社調査記事。筆者の感想を別節に分離。学術論文の件数には含めない。
+英語が主言語で、すべてのページに日本語版（`*.ja.md`）があります。各ページ先頭の切替リンクから移動できます。
