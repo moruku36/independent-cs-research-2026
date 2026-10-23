@@ -2,6 +2,13 @@
 
 # AI論文の読書・活用一覧
 
+## 2026年10月：Anthropicの形式検証・自己複製AI（研究記事）
+
+- [LLMによる形式的ソフトウェア検証](../surveys/coding-agents/2026-anthropic-formal-verification.ja.md)
+- [データセンター外の自己複製AI](../surveys/agent-safety/2026-anthropic-self-replicating-ai.ja.md)
+
+2026-10-24 JST追加。研究記事として学術論文と区別。確認範囲・限界・関連研究・未実施の確認計画は各ノートに記載。
+
 ## 2025–2026年：追加した論文サーベイ
 
 - [Cache Engineering for Agents](../surveys/llm-infrastructure/2026-cache-engineering-for-agents.ja.md) — [arXiv:2610.28577v1](https://arxiv.org/html/2610.28577v1)。主要節・付録を部分読了／再現未実施。

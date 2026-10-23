@@ -4,6 +4,8 @@
 
 Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review.
 
+- [LLM-assisted formal software verification](2026-anthropic-formal-verification.md) (2026-10-22): Anthropic research article; primary sources checked, no independent verification or reproduction. Counted separately from academic papers.
+
 - [SlopCodeBench: code degradation under iterative agent development](2026-slopcodebench.md) (v2, 2026-05-07): 36 problems and 196 checkpoints measuring correctness, structural erosion, and verbosity. Primary PDF body, main tables, and execution conditions checked; no reproduction.
 - [SWE-Journey](2026-swe-journey.md) (2026-10-08): long-horizon development with simulated user dialogue. Primary text checked; partially read.
 - [FlowAgent](2026-flowagent.md) (2026-10-05): low-latency automatic repair of pre-submit test failures at Google. Primary HTML read in full; no reproduction.

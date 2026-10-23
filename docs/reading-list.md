@@ -2,6 +2,13 @@
 
 # AI Paper Reading and Application List
 
+## October 2026: Anthropic formal verification and self-replicating AI (research articles)
+
+- [LLM-assisted formal software verification](../surveys/coding-agents/2026-anthropic-formal-verification.md)
+- [Self-replicating AI outside datacenters](../surveys/agent-safety/2026-anthropic-self-replicating-ai.md)
+
+Added 2026-10-24 JST. Research articles are distinct from academic papers. Each note records verification scope, limitations, related work, and unexecuted check plans.
+
 ## Added paper surveys, 2025–2026
 
 - [Cache Engineering for Agents](../surveys/llm-infrastructure/2026-cache-engineering-for-agents.md) — [arXiv:2610.28577v1](https://arxiv.org/html/2610.28577v1); partially read; not reproduced.
