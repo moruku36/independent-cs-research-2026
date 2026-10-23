@@ -2,6 +2,12 @@
 
 # AI論文の読書・活用一覧
 
+## 2025–2026年：追加した論文サーベイ
+
+- [Cache Engineering for Agents](../surveys/llm-infrastructure/2026-cache-engineering-for-agents.ja.md) — [arXiv:2610.28577v1](https://arxiv.org/html/2610.28577v1)。主要節・付録を部分読了／再現未実施。
+- [生成AIと知識労働者の批判的思考](../surveys/articles/2025-ai-critical-thinking-knowledge-workers.ja.md) — [CHI 2025](https://doi.org/10.1145/3706598.3713778)。仕事・労働研究の学術論文。方法・結果・限界を部分読了／再現未実施。
+- [Adaptive Ephemeral Chaos Infrastructure](../surveys/cloud-resilience/2026-adaptive-ephemeral-chaos-infrastructure.ja.md) — [出版社PDF](https://ijetcsit.org/index.php/ijetcsit/article/view/654/593)。本文確認済み／第8節は将来評価案・実測なし／コード・再現未検証。
+
 状態：既存の二次記事seedは一次論文の識別待ち。読書状態は論文別に記録する。Astra・SWE-Journey・FlowAgent・GitInjectは一次本文（FlowAgentは一次PDF）確認済み、SWE-Journeyは部分読了（再現・実装は未実施）。活用案を実施済みの成果と扱いません。
 
 | 二次記事seed | 関心・活用案 | 一次論文／読了／実装 |
@@ -12,7 +18,7 @@
 
 ## サーベイ論文集 v2
 
-- **[サーベイ論文集 v2（7論文の索引）](../surveys/README.ja.md)**
+- **[サーベイ論文集（テーマ別索引）](../surveys/README.ja.md)**
 - [非承認OSSサプライチェーン攻撃評価（GPT-6 Astra）](../surveys/agent-safety/2026-unsanctioned-supply-chain-attacks.ja.md) — arXiv:2609.38415。一次本文確認／追試未実施。
 
 ## 2026年9〜10月：AIエージェント攻撃とおとり
@@ -40,7 +46,7 @@
 ## English index
 
 - [CAMM: practical evaluation of crypto-agility maturity](../surveys/security-governance/2026-camm-practical-evaluation.ja.md) — primary PDF reviewed; no reproduction or new implementation.
-- [Survey collection](../surveys/README.ja.md) — seven paper records with individual reading status.
+- [Survey collection](../surveys/README.ja.md) — paper records with individual reading status.
 - [FlowAgent: pre-submit test repair at Google](../surveys/coding-agents/2026-flowagent.ja.md) — primary PDF checked; no reproduction; adopted practices unverified.
 - [GitInject: prompt injection in AI-powered CI/CD](../surveys/agent-safety/2026-gitinject.ja.md) — primary HTML read; no reproduction; kept as a defensive survey with unresolved text/table inconsistencies.
 - [SWE-Journey: evaluation and proposed acceptance workflow](../surveys/coding-agents/2026-swe-journey.ja.md) — primary text checked, partially read; no reproduction or implementation.
