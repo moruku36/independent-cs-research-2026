@@ -2,6 +2,12 @@
 
 # HoneyRoute: Routing Malicious LLM Requests to Decoy Models
 
+## Overview
+
+- **What it is**: HoneyRoute (arXiv 2609.08306), a design that routes malicious LLM requests to decoy models to protect the production model; only the abstract was checked.
+- **What it says**: A router flags malicious requests and sends them to honeypot models, then retrains on observed attacks; it reports detection F1 0.911, +38 ms median latency and 97.8% fewer production-model tokens in a load test.
+- **Caveat**: The 97.8% is production-side only, not total cost including decoys, and false positives and attacker adaptation need the full text; nothing was reproduced.
+
 - **Status**: primary bibliographic information and abstract checked / full text not closely read / not reproduced
 - **Title, authors, year, venue, ID, primary URL**: *HoneyRoute: Honeypot-Model Routing for Adversarial LLM Serving* / Han Jin / 2026 / arXiv preprint (peer-reviewed venue not confirmed) / arXiv:2609.08306 / [primary paper](https://arxiv.org/abs/2609.08306)
 - **Date checked and version**: 2026-10-10 / public abstract (arXiv lists several versions; pin one before reproducing)

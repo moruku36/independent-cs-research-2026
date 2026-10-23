@@ -2,6 +2,12 @@
 
 # CAMM — 暗号アジリティ成熟度モデルの実用評価
 
+## 概要
+
+- **何についてのものか**: 暗号の移行準備度を測る成熟度モデルCAMM（Crypto-Agility Maturity Model）を実地評価したarXiv論文（FPS 2025）。
+- **何を述べているか**: 成熟度モデルの設計原則に照らしてCAMMを検討し、社内HTTPSサービスに適用して、対象範囲・想定読者・測定可能な基準・依存関係の問題を指摘する。
+- **留意点**: 研究者4人と1つの簡略化したシナリオのみで、改善版CAMMも示していない。実際のポスト量子移行について何かを示すものではない。
+
 - **状態**：一次PDF本文確認済み（§1–6、Table 1–3）／再現未実施。
 - **題名・著者・年・会場・DOI／arXiv ID・一次URL**：*Practical Evaluation of the Crypto-Agility Maturity Model*／Leonie Wolf, Samson Umezulike, Gurur Öndarö, Sebastian Schinzel, Fabian Ising／2026／arXivの会場記載はFPS 2025／[arXiv:2604.12428v1](https://arxiv.org/abs/2604.12428v1)／[PDF](https://arxiv.org/pdf/2604.12428v1)／[DOI](https://doi.org/10.48550/arXiv.2604.12428)。
 - **確認日・対象version**：2026-10-15 UTC／v1、2026-04-14提出。引用先のCAMM原論文・Webサイトは別途精読していない。

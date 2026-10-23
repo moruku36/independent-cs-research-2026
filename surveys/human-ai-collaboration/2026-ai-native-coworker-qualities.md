@@ -2,6 +2,12 @@
 
 # What Makes a Great Co-Worker in an AI-Native Workplace?
 
+## Overview
+
+- **What it is**: A Microsoft arXiv preprint on what knowledge workers value in a co-worker in an AI-native workplace, covering both human and AI co-workers.
+- **What it says**: From 22 interviews and a survey of 1,534 knowledge workers, it builds the BACI framework of 75 observable co-worker qualities and shows which qualities are prioritized for humans versus AI.
+- **Caveat**: It is a single-organization study based on self-reports, not observation of team performance, and the raw data are proprietary.
+
 ## Key points for people and PMOs
 
 - **What we learned**: A two-phase mixed-methods study at Microsoft (22 exploratory interviews followed by a between-subjects survey of $N = 1,534$ knowledge workers: $n = 732$ rating a human co-worker, $n = 802$ rating an AI) mapped what workers value in human and AI contributors. The study introduces the **BACI framework** of 75 observable co-worker qualities across four buckets—**B**enevolence (23), **A**bility (16), **C**ooperativeness (21), and **I**ntegrity (15)—grouped under two broad motives (*getting ahead* and *getting along*). Crossing priority bands across referents yielded **11 co-worker archetypes**: 4 prioritized for both humans and AI (*Safe Pair of Hands*, *Fair Dealer*, *Craftsperson*, *Explorer*), 2 prioritized for humans (*Stand-Up Colleague*, *Perseverer*—where 59% of AI-side rationales insisted accountability must remain human), 2 prioritized for AI (*Navigator*, *Straight Talker*—demanding provenance, explicit uncertainty, domain knowledge, and non-sycophancy), and 3 lower-priority/conditional archetypes (*Glue*, *Satisficer*, *Room-Maker*). Furthermore, 17 qualities were contested for AI (10 in Benevolence, 6 in Cooperativeness, 1 in Ability, 0 in Integrity). Finally, qualitative coding of 991 responses established a **taxonomy of AI work etiquette** (4 themes, 15 sub-themes): 63.6% of respondents required senders to read and verify AI-supported work before sharing, 21.8% required senders to understand and answer for it, and 18.9% warned that unverified "workslop" merely shifts verification labor downstream and erodes trust.

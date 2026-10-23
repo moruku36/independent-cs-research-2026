@@ -2,6 +2,12 @@
 
 # AgentLSD — AIセキュリティエージェントへの偽情報混入
 
+## 概要
+
+- **何についてのものか**: AgentLSD（arXiv 2609.19140）。タスク環境に仕込まれた偽の証拠がAIセキュリティエージェントにどう影響するかを調べた研究。確認したのは要旨のみ。
+- **何を述べているか**: 11のWeb CTF課題と6モデルで、通常条件のフラグ獲得率は41%。罠があると、課題を解けた場合でも約20ターン、約2,000推論トークンが余計にかかったと報告する。
+- **留意点**: CTFは実ネットワークと異なり、全文は精読していないため、集計方法・分散・モデル別の差は未確認。再現は未実施。
+
 - **状態**：一次資料（arXiv要旨）確認済み／本文未精読／再現未実施
 - **題名・著者・年・会場・DOI／arXiv ID・一次URL**：*AgentLSD: Evaluating AI Security Agents Under Adversarial Task Contamination*／Matteo Golinelli, Idilio Drago, Matteo Boffa, Francesco Bergadano, Bruno Crispo／2026／AISec 2026 発表予定（要確認）／arXiv:2609.19140／[一次論文](https://arxiv.org/abs/2609.19140)
 - **確認日・対象version**：2026-10-10／arXiv要旨（版の固定・全文照合は未実施）

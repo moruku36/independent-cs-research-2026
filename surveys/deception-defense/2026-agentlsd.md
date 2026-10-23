@@ -2,6 +2,12 @@
 
 # AgentLSD: Injecting False Information into AI Security Agents
 
+## Overview
+
+- **What it is**: AgentLSD (arXiv 2609.19140), a study of how false evidence planted in a task environment affects AI security agents; only the abstract was checked.
+- **What it says**: Using 11 web CTF challenges and 6 models, it reports a 41% flag-capture rate in the clean condition, and traps added about 20 turns and 2,000 reasoning tokens even when the agent still solved the challenge.
+- **Caveat**: CTFs differ from real networks and the full text was not closely read, so aggregation, variance and per-model detail are unconfirmed; nothing was reproduced.
+
 - **Status**: primary source (arXiv abstract) checked / full text not closely read / not reproduced
 - **Title, authors, year, venue, ID, primary URL**: *AgentLSD: Evaluating AI Security Agents Under Adversarial Task Contamination* / Matteo Golinelli, Idilio Drago, Matteo Boffa, Francesco Bergadano, Bruno Crispo / 2026 / AISec 2026 (announced; to be confirmed) / arXiv:2609.19140 / [primary paper](https://arxiv.org/abs/2609.19140)
 - **Date checked and version**: 2026-10-10 / arXiv abstract (version not pinned; full text not cross-checked)

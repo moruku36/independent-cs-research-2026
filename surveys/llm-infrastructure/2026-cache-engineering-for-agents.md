@@ -2,6 +2,12 @@
 
 # Cache Engineering for Agents — Survey note
 
+## Overview
+
+- **What it is**: Cache Engineering for Agents (arXiv 2610.28577), a paper on controlling an agent's active KV cache directly without rewriting its text history.
+- **What it says**: A rolling-drop policy beat threshold-triggered summarization by 1.7 points on average at 27.7% lower calculated cost, and a serving test showed 1.18x output throughput and 1.51x faster P95 latency.
+- **Caveat**: Results depend on model, hardware and task mix, dropped content may still leave effects in retained KV, and the code was not checked.
+
 ## Reader summary
 
 The paper studies direct control of an agent's active KV cache without editing its text trajectory. The authors report a 1.7-point mean benchmark score gain and 27.7% lower calculated cost for a rolling-drop policy versus threshold-triggered summarization across three models and four benchmarks. A separate serving experiment reports 1.18× output throughput and a 1.51× speedup in P95 request latency. These are reported results in specified settings, not a general API billing guarantee.

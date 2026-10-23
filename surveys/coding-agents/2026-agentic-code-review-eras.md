@@ -2,6 +2,12 @@
 
 # From Human-Centric to Agentic Code Review: How Generations of Generative AI Affect Review Quality (1.02M PRs, 207 projects)
 
+## Overview
+
+- **What it is**: An arXiv preprint (2607.13196) analyzing about 1.02 million reviewed pull requests from 207 GitHub projects across three eras of AI code review.
+- **What it says**: It compares the pre-LLM, LLM and AI-agent eras and finds that projects adopt AI reviewers in three ways, with faster reviews in the agent era for the Gradual and Rapid AI Agent groups.
+- **Caveat**: It is observational and measures only six review smells, not defect detection or comment usefulness, so it does not show that AI reviewers cause better review.
+
 ## Key points for people and PMOs
 
 - **What we learned**: about 1.02 million reviewed pull requests (PRs) from 207 GitHub projects were compared across three eras: before AI reviewers (pre-LLM), LLM-assisted (LLM era), and AI-agent (agent era). Projects adopt AI reviewers in three ways (Gradual 46%, Rapid LLM 22%, Rapid AI Agent 32%). Gradual and Rapid AI Agent adoption saw faster reviews in the agent era (−2.5 / −4.5 days/KLOC), but no significant improvement in the review-quality indicators (review smells) was found. Rapid LLM adoption saw more smells.

@@ -2,6 +2,12 @@
 
 # Black Hat USA 2026: Review of NRI Secure's Conference Report
 
+## Overview
+
+- **What it is**: A review of NRI Secure's Black Hat USA 2026 report article (published 2026-10-20), which covers five conference sessions.
+- **What it says**: It reads the sessions together: agent execution boundaries, passkey and Active Directory authentication weaknesses, and intelligence on malware suppliers, and asks how to examine permissions, identity validation and monitoring.
+- **Caveat**: It rests on a participant's session summaries, not slides or product tests, so each session's claims still need checking against primary sources.
+
 ## Summary and source type
 
 This review connects agent execution boundaries, authentication implementation, and intelligence on malware suppliers. Its practical question is how to examine permissions, identity validation, and monitoring alongside model instructions and authentication choices.

@@ -2,6 +2,12 @@
 
 # Chat First, Worry Later: Individuals' Privacy Perceptions of ChatGPT at Work (user study, N=224)
 
+## Overview
+
+- **What it is**: An arXiv preprint reporting a questionnaire study of 224 European workers on their privacy perceptions of using ChatGPT at work.
+- **What it says**: Workers whose organization had a GenAI policy scored slightly higher on knowledge of ChatGPT's data handling and used it for more use cases, yet average knowledge was low (36% correct).
+- **Caveat**: It is cross-sectional and self-reported, so it cannot show that policies cause better knowledge, and the full-sample model's fit does not meet the authors' own cut-offs.
+
 ## Key points for people and PMOs
 
 - **What we learned**: a questionnaire study of 224 European workers who use ChatGPT at work. The group that reported an organizational GenAI policy (n=103) scored slightly higher on knowledge of ChatGPT's data handling (policy → knowledge, β=.15) and used ChatGPT for more use cases (β=.23). Knowledge is low overall, though: the mean share of correct answers is 36%. Stronger privacy concerns go with lower usage frequency and fewer use cases (β=−.14, −.17). By group, the effect of concerns is significant only in the group without a policy (n=121).

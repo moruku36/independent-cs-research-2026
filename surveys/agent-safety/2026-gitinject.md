@@ -2,6 +2,12 @@
 
 # GitInject: Real-World Prompt Injection Against AI-Powered CI/CD Pipelines
 
+## Overview
+
+- **What it is**: GitInject (arXiv 2606.09935), a study of prompt injection against AI review/triage workflows that run in GitHub Actions CI/CD.
+- **What it says**: It ran four real workflows (Claude, Codex, Gemini, Cline) in throwaway repositories and reproduced 10 of 11 named attacks; the worst path is a PR branch's config files (CLAUDE.md etc.) being read as operator-level instructions.
+- **Caveat**: Results hold only for the tested configurations and model versions, and a failed attack is not proof of safety; this note did not reproduce anything.
+
 ## Key points for people and PMOs
 
 - **What we learned**: four AI review/triage workflows on GitHub Actions (Claude, Codex, Gemini, Cline) were actually run and evaluated in throwaway repositories. Of 11 named attack scenarios, 10 were reproduced and 1 was not (token theft via issue body). The most serious is the path where config files placed on a PR branch (`CLAUDE.md`, `AGENTS.md`, `GEMINI.md`) are loaded as operator-level instructions.

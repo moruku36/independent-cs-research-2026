@@ -22,6 +22,7 @@ Research articles follow the same record fields but are counted separately from 
 - Do not confuse a paper's simulation results with attacks that succeed in real operation.
 - Always keep the primary URL and verification status of cited works.
 - Every note has a Japanese counterpart (`*.ja.md`).
+- Every note opens with a three-line **Overview** (what it is / what it says / caveat), placed right after the title.
 
 ## Where files live
 

@@ -2,6 +2,12 @@
 
 # Too Long to Watch, Too Short to Leave: Designing for Agent Micro-Waits
 
+## Overview
+
+- **What it is**: A Google DeepMind and University of Toronto paper on "micro-waits", the minute or two a user waits per agent turn, and Sidecar, a side chat built for that time.
+- **What it says**: In a within-subjects study (N=16), time spent switched away from the agent tab fell from 35% to 13% with Sidecar, which reads the agent's run, surfaces implicit decisions and suggests next directions.
+- **Caveat**: It is a small, single-session lab study, Sidecar's parts were not separated, and participants reported higher mental demand; the text was read via a summarizing tool.
+
 ## Key points for people and PMOs
 
 - **What we learned**: when an AI agent works for a minute or two per turn, users are stuck in a "micro-wait": too long to watch, too short to do something else. The authors built **Sidecar**, a side chat in the same tab that reads the agent's run, surfaces decisions the agent made implicitly, and suggests next directions. In a within-subjects study (N=16), time spent switched away from the agent tab fell from 35% to 13% of wait time, and participants reported making more progress and noticing under-specification in their own prompts.

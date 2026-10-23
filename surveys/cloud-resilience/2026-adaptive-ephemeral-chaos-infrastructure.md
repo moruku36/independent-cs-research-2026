@@ -2,6 +2,12 @@
 
 # Adaptive Ephemeral Chaos Infrastructure — survey note
 
+## Overview
+
+- **What it is**: A 2026 journal paper (IJETCSIT) that designs a workflow for fault injection across multiple AWS accounts.
+- **What it says**: It defines seven phases from request validation through AWS FIS injection to recovery verification, and declares recovery only after values stay within two standard deviations of a 15-minute baseline for three minutes; otherwise the run is marked UNRESOLVED.
+- **Caveat**: These are design parameters, not measured results: the evaluation is future work, and it is neither multi-cloud nor an autonomous LLM SRE agent.
+
 ## Reader summary
 
 The paper designs a seven-phase workflow for fault injection across AWS accounts: request validation, safety checks, baseline capture, AWS FIS injection, telemetry collection, recovery verification and reporting. Its recovery design uses a 15-minute prior baseline, requires monitored values to remain within two standard deviations for three consecutive minutes, and marks an experiment UNRESOLVED with SNS notification if convergence has not occurred within 15 minutes; the next experiment is then blocked.
