@@ -6,20 +6,13 @@
 
 **現状（2026-10-24 JST）：研究計画は初期段階。各論文ノートに、実際に確認した範囲（一次本文・部分読了・要旨のみ）を明記しています。再現実験・独自研究の検証は未実施です。発表資格・採択例・経歴・所属は未確定です。**
 
-## 2026-10-24 追加：Anthropic研究記事のサーベイ
-
-- [LLMによる形式的ソフトウェア検証](surveys/coding-agents/2026-anthropic-formal-verification.ja.md)
-- [データセンター外の自己複製AI](surveys/agent-safety/2026-anthropic-self-replicating-ai.ja.md)
-
-研究記事として学術論文と区別し、手法・証拠・限界・関連研究・未実施の確認計画を整理しています。
-
 ## テーマ別の論文ノート
 
 まずテーマを選んでください。各フォルダのREADMEに、論文の一覧と確認状態があります。[全テーマと運用ルール](surveys/README.ja.md)。
 
-- [AIエージェントの安全性・逸脱行動](surveys/agent-safety/README.ja.md)（論文2本＋研究記事1本）: AIエージェントが権限外の行動をとるか、実際のワークフローがどう攻撃されうるか。
+- [AIエージェントの安全性・逸脱行動](surveys/agent-safety/README.ja.md)（論文2本＋研究記事1本）: AIエージェントが権限外の行動をとるか、実際のワークフローがどう攻撃されうるか。 [自己複製AIのサーベイ](surveys/agent-safety/2026-anthropic-self-replicating-ai.ja.md)。
 - [おとり・欺瞞とLLMシステム防御](surveys/deception-defense/README.ja.md)（2本）: 偽の証拠やおとりモデルで、悪意あるエージェントや要求を誘導・隔離する研究。
-- [コーディングエージェント・コードレビュー・開発現場](surveys/coding-agents/README.ja.md)（論文6本＋研究記事1本）: AIコーディング支援・自動修復・自動レビューのベンチマークと企業での実証研究。
+- [コーディングエージェント・コードレビュー・開発現場](surveys/coding-agents/README.ja.md)（論文6本＋研究記事1本）: AIコーディング支援・自動修復・自動レビューのベンチマークと企業での実証研究。 [形式検証のサーベイ](surveys/coding-agents/2026-anthropic-formal-verification.ja.md)。
 - [職場での人とAIの協働](surveys/human-ai-collaboration/README.ja.md)（2本）: AIの同僚に人が何を求めるか、エージェントツールが待ち時間や注意をどう扱うべきか。
 - [セキュリティ・ガバナンス（プライバシー・組織ポリシー・暗号アジリティ）](surveys/security-governance/README.ja.md)（2本）: GenAI利用と暗号移行をめぐる、組織・ポリシー面のセキュリティの問い。
 - [LLM推論基盤と費用対効果](surveys/llm-infrastructure/README.ja.md)（2本）: LLM推論のハードウェア選択、スケジューリング、エージェントのKVキャッシュ制御。
