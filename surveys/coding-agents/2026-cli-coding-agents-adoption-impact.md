@@ -2,6 +2,12 @@
 
 # Adoption and Impact of Command-Line AI Coding Agents: A Study of Microsoft's Early 2026 Rollout of Claude Code and GitHub Copilot CLI
 
+## Overview
+
+- **What it is**: An arXiv preprint (2607.01418) from Microsoft studying the early-2026 rollout of Claude Code and GitHub Copilot CLI to tens of thousands of engineers.
+- **What it says**: It examines who tries and keeps using the tools (social exposure from peers and managers matters most) and whether use goes with more merged pull requests.
+- **Caveat**: Merged PRs are only an output proxy and the models are observational, so social contagion cannot be separated from similarity and the PR gain is not shown to be causal.
+
 ## Key points for people and PMOs
 
 - **What we learned**: A large-scale observational study tracked tens of thousands of Microsoft software engineers during the early-2026 enterprise rollout (Jan 5 – Apr 29, 2026) of two command-line AI coding agents: GitHub Copilot CLI and Anthropic's Claude Code. In the adoption study (Copilot CLI), initial trial was heavily driven by social exposure (skip-level peers +216% odds, direct manager +82%, reviewer peers +54%). Prior IDE Copilot usage increased the odds of trying the CLI tool (+49% to +83%) but reduced retention odds (−12% to −15%). Retention was instead predicted by high baseline coding activity (+31% for >=2 PRs/week). In the outcomes study, early adopters experienced a +24.0% lift in merged PRs per engineer per day (CausalImpact synthetic-control, 95% CI [+14.5%, +33.7%]), which persisted across the 4-month window (+29.4% Feb vs +20.0% Mar–Apr). Within-person dose-response showed a monotone increase from +15.0% at 3 tool days/week to +50.1% at 5+ days/week. In single-tool comparisons, Copilot CLI adopters saw 2.2x the PR lift of Claude Code adopters (+24.9% vs +11.4%, p < 0.0001).

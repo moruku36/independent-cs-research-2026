@@ -2,6 +2,12 @@
 
 # Generative AI and critical thinking in knowledge work — CHI 2025 survey note
 
+## Overview
+
+- **What it is**: A CHI 2025 academic paper surveying 319 knowledge workers about critical thinking when using generative AI.
+- **What it says**: In 936 self-reported examples, greater confidence in AI for a task went with less reported critical thinking, while greater self-confidence went with more; work shifted toward verifying, integrating and stewarding.
+- **Caveat**: It is a cross-sectional self-report study, so it cannot show that AI causes reduced thinking or long-term skill loss.
+
 ## Reader summary
 
 In 319 knowledge workers' 936 self-reported examples, the authors find that greater task-specific confidence in AI is associated with less reported critical thinking, while greater confidence in one's own ability is associated with more. They describe a shift toward verifying information, integrating outputs and stewarding the task. A cross-sectional self-report study cannot establish that AI causes a lasting loss of thinking ability.

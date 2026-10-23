@@ -2,6 +2,12 @@
 
 # SlopCodeBench: Code Quality Under Iterative Agent Development
 
+## Overview
+
+- **What it is**: SlopCodeBench (arXiv 2603.24755), a benchmark of how code quality degrades when coding agents repeatedly extend their own code.
+- **What it says**: It specifies only externally visible behavior, carries the agent's workspace forward across stages, and measures correctness separately from structural quality; quality-oriented prompts help some metrics but do not solve degradation.
+- **Caveat**: Passing tests and completion reports alone do not show maintainable code; this note read the main text and some appendices but did not audit code or reproduce results.
+
 ## Key points
 
 Completion reports and passing tests alone do not establish that evolving code remains maintainable. SlopCodeBench measures functional correctness separately from structural quality while agents repeatedly extend their own code. Quality-oriented prompts improve some quality measurements but do not establish a general solution to degradation.

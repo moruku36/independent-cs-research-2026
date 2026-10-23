@@ -1,5 +1,11 @@
 # How employment is changing at Anthropic
 
+## 概要
+
+- **何についてのものか**: Anthropicの研究レポート（2026-10-16）。AIエージェントが仕事を担うにつれて社内の雇用がどう変わっているかを分析している。
+- **何を述べているか**: 人事記録とエージェントのテレメトリから、2026年3月にエージェント稼働時間が人間を上回り（8月には6対1）、技術職採用に占める若手の割合が27%から9%に低下し、人間の注意力が制約になったと報告する。
+- **留意点**: 一社の内部データに基づくため、数値はAnthropic自身の状況を表すもので、他社へ一般化はできない。
+
 ## 1. 書誌情報 (Metadata)
 - **タイトル**: How employment is changing at Anthropic
 - **著者**: Nathan Wilmers, Regina Catipon, Maxim Massenkoff, Peter McCrory (Anthropic Research)

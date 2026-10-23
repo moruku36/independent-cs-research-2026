@@ -2,6 +2,12 @@
 
 # Research acceleration: The view inside OpenAI — reading record
 
+## Overview
+
+- **What it is**: An OpenAI company article (2026-09-06) reporting how heavily its own researchers use AI agents; this is a reading record, not a peer-reviewed paper.
+- **What it says**: In mid-August 2026 median usage exceeded USD600/day and the 90th percentile USD7000/day at API prices, equal to about 3.1 agent-workdays per human workday after eight-hour normalization.
+- **Caveat**: It is a company self-report; usage at API prices is not spend, and runtime is not productivity or quality, so causal claims are not supported.
+
 ## Bibliography and reading status
 
 - Author / publisher: OpenAI.

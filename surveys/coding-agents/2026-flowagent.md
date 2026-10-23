@@ -2,6 +2,12 @@
 
 # FlowAgent: Low-Latency Agentic Repair of Pre-Submit Test Failures (Google Scale)
 
+## Overview
+
+- **What it is**: A Google paper (ASE 2026, as stated in the preprint) on FlowAgent, an agent that repairs failing pre-submit tests at low latency.
+- **What it says**: In Google's internal environment it proposed a correct fix in 131 of 195 manually checked cases (67.18%), and in production showed fixes on 295,508 changes, of which 28,554 were applied.
+- **Caveat**: Data and infrastructure are internal, evaluation was by three developers' judgment, and adoption rate is not quality rate, so outside reproduction is hard.
+
 ## Key points for people and PMOs
 
 - **What we learned**: in Google's internal environment, an agent that automatically repairs and proposes fixes for pre-submit test failures proposed a correct fix in 131 of 195 manually evaluated cases (67.18%). In production it showed fixes on 295,508 changes, and 28,554 were applied.

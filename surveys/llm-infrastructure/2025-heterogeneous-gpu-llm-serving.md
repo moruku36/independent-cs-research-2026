@@ -2,6 +2,12 @@
 
 # Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs
 
+## Overview
+
+- **What it is**: An arXiv paper on cost-efficient LLM serving over a mix of GPU types, with a scheduler that decides what to rent and how to dispatch requests.
+- **What it says**: It benchmarks six GPU types, then uses a mixed-integer linear program to choose GPUs, replica deployment and dispatch under a budget, reporting up to 41% higher throughput or 54% lower latency than baselines at equal price.
+- **Caveat**: Only the first part of the paper was read (through part of section 4.2), and results depend on cloud prices at measurement time.
+
 ## Key points for people and PMOs
 
 - **What we learned**: serving LLMs on a mix of GPU types can be more cost-efficient than serving on one type, because different workloads stress different resources. The authors benchmark six GPU types and then build a scheduler (mixed-integer linear programming, MILP) that decides which GPUs to rent, how to deploy model replicas, and how to dispatch requests under a price budget and live GPU availability. Reported: up to 41% (average 20%) higher throughput, or up to 54% (average 20%) lower latency, at the same price budget versus baselines.

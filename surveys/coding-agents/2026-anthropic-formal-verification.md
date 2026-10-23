@@ -2,6 +2,12 @@
 
 # LLM-assisted formal software verification: a critical survey
 
+## Overview
+
+- **What it is**: An Anthropic and Theorem research article (2026-10-22) on using LLMs to make formal software verification feasible at larger scale; this note is a critical survey of it.
+- **What it says**: Fuzz harnesses become specifications over compiled RISC-V binaries and Claude builds proofs checked by Rocq, reported as 239 entry points in 123 libraries and about 180 million accepted proof lines.
+- **Caveat**: A proof covers particular compiled artifacts under stated assumptions, not whole-library correctness; nothing was independently proof-checked or replicated here.
+
 ## Bibliography and verification status
 
 - Primary source [F1]: [LLMs are making formal software verification feasible at a much larger scale](https://www.anthropic.com/research/formal-verification), Anthropic / Theorem, 2026-10-22.

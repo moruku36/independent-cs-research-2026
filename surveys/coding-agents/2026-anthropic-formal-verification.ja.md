@@ -2,6 +2,12 @@
 
 # LLMによる形式的ソフトウェア検証：批判的サーベイ
 
+## 概要
+
+- **何についてのものか**: AnthropicとTheoremによる研究記事（2026-10-22）。LLMでより大規模な形式的ソフトウェア検証を可能にするという主張の批判的サーベイ。
+- **何を述べているか**: ファズハーネスをコンパイル済みRISC-Vバイナリ上の仕様に変換し、ClaudeがRocqで検査される証明を作る。123ライブラリの239エントリポイント、受理された証明は約1.8億行と報告している。
+- **留意点**: 証明は特定のコンパイル済み成果物に対して前提付きで成り立つもので、ライブラリ全体の正しさではない。本ノートでは証明の独立検査も再現もしていない。
+
 ## 書誌情報・確認状態
 
 - 一次資料 [F1]：[LLMs are making formal software verification feasible at a much larger scale](https://www.anthropic.com/research/formal-verification)、Anthropic / Theorem、2026-10-22公開。

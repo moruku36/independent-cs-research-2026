@@ -2,6 +2,12 @@
 
 # SWE-Journey: Evaluating Long-Horizon, Interactive Coding Assistance
 
+## Overview
+
+- **What it is**: SWE-Journey (arXiv 2610.11559), a benchmark for coding assistants in long, multi-turn development where requirements change step by step.
+- **What it says**: It simulates four user personas on 30 tasks (594 subtasks) with 13 models, and the functional-test pass rate varies a lot with the simulated user's collaboration style.
+- **Caveat**: Users are simulated and tasks are small and synthetic, so it does not show success rates for real users or the causal effect of expertise alone.
+
 ## Key points for people and PMOs
 
 - **What we learned**: even on the same task, the pass rate of functional tests changes a lot with the simulated user's collaboration style. An AI's own completion report is not enough to judge the outcome.

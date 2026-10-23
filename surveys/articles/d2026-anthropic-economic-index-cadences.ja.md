@@ -1,5 +1,11 @@
 # Anthropic Economic Index report: Cadences
 
+## 概要
+
+- **何についてのものか**: Anthropicが2026年6月に公開したEconomic Indexレポート「Cadences」。Claude各製品とAPIの利用テレメトリに約9,700人の調査を組み合わせている。
+- **何を述べているか**: 時間帯・曜日ごとの利用リズム、具体的な成果物とトークン消費、利用者の見通しを示し、例えば12か月以内にAIが業務の大半を担うと予想する人が35%超いる。
+- **留意点**: 自社利用者のテレメトリと調査に基づく企業レポートであり、AI利用や労働市場全般にそのまま当てはまるとは限らない。
+
 ## 1. 書誌情報 (Metadata)
 - **タイトル**: Anthropic Economic Index report: Cadences
 - **著者**: Maxim Massenkoff, Eva Lyubich, Szymon Sacher, Zoe Hitzig, Shaoyi Zhang, Ryan Heller, Peter McCrory

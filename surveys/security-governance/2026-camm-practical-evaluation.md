@@ -2,6 +2,12 @@
 
 # CAMM: Practical Evaluation of the Crypto-Agility Maturity Model
 
+## Overview
+
+- **What it is**: An arXiv paper (FPS 2025) that evaluates the Crypto-Agility Maturity Model (CAMM), a model for judging how ready an organization is to migrate cryptography.
+- **What it says**: It checks CAMM against maturity-model design principles and applies it to an internal HTTPS service, pointing out problems with scope, audience, measurable criteria and dependencies.
+- **Caveat**: Only four researchers and one simplified scenario were used, and no improved CAMM is presented, so it does not show anything about real post-quantum migration.
+
 - **Status**: primary PDF text checked (§1–6, Tables 1–3) / not reproduced.
 - **Title, authors, year, venue, ID, primary URL**: *Practical Evaluation of the Crypto-Agility Maturity Model* / Leonie Wolf, Samson Umezulike, Gurur Öndarö, Sebastian Schinzel, Fabian Ising / 2026 / arXiv lists the venue as FPS 2025 / [arXiv:2604.12428v1](https://arxiv.org/abs/2604.12428v1) / [PDF](https://arxiv.org/pdf/2604.12428v1) / [DOI](https://doi.org/10.48550/arXiv.2604.12428).
 - **Date checked and version**: 2026-10-15 UTC / v1, submitted 2026-04-14. The original CAMM paper and website cited by this one were not read separately.

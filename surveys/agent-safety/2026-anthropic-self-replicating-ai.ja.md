@@ -2,6 +2,12 @@
 
 # データセンター外の自己複製AI：批判的サーベイ
 
+## 概要
+
+- **何についてのものか**: Anthropic が2026年10月に公開した、AIモデルがデータセンターなしで普通のハードウェア上に自己複製できるかを調べた研究記事の批判的サーベイ。
+- **何を述べているか**: 9Bモデルが9種類中8種類のハードで推論環境を構築し、隔離された8ノード実験ではGLM-5.2が5回中4回で8ノード全てに到達したと報告している。
+- **留意点**: 実験は権限を簡略化し、行動主体の推論に外部サービスを使っているため、完全に自律した複製の実証ではない。本ノートでの再現は未実施。
+
 ## 書誌情報・確認状態
 
 - 一次資料 [S1]：William Zhou、Daniel Freeman、[AI models may be capable of self-replicating without access to a datacenter](https://www.anthropic.com/research/self-replicating-ai)、Anthropic、2026-10-12公開。

@@ -2,6 +2,12 @@
 
 # Automating Low-Risk Code Review at Meta: RADAR, Risk Calibration, and Review Efficiency
 
+## Overview
+
+- **What it is**: A Meta paper on RADAR, a system that automatically reviews and approves low-risk code changes as AI-written code floods human review.
+- **What it says**: It stratifies which changes may be auto-approved by author type and a diff risk score (for example a conservative P5 threshold for human-authored diffs), so low-risk changes ship without waiting for human review.
+- **Caveat**: It is an observational evaluation in Meta's own monorepo with strictly selected low-risk diffs, so low revert rates do not prove LLM review beats human review on equal-risk changes.
+
 ## Key points for people and PMOs
 
 - **What we learned**: As agentic AI coding tools accelerated code production at Meta—driving a **+105.9% YoY** increase in significant lines of code per human-landed diff and a **+51% YoY** increase in diffs per developer per month (with **80%+** of growth driven by agentic AI)—human review capacity became a bottleneck. Meta deployed **RADAR (Risk Aware Diff Auto Review)**, a multi-stage automated review and landing funnel combining source-specific eligibility gates, static heuristics, a machine-learned **Diff Risk Score (DRS)**, an LLM-based **Automated Code Review (ACR)** agent (requiring confidence $\ge 8/10$ and zero risk signals), and deterministic CI validation. Across production rollout, RADAR reviewed **535,290 diffs** (peaking at **25,000+ diffs/day**) and automatically landed **331,720 diffs**. Relaxing the DRS threshold from **P25 to P50** increased the 7-day RADAR approve rate to **60.31%** (and human RADAR Verification pass rate to **26.31%**). Safety outcomes remained substantially better than baseline: RADAR-reviewed diffs had **1/3 the revert rate** ($p < 10^{-16}$) and **1/50 the Production Incident (PI) rate** ($p < 10^{-6}$) of non-RADAR diffs. Compared to human-reviewed diffs, RADAR reduced **median time to close by over 330%** and **median diff review wall time by 35%**.

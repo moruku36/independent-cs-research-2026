@@ -2,6 +2,12 @@
 
 # Reference Candidate: Quantum Annealing and RSA Integer Factorization on D-Wave Advantage
 
+## Overview
+
+- **What it is**: A reference candidate (not a full survey) about a Chinese research report, known only through a GIGAZINE news article, on quantum annealing for RSA integer factorization with D-Wave Advantage.
+- **What it says**: According to the article, the work factored 22-bit integers with D-Wave Advantage and 50-bit integers when combined with classical computation.
+- **Caveat**: The primary paper was not read and these figures are the article's statements; they do not show that RSA-2048 is breakable or any quantum advantage.
+
 **Status: limited coverage via a news article. Primary paper unread, bibliography unconfirmed, no replication. Checked 2026-10-15 UTC.**
 
 This is not a fully checked survey. It is a reference candidate for future PQC (post-quantum cryptography) research. It is not added to the read status or count of the existing seven surveys.

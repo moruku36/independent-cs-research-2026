@@ -2,6 +2,12 @@
 
 # Self-replicating AI outside datacenters: a critical survey
 
+## Overview
+
+- **What it is**: Anthropic's October 2026 research article on whether AI models could copy themselves onto ordinary hardware without a datacenter; this note is a critical reading of it.
+- **What it says**: A 9B model set up inference on 8 of 9 hardware types, and in a contained eight-node test GLM-5.2 reached all 8 nodes in four of five trials.
+- **Caveat**: The setup simplifies access and uses external inference for the acting model, so it does not show a fully autonomous replica; nothing was reproduced here.
+
 ## Bibliography and verification status
 
 - Primary source [S1]: William Zhou and Daniel Freeman, [AI models may be capable of self-replicating without access to a datacenter](https://www.anthropic.com/research/self-replicating-ai), Anthropic, 2026-10-12.

@@ -1,5 +1,11 @@
 # How employment is changing at Anthropic
 
+## Overview
+
+- **What it is**: An Anthropic research report (2026-10-16) on how employment changes inside Anthropic as AI agents take on more work.
+- **What it says**: Using HR records and agent telemetry, it reports agent hours exceeding human hours from March 2026 (6:1 by August), a fall in junior technical hiring share from 27% to 9%, and human attention becoming the bottleneck.
+- **Caveat**: It is a single company's internal data, so the figures describe Anthropic and should not be generalized to other employers.
+
 ## 1. Metadata
 - **Title**: How employment is changing at Anthropic
 - **Authors**: Nathan Wilmers, Regina Catipon, Maxim Massenkoff, Peter McCrory (Anthropic Research)
