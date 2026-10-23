@@ -9,8 +9,9 @@
 - [コーディングエージェント・コードレビュー・開発現場](coding-agents/README.ja.md)（6本）: AIコーディング支援・自動修復・自動レビューのベンチマークと企業での実証研究。
 - [職場での人とAIの協働](human-ai-collaboration/README.ja.md)（2本）: AIの同僚に人が何を求めるか、エージェントツールが待ち時間や注意をどう扱うべきか。
 - [セキュリティ・ガバナンス（プライバシー・組織ポリシー・暗号アジリティ）](security-governance/README.ja.md)（2本）: GenAI利用と暗号移行をめぐる、組織・ポリシー面のセキュリティの問い。
-- [LLM推論基盤と費用対効果](llm-infrastructure/README.ja.md)（1本）: LLM推論のハードウェアの選び方とスケジューリング。
-- [イベント・技術記事（学術論文には含めない）](articles/README.ja.md)（4本）: 企業レポート・学会イベント記事・会社の調査記事。論文とは分けて記録する。
+- [LLM推論基盤と費用対効果](llm-infrastructure/README.ja.md)（2本）: LLM推論のハードウェア選択、スケジューリング、エージェントのKVキャッシュ制御。
+- [クラウドの耐障害性・SRE](cloud-resilience/README.ja.md)（1本）: AWS複数アカウントの障害実験と復旧判定。実測・再現は未確認。
+- [イベント・技術記事・仕事／労働研究](articles/README.ja.md)（記事4本＋学術論文1本）: 仕事・労働のCHI論文を記事と区別して収録。
 
 ## 研究メモの原則
 
