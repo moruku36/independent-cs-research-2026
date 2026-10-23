@@ -15,8 +15,9 @@ Start from a theme; each folder README lists its papers with their verification 
 - [Coding agents, code review, and software engineering](surveys/coding-agents/README.md) (6): Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review.
 - [Human-AI collaboration at work](surveys/human-ai-collaboration/README.md) (2): What people expect from AI co-workers, and how agent tools should treat the user's waiting time and attention.
 - [Security governance: privacy, policy, and crypto-agility](surveys/security-governance/README.md) (2): Organizational and policy-level security questions around GenAI use and cryptographic migration.
-- [LLM serving infrastructure and cost-efficiency](surveys/llm-infrastructure/README.md) (1): How to choose and schedule hardware for serving LLMs.
-- [Conference and technical articles (not counted as academic papers)](surveys/articles/README.md) (4): Vendor reports, conference recaps, and company articles. Kept apart from peer-reviewed or preprint papers.
+- [LLM serving infrastructure and cost-efficiency](surveys/llm-infrastructure/README.md) (2): Hardware choices, scheduling, and agent KV cache control.
+- [Cloud resilience and SRE](surveys/cloud-resilience/README.md) (1): AWS cross-account fault experiments and recovery decisions; measured results and reproduction unverified.
+- [Events, technical articles, and work/labor research](surveys/articles/README.md) (4 articles + 1 academic paper): A CHI paper is kept distinct from the articles.
 
 ## Plans and guides
 
