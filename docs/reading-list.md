@@ -2,6 +2,12 @@
 
 # AI Paper Reading and Application List
 
+## Added paper surveys, 2025–2026
+
+- [Cache Engineering for Agents](../surveys/llm-infrastructure/2026-cache-engineering-for-agents.md) — [arXiv:2610.28577v1](https://arxiv.org/html/2610.28577v1); partially read; not reproduced.
+- [Generative AI and critical thinking in knowledge work](../surveys/articles/2025-ai-critical-thinking-knowledge-workers.md) — [CHI 2025](https://doi.org/10.1145/3706598.3713778); work/labor academic paper, partially read; not reproduced.
+- [Adaptive Ephemeral Chaos Infrastructure](../surveys/cloud-resilience/2026-adaptive-ephemeral-chaos-infrastructure.md) — [publisher PDF](https://ijetcsit.org/index.php/ijetcsit/article/view/654/593); full text checked, Section 8 only future evaluation, no measured result; code and reproduction unverified.
+
 Status: the existing secondary-article seeds are awaiting identification of primary papers. Reading status is recorded per paper. Astra, SWE-Journey, FlowAgent, and GitInject have primary text checked (FlowAgent via the primary PDF); SWE-Journey is partially read (no reproduction or implementation). Application ideas are not treated as completed results.
 
 | Secondary-article seed | Interest / application idea | Primary paper / read / implemented |
@@ -12,7 +18,7 @@ Status: the existing secondary-article seeds are awaiting identification of prim
 
 ## Survey Collection v2
 
-- **[Survey Collection v2 (index of 7 papers)](../surveys/README.md)**
+- **[Survey collection (theme index)](../surveys/README.md)**
 - [Evaluation of unsanctioned OSS supply-chain attacks (GPT-6 Astra)](../surveys/agent-safety/2026-unsanctioned-supply-chain-attacks.md): arXiv:2609.38415. Primary text checked; no replication.
 
 ## Sept–Oct 2026: AI agent attacks and decoys
