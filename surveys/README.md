@@ -9,8 +9,9 @@ Reading records for computer science and AI-security papers. Each note follows t
 - [Coding agents, code review, and software engineering](coding-agents/README.md) (6): Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review.
 - [Human-AI collaboration at work](human-ai-collaboration/README.md) (2): What people expect from AI co-workers, and how agent tools should treat the user's waiting time and attention.
 - [Security governance: privacy, policy, and crypto-agility](security-governance/README.md) (2): Organizational and policy-level security questions around GenAI use and cryptographic migration.
-- [LLM serving infrastructure and cost-efficiency](llm-infrastructure/README.md) (1): How to choose and schedule hardware for serving LLMs.
-- [Conference and technical articles (not counted as academic papers)](articles/README.md) (4): Vendor reports, conference recaps, and company articles. Kept apart from peer-reviewed or preprint papers.
+- [LLM serving infrastructure and cost-efficiency](llm-infrastructure/README.md) (2): Hardware choices, scheduling, and agent KV cache control.
+- [Cloud resilience and SRE](cloud-resilience/README.md) (1): AWS cross-account fault experiments and recovery decisions; measured results and reproduction unverified.
+- [Events, technical articles, and work/labor research](articles/README.md) (4 articles + 1 academic paper): A CHI paper is kept distinct from the articles.
 
 ## Principles for research notes
 
