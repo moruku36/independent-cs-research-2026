@@ -11,6 +11,7 @@
 
 ## 2025–2026年：追加した論文サーベイ
 
+- [Raw-RAGとエージェント記憶の比較](../surveys/llm-infrastructure/2026-raw-rag-agentic-memory.ja.md) — [arXiv:2610.30755v1](https://arxiv.org/html/2610.30755v1)。一次本文・付録の一部を確認／部分読了／コード・再現未検証。
 - [Cache Engineering for Agents](../surveys/llm-infrastructure/2026-cache-engineering-for-agents.ja.md) — [arXiv:2610.28577v1](https://arxiv.org/html/2610.28577v1)。主要節・付録を部分読了／再現未実施。
 - [生成AIと知識労働者の批判的思考](../surveys/articles/2025-ai-critical-thinking-knowledge-workers.ja.md) — [CHI 2025](https://doi.org/10.1145/3706598.3713778)。仕事・労働研究の学術論文。方法・結果・限界を部分読了／再現未実施。
 - [Adaptive Ephemeral Chaos Infrastructure](../surveys/cloud-resilience/2026-adaptive-ephemeral-chaos-infrastructure.ja.md) — [出版社PDF](https://ijetcsit.org/index.php/ijetcsit/article/view/654/593)。本文確認済み／第8節は将来評価案・実測なし／コード・再現未検証。

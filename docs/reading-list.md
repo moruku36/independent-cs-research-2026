@@ -11,6 +11,7 @@ Added 2026-10-24 JST. Research articles are distinct from academic papers. Each 
 
 ## Added paper surveys, 2025–2026
 
+- [Raw-RAG versus agentic memory](../surveys/llm-infrastructure/2026-raw-rag-agentic-memory.md) — [arXiv:2610.30755v1](https://arxiv.org/html/2610.30755v1); primary body and selected appendix material checked; partially read; code and reproduction unverified.
 - [Cache Engineering for Agents](../surveys/llm-infrastructure/2026-cache-engineering-for-agents.md) — [arXiv:2610.28577v1](https://arxiv.org/html/2610.28577v1); partially read; not reproduced.
 - [Generative AI and critical thinking in knowledge work](../surveys/articles/2025-ai-critical-thinking-knowledge-workers.md) — [CHI 2025](https://doi.org/10.1145/3706598.3713778); work/labor academic paper, partially read; not reproduced.
 - [Adaptive Ephemeral Chaos Infrastructure](../surveys/cloud-resilience/2026-adaptive-ephemeral-chaos-infrastructure.md) — [publisher PDF](https://ijetcsit.org/index.php/ijetcsit/article/view/654/593); full text checked, Section 8 only future evaluation, no measured result; code and reproduction unverified.
