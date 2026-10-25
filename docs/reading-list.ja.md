@@ -2,6 +2,15 @@
 
 # AI論文の読書・活用一覧
 
+## 2026-10-25追加：構成・検証・報酬の健全性
+
+- [サブエージェント統合](../surveys/coding-agents/2026-fold-subagents-main-loop.ja.md)：技術記事（2026-10-22）。本文確認／キット未実行。
+- [マルチクラウド・セキュリティ設計](../surveys/security-governance/2026-multi-cloud-security-architecture.ja.md)：学術誌掲載論文（2026-09-24）。出版元PDF確認／定量的証拠の記述不足。
+- [Neuro-Formal Verification](../surveys/coding-agents/2026-neuro-formal-verification.ja.md)：プレプリント（v1、2026-08-21）。一次本文の方法・結果確認／部分読了。
+- [報酬ハッキングとミスアラインメント](../surveys/agent-safety/2025-reward-hacking-emergent-misalignment.ja.md)：2025年のプレプリントと紹介記事。一次PDFの一部確認／部分読了。一論文として計上。
+
+4件とも英語版・関連研究との比較・確認計画を用意。再現実験・活用の採用は未実施。
+
 ## 2026年10月：Anthropicの形式検証・自己複製AI（研究記事）
 
 - [LLMによる形式的ソフトウェア検証](../surveys/coding-agents/2026-anthropic-formal-verification.ja.md)

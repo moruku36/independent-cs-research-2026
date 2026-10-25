@@ -4,6 +4,9 @@
 
 Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review.
 
+- [When to fold subagents into the main loop](2026-fold-subagents-main-loop.md) (2026-10-22): technical article; body checked, migration kit not run. Counted separately from research papers.
+- [Neuro-Formal Verification](2026-neuro-formal-verification.md) (v1, 2026-08-21): preprint; method, evaluation, and error analysis checked; partial reading, no reproduction.
+
 - [LLM-assisted formal software verification](2026-anthropic-formal-verification.md) (2026-10-22): Anthropic research article; primary sources checked, no independent verification or reproduction. Counted separately from academic papers.
 
 - [SlopCodeBench: code degradation under iterative agent development](2026-slopcodebench.md) (v2, 2026-05-07): 36 problems and 196 checkpoints measuring correctness, structural erosion, and verbosity. Primary PDF body, main tables, and execution conditions checked; no reproduction.
