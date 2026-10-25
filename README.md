@@ -4,17 +4,17 @@
 
 Public notes for independent researchers and industry practitioners who do computer science research and want to turn it into papers and conference talks. This repository accumulates publication pathways, candidate research topics, AI paper reading logs, and practical application ideas, all based on publicly available information.
 
-**Status (2026-10-24 JST):** Research plans are in the initial phase. Each paper note states what was actually checked (primary text, partial read, or abstract only). Replication experiments and original-research validation have not been done. Eligibility for presentation, acceptance precedents, biographical details, and affiliation wording are still undecided.
+**Status (2026-10-25 JST):** Research plans are in the initial phase. Each paper note states what was actually checked (primary text, partial read, or abstract only). Replication experiments and original-research validation have not been done. Eligibility for presentation, acceptance precedents, biographical details, and affiliation wording are still undecided.
 
 ## Paper notes by theme
 
 Start from a theme; each folder README lists its papers with their verification status. [All themes and conventions](surveys/README.md).
 
-- [AI agent safety and out-of-scope behavior](surveys/agent-safety/README.md) (2 papers + 1 research article): Whether AI agents act outside their authorization, and how they can be attacked in real workflows. Includes the [self-replicating AI survey](surveys/agent-safety/2026-anthropic-self-replicating-ai.md).
+- [AI agent safety and out-of-scope behavior](surveys/agent-safety/README.md) (3 papers + 1 research article): Whether AI agents act outside their authorization, and how they can be attacked in real workflows. Includes [self-replicating AI](surveys/agent-safety/2026-anthropic-self-replicating-ai.md) and [reward hacking](surveys/agent-safety/2025-reward-hacking-emergent-misalignment.md).
 - [Decoys, deception, and LLM system defense](surveys/deception-defense/README.md) (2): Using fake evidence and decoy models to steer or isolate malicious agents and requests.
-- [Coding agents, code review, and software engineering](surveys/coding-agents/README.md) (6 papers + 1 research article): Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review. Includes the [formal verification survey](surveys/coding-agents/2026-anthropic-formal-verification.md).
+- [Coding agents, code review, and software engineering](surveys/coding-agents/README.md) (7 papers + 1 research article + 1 technical article): Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review. Includes [formal verification](surveys/coding-agents/2026-anthropic-formal-verification.md), [NFV](surveys/coding-agents/2026-neuro-formal-verification.md), and [subagent consolidation](surveys/coding-agents/2026-fold-subagents-main-loop.md).
 - [Human-AI collaboration at work](surveys/human-ai-collaboration/README.md) (2): What people expect from AI co-workers, and how agent tools should treat the user's waiting time and attention.
-- [Security governance: privacy, policy, and crypto-agility](surveys/security-governance/README.md) (2): Organizational and policy-level security questions around GenAI use and cryptographic migration.
+- [Security governance: privacy, policy, crypto-agility, and cloud controls](surveys/security-governance/README.md) (3): Organizational security questions around GenAI, cryptographic migration, and multi-cloud control consistency. Includes the [multi-cloud security architecture survey](surveys/security-governance/2026-multi-cloud-security-architecture.md).
 - [LLM serving infrastructure and cost-efficiency](surveys/llm-infrastructure/README.md) (3): Hardware choices, scheduling, KV cache control, and long-term memory retrieval. Includes the [Raw-RAG survey](surveys/llm-infrastructure/2026-raw-rag-agentic-memory.md).
 - [Cloud resilience and SRE](surveys/cloud-resilience/README.md) (1): AWS cross-account fault experiments and recovery decisions; measured results and reproduction unverified.
 - [Events, technical articles, and work/labor research](surveys/articles/README.md) (4 articles + 1 academic paper): A CHI paper is kept distinct from the articles.

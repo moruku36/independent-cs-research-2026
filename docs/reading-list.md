@@ -2,6 +2,15 @@
 
 # AI Paper Reading and Application List
 
+## Added 2026-10-25: architecture, verification, and reward integrity
+
+- [Subagent consolidation](../surveys/coding-agents/2026-fold-subagents-main-loop.md): technical article (2026-10-22); body checked, kit not run.
+- [Multi-cloud security architecture](../surveys/security-governance/2026-multi-cloud-security-architecture.md): journal article (2026-09-24); publisher PDF checked, quantitative evidence insufficiently specified.
+- [Neuro-Formal Verification](../surveys/coding-agents/2026-neuro-formal-verification.md): preprint (v1, 2026-08-21); primary method and results checked, partially read.
+- [Reward hacking and emergent misalignment](../surveys/agent-safety/2025-reward-hacking-emergent-misalignment.md): 2025 preprint and companion article; selected primary PDF sections checked, partially read; counted once.
+
+All four notes have Japanese counterparts, related-work comparisons, and proposed check plans. No reproduction or adoption was performed.
+
 ## October 2026: Anthropic formal verification and self-replicating AI (research articles)
 
 - [LLM-assisted formal software verification](../surveys/coding-agents/2026-anthropic-formal-verification.md)

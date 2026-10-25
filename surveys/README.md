@@ -4,11 +4,11 @@
 
 Reading records for computer science and AI-security papers and research articles. Each note follows the [survey record template](template.md) and keeps **primary source checked / text read closely / reproduced** apart. Pick a theme:
 
-- [AI agent safety and out-of-scope behavior](agent-safety/README.md) (2 papers + 1 research article): Whether AI agents act outside their authorization, and how they can be attacked in real workflows.
+- [AI agent safety and out-of-scope behavior](agent-safety/README.md) (3 papers + 1 research article): Whether AI agents act outside their authorization, and how they can be attacked in real workflows.
 - [Decoys, deception, and LLM system defense](deception-defense/README.md) (2): Using fake evidence and decoy models to steer or isolate malicious agents and requests.
-- [Coding agents, code review, and software engineering](coding-agents/README.md) (6 papers + 1 research article): Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review.
+- [Coding agents, code review, and software engineering](coding-agents/README.md) (7 papers + 1 research article + 1 technical article): Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review.
 - [Human-AI collaboration at work](human-ai-collaboration/README.md) (2): What people expect from AI co-workers, and how agent tools should treat the user's waiting time and attention.
-- [Security governance: privacy, policy, and crypto-agility](security-governance/README.md) (2): Organizational and policy-level security questions around GenAI use and cryptographic migration.
+- [Security governance: privacy, policy, crypto-agility, and cloud controls](security-governance/README.md) (3): Organizational security questions around GenAI, cryptographic migration, and multi-cloud control consistency.
 - [LLM serving infrastructure and cost-efficiency](llm-infrastructure/README.md) (3): Hardware choices, scheduling, KV cache control, and long-term memory retrieval.
 - [Cloud resilience and SRE](cloud-resilience/README.md) (1): AWS cross-account fault experiments and recovery decisions; measured results and reproduction unverified.
 - [Events, technical articles, and work/labor research](articles/README.md) (4 articles + 1 academic paper): A CHI paper is kept distinct from the articles.
