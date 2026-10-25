@@ -2,6 +2,13 @@
 
 # AI論文の読書・活用一覧
 
+## 2026-10-25追加：職場の業務活動と非公式学習
+
+- [生成AI導入と生産性・コミュニケーション活動](../surveys/human-ai-collaboration/2026-genai-workplace-productivity-communication.ja.md)：arXiv:2608.15550v1。Microsoft Researchページ・一次HTML確認／部分読了／再現未実施。
+- [日常の人・LLM対話における非公式学習](../surveys/human-ai-collaboration/2026-informal-learning-human-llm.ja.md)：arXiv:2607.17643v2。一次HTML・PDFの要旨と版・公開コードREADME確認／部分読了／コード未実行。
+
+2本とも英語版、批判的比較、未実施の確認計画を用意。操作数と対話への関与を、生産性や学習成果そのものと区別する。
+
 ## 2026-10-25追加：構成・検証・報酬の健全性
 
 - [サブエージェント統合](../surveys/coding-agents/2026-fold-subagents-main-loop.ja.md)：技術記事（2026-10-22）。本文確認／キット未実行。

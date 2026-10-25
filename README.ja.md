@@ -13,7 +13,7 @@
 - [AIエージェントの安全性・逸脱行動](surveys/agent-safety/README.ja.md)（論文3本＋研究記事1本）: AIエージェントが権限外の行動をとるか、実際のワークフローがどう攻撃されうるか。 [自己複製AI](surveys/agent-safety/2026-anthropic-self-replicating-ai.ja.md)・[報酬ハッキング](surveys/agent-safety/2025-reward-hacking-emergent-misalignment.ja.md)。
 - [おとり・欺瞞とLLMシステム防御](surveys/deception-defense/README.ja.md)（2本）: 偽の証拠やおとりモデルで、悪意あるエージェントや要求を誘導・隔離する研究。
 - [コーディングエージェント・コードレビュー・開発現場](surveys/coding-agents/README.ja.md)（論文7本＋研究記事1本＋技術記事1本）: AIコーディング支援・自動修復・自動レビューのベンチマークと企業での実証研究。 [形式検証](surveys/coding-agents/2026-anthropic-formal-verification.ja.md)・[NFV](surveys/coding-agents/2026-neuro-formal-verification.ja.md)・[サブエージェント統合](surveys/coding-agents/2026-fold-subagents-main-loop.ja.md)。
-- [職場での人とAIの協働](surveys/human-ai-collaboration/README.ja.md)（2本）: AIの同僚に人が何を求めるか、エージェントツールが待ち時間や注意をどう扱うべきか。
+- [職場での人とAIの協働](surveys/human-ai-collaboration/README.ja.md)（4本）: AIの同僚への期待、待ち時間・注意の扱い、AI利用による業務活動と学習機会の変化。 [職場の生成AI導入](surveys/human-ai-collaboration/2026-genai-workplace-productivity-communication.ja.md)・[日常対話の非公式学習](surveys/human-ai-collaboration/2026-informal-learning-human-llm.ja.md)。
 - [セキュリティ・ガバナンス（プライバシー・組織ポリシー・暗号アジリティ・クラウド統制）](surveys/security-governance/README.ja.md)（3本）: GenAI利用・暗号移行・マルチクラウド統制の一貫性をめぐる、組織面のセキュリティの問い。 [マルチクラウド設計のサーベイ](surveys/security-governance/2026-multi-cloud-security-architecture.ja.md)。
 - [LLM推論基盤と費用対効果](surveys/llm-infrastructure/README.ja.md)（3本）: LLM推論のハードウェア選択、スケジューリング、KVキャッシュ制御、長期記憶検索。 [Raw-RAGのサーベイ](surveys/llm-infrastructure/2026-raw-rag-agentic-memory.ja.md)。
 - [クラウドの耐障害性・SRE](surveys/cloud-resilience/README.ja.md)（1本）: AWS複数アカウントの障害実験と復旧判定。実測・再現は未確認。

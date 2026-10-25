@@ -2,6 +2,13 @@
 
 # AI Paper Reading and Application List
 
+## Added 2026-10-25: workplace activity and informal learning
+
+- [Generative AI adoption and productivity/communication activity](../surveys/human-ai-collaboration/2026-genai-workplace-productivity-communication.md): arXiv:2608.15550v1; Microsoft Research page and primary HTML checked; partially read, no reproduction.
+- [Informal learning in everyday human–LLM interaction](../surveys/human-ai-collaboration/2026-informal-learning-human-llm.md): arXiv:2607.17643v2; primary HTML, PDF abstract/version, and public code README checked; partially read, code not run.
+
+Both have Japanese counterparts, critical comparisons, and unexecuted check plans. Activity counts and conversational engagement are kept distinct from productivity and learning outcomes.
+
 ## Added 2026-10-25: architecture, verification, and reward integrity
 
 - [Subagent consolidation](../surveys/coding-agents/2026-fold-subagents-main-loop.md): technical article (2026-10-22); body checked, kit not run.
