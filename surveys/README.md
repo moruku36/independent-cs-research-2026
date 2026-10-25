@@ -7,7 +7,7 @@ Reading records for computer science and AI-security papers and research article
 - [AI agent safety and out-of-scope behavior](agent-safety/README.md) (3 papers + 1 research article): Whether AI agents act outside their authorization, and how they can be attacked in real workflows.
 - [Decoys, deception, and LLM system defense](deception-defense/README.md) (2): Using fake evidence and decoy models to steer or isolate malicious agents and requests.
 - [Coding agents, code review, and software engineering](coding-agents/README.md) (7 papers + 1 research article + 1 technical article): Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review.
-- [Human-AI collaboration at work](human-ai-collaboration/README.md) (2): What people expect from AI co-workers, and how agent tools should treat the user's waiting time and attention.
+- [Human-AI collaboration at work](human-ai-collaboration/README.md) (4): What people expect from AI co-workers, how tools treat waiting time and attention, and how AI use changes work activity and learning opportunities.
 - [Security governance: privacy, policy, crypto-agility, and cloud controls](security-governance/README.md) (3): Organizational security questions around GenAI, cryptographic migration, and multi-cloud control consistency.
 - [LLM serving infrastructure and cost-efficiency](llm-infrastructure/README.md) (3): Hardware choices, scheduling, KV cache control, and long-term memory retrieval.
 - [Cloud resilience and SRE](cloud-resilience/README.md) (1): AWS cross-account fault experiments and recovery decisions; measured results and reproduction unverified.
