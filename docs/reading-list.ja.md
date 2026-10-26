@@ -2,6 +2,10 @@
 
 # AI論文の読書・活用一覧
 
+## 2026-10-27追加：Claude Codeのコードレビュー
+
+- [Claude Codeチームのコードレビュー](../surveys/coding-agents/2026-claude-code-review.ja.md)：企業技術記事。一次記事確認、指定のX投稿・PDF本文は未確認／再現未実施。
+
 ## 2026-10-27追加：クラウド・DevOpsとScion
 
 - [Cloud Computing & DevOps：2025–2026年の研究動向](../surveys/cloud-resilience/2026-cloud-devops-research-insights.ja.md)

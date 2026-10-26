@@ -4,6 +4,8 @@
 
 AIコーディング支援・自動修復・自動レビューのベンチマークと企業での実証研究。
 
+- [Claude Codeチームのコードレビュー](2026-claude-code-review.ja.md) — 企業技術記事。元記事本文確認、X投稿・PDF本文は未確認／再現未実施。
+
 - [Anthropicのソース管理再設計：Scion](2026-anthropic-scion-source-control.ja.md) — 研究動向報告・技術記事の読書ノート。部分確認／再現未実施。
 
 - [サブエージェントをメインループへ統合すべき条件](2026-fold-subagents-main-loop.ja.md)（2026-10-22）— 技術記事。本文確認済み／移行キット未実行。論文件数とは区別。
