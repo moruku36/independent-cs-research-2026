@@ -19,6 +19,11 @@
 - [クラウドの耐障害性・SRE](surveys/cloud-resilience/README.ja.md)（2本）: AWS複数アカウントの障害実験と復旧判定。実測・再現は未確認。 [SequenceFI：タイミングを指定するマイクロサービス障害注入](surveys/cloud-resilience/2026-sequencefi.ja.md)。
 - [イベント・技術記事・仕事／労働研究](surveys/articles/README.ja.md)（記事・報告書5本＋学術論文1本）: 仕事・労働のCHI論文を記事と区別して収録。 [再帰的自己改善（RSI）：証拠の読み分け](surveys/articles/2026-rsi-evidence-review.ja.md)。
 
+## 経済・企業開示（論文とは別枠）
+
+- [経済・企業開示の索引](economics/README.ja.md)
+- [Anthropic Form S-1](economics/2026-anthropic-s1.ja.md) — 2026-10-26提出。索引・表紙の読書ノート／財務本文未確認。
+
 ## 計画・ガイド
 
 - [個人によるCS研究の発表と論文投稿](docs/publication-pathways-2026.ja.md)：2026-10-11 JST更新。国内の発表経路、採録例、公開研究意図を一次資料で確認。本人の投稿先・所属表記・参加予算は未決定。

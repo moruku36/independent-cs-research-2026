@@ -19,6 +19,11 @@ Start from a theme; each folder README lists its papers with their verification 
 - [Cloud resilience and SRE](surveys/cloud-resilience/README.md) (2): AWS cross-account fault experiments and recovery decisions; measured results and reproduction unverified. [SequenceFI: Non-intrusive Temporal Fault Injection for Microservice Systems](surveys/cloud-resilience/2026-sequencefi.md)。
 - [Events, technical articles, and work/labor research](surveys/articles/README.md) (5 articles/reports + 1 academic paper): A CHI paper is kept distinct from the articles. [Recursive self-improvement: evidence review](surveys/articles/2026-rsi-evidence-review.md)。
 
+## Economics and corporate disclosures (separate from papers)
+
+- [Economics and disclosures index](economics/README.md)
+- [Anthropic Form S-1](economics/2026-anthropic-s1.md) — Filed 2026-10-26; index/cover reading note, financial body not yet verified.
+
 ## Plans and guides
 
 - [Publishing and presenting CS research as an individual](docs/publication-pathways-2026.md): updated 2026-10-11 JST; domestic Japanese venues, acceptance examples, and public research history checked against primary sources. Target venue, affiliation wording, and travel budget are still undecided.
