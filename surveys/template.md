@@ -27,3 +27,7 @@ Write it in your own words after reading the source, not as a copy or translatio
 - Unconfirmed points and next checks:
 
 Do not treat a translation or copy of an abstract as a finished survey.
+
+## Practical reading (required for future notes)
+
+In addition to the three-line overview, provide six or seven lines covering the question, approach, conclusion, application to work/development/everyday life, and caveat. Separate reported findings from proposed applications. Keep both languages aligned and present a six/seven-line Japanese explanation per source in the completion chat.

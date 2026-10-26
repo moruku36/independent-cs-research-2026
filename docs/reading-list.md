@@ -2,6 +2,16 @@
 
 # AI Paper Reading and Application List
 
+## Added 2026-10-26: practical interpretation
+
+- [Recursive self-improvement: evidence review](../surveys/articles/2026-rsi-evidence-review.md)
+- [Agentic Inequality](../surveys/security-governance/2025-agentic-inequality.md)
+- [SequenceFI: Non-intrusive Temporal Fault Injection for Microservice Systems](../surveys/cloud-resilience/2026-sequencefi.md)
+- [Agentic Uncertainty Reveals Agentic Overconfidence](../surveys/agent-safety/2026-agentic-overconfidence.md)
+- [Goals as First-Class Abstractions in Human-AI Collaboration](../surveys/human-ai-collaboration/2026-goals-first-class-abstractions.md)
+
+Each note records a seven-line practical reading, conclusions, application proposals, and caveats. RSI is a report, not an academic paper. No reproduction.
+
 ## Added 2026-10-25: workplace activity and informal learning
 
 - [Generative AI adoption and productivity/communication activity](../surveys/human-ai-collaboration/2026-genai-workplace-productivity-communication.md): arXiv:2608.15550v1; Microsoft Research page and primary HTML checked; partially read, no reproduction.

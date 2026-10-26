@@ -10,6 +10,8 @@
 
 ## イベント・技術記事（学術論文に含めない）
 
+- [再帰的自己改善（RSI）：証拠の読み分け](2026-rsi-evidence-review.ja.md) — 一次資料を部分確認／実務向け7行・比較・限界・未実施の確認案を収録。
+
 - [Black Hat USA 2026 — NRIセキュア記事レビュー](2026-black-hat-usa-nri-secure.ja.md)（2026-10-20）— 5セッションの要約、一次資料の確認範囲、企業向け検討案。記事本文確認済み／再現・実装未実施。
 - [Research acceleration: The view inside OpenAI — 調査記事の読書記録](2026-10-21-openai-research-acceleration.ja.md)（記録日2026-10-21 JST）— 自社調査記事。筆者の感想を別節に分離。
 ## 仕事・労働に関する記事・レポート

@@ -10,6 +10,8 @@ Vendor reports, conference recaps and company articles appear alongside a work/l
 
 ## Events and technical articles (excluded from academic paper count)
 
+- [Recursive self-improvement: evidence review](2026-rsi-evidence-review.md) — Primary sources partially checked; seven-line practical reading, comparison, limitations, and unexecuted check plan.
+
 - [Black Hat USA 2026: NRI Secure article review](2026-black-hat-usa-nri-secure.md) (2026-10-20): five-session synthesis, primary-source verification scope, and enterprise review proposals. Article checked; no reproduction or implementation.
 - [Research acceleration: The view inside OpenAI](2026-10-21-openai-research-acceleration.md) (recorded 2026-10-21 JST): company research article; author reflection kept separate.
 ## Work and labor articles and reports

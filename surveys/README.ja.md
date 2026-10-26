@@ -4,14 +4,14 @@
 
 コンピュータサイエンス／AIセキュリティの論文・研究記事の読書記録。各ファイルは[サーベイ記録テンプレート](template.ja.md)の項目に沿い、**一次資料確認／本文精読／再現**を区別して記録する。テーマを選んでください。
 
-- [AIエージェントの安全性・逸脱行動](agent-safety/README.ja.md)（論文3本＋研究記事1本）: AIエージェントが権限外の行動をとるか、実際のワークフローがどう攻撃されうるか。
+- [AIエージェントの安全性・逸脱行動](agent-safety/README.ja.md)（論文4本＋研究記事1本）: AIエージェントが権限外の行動をとるか、実際のワークフローがどう攻撃されうるか。 [Agentic Overconfidence：AIエージェントの自信は成功率と一致するか](agent-safety/2026-agentic-overconfidence.ja.md)。
 - [おとり・欺瞞とLLMシステム防御](deception-defense/README.ja.md)（2本）: 偽の証拠やおとりモデルで、悪意あるエージェントや要求を誘導・隔離する研究。
 - [コーディングエージェント・コードレビュー・開発現場](coding-agents/README.ja.md)（論文7本＋研究記事1本＋技術記事1本）: AIコーディング支援・自動修復・自動レビューのベンチマークと企業での実証研究。
-- [職場での人とAIの協働](human-ai-collaboration/README.ja.md)（4本）: AIの同僚への期待、待ち時間・注意の扱い、AI利用による業務活動と学習機会の変化。
-- [セキュリティ・ガバナンス（プライバシー・組織ポリシー・暗号アジリティ・クラウド統制）](security-governance/README.ja.md)（3本）: GenAI利用・暗号移行・マルチクラウド統制の一貫性をめぐる、組織面のセキュリティの問い。
+- [職場での人とAIの協働](human-ai-collaboration/README.ja.md)（5本）: AIの同僚への期待、待ち時間・注意の扱い、AI利用による業務活動と学習機会の変化。 [人とAIの協働で、目標を独立した共有情報として扱う](human-ai-collaboration/2026-goals-first-class-abstractions.ja.md)。
+- [セキュリティ・ガバナンス（プライバシー・組織ポリシー・暗号アジリティ・クラウド統制）](security-governance/README.ja.md)（4本）: GenAI利用・暗号移行・マルチクラウド統制の一貫性をめぐる、組織面のセキュリティの問い。 [Agentic Inequality：AIエージェントを使える力の格差](security-governance/2025-agentic-inequality.ja.md)。
 - [LLM推論基盤と費用対効果](llm-infrastructure/README.ja.md)（3本）: LLM推論のハードウェア選択、スケジューリング、KVキャッシュ制御、長期記憶検索。
-- [クラウドの耐障害性・SRE](cloud-resilience/README.ja.md)（1本）: AWS複数アカウントの障害実験と復旧判定。実測・再現は未確認。
-- [イベント・技術記事・仕事／労働研究](articles/README.ja.md)（記事4本＋学術論文1本）: 仕事・労働のCHI論文を記事と区別して収録。
+- [クラウドの耐障害性・SRE](cloud-resilience/README.ja.md)（2本）: AWS複数アカウントの障害実験と復旧判定。実測・再現は未確認。 [SequenceFI：タイミングを指定するマイクロサービス障害注入](cloud-resilience/2026-sequencefi.ja.md)。
+- [イベント・技術記事・仕事／労働研究](articles/README.ja.md)（記事・報告書5本＋学術論文1本）: 仕事・労働のCHI論文を記事と区別して収録。 [再帰的自己改善（RSI）：証拠の読み分け](articles/2026-rsi-evidence-review.ja.md)。
 
 研究記事も同じ記録項目で整理するが、査読論文・プレプリントとは区別して件数を示す。
 
