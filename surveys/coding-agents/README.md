@@ -4,6 +4,8 @@
 
 Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review.
 
+- [How the Claude Code team does code review](2026-claude-code-review.md) — Company engineering article; primary article checked, X/PDF content not independently verified; no reproduction.
+
 - [Redesigning source control at Anthropic](2026-anthropic-scion-source-control.md) — Research report / technical article reading note. Partially reviewed; no reproduction.
 
 - [When to fold subagents into the main loop](2026-fold-subagents-main-loop.md) (2026-10-22): technical article; body checked, migration kit not run. Counted separately from research papers.
