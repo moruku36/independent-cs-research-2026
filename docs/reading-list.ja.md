@@ -2,6 +2,16 @@
 
 # AI論文の読書・活用一覧
 
+## 2026-10-26追加：実務での読み解き
+
+- [再帰的自己改善（RSI）：証拠の読み分け](../surveys/articles/2026-rsi-evidence-review.ja.md)
+- [Agentic Inequality：AIエージェントを使える力の格差](../surveys/security-governance/2025-agentic-inequality.ja.md)
+- [SequenceFI：タイミングを指定するマイクロサービス障害注入](../surveys/cloud-resilience/2026-sequencefi.ja.md)
+- [Agentic Overconfidence：AIエージェントの自信は成功率と一致するか](../surveys/agent-safety/2026-agentic-overconfidence.ja.md)
+- [人とAIの協働で、目標を独立した共有情報として扱う](../surveys/human-ai-collaboration/2026-goals-first-class-abstractions.ja.md)
+
+各ノートに実務向け7行、結論、応用案と限界を記録。RSIは報告書として区別。再現未実施。
+
 ## 2026-10-25追加：職場の業務活動と非公式学習
 
 - [生成AI導入と生産性・コミュニケーション活動](../surveys/human-ai-collaboration/2026-genai-workplace-productivity-communication.ja.md)：arXiv:2608.15550v1。Microsoft Researchページ・一次HTML確認／部分読了／再現未実施。

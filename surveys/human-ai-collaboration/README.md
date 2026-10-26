@@ -4,6 +4,8 @@
 
 What people expect from AI co-workers, how tools treat waiting time and attention, and how AI use changes work activity and learning opportunities.
 
+- [Goals as First-Class Abstractions in Human-AI Collaboration](2026-goals-first-class-abstractions.md) — Primary sources partially checked; seven-line practical reading, comparison, limitations, and unexecuted check plan.
+
 - [Generative AI adoption and workplace activity allocation](2026-genai-workplace-productivity-communication.md) (arXiv:2608.15550v1, 2026-08-16): observational M365 traces; primary HTML results, methods, and limitations checked; partial reading, no reproduction.
 - [Informal learning in everyday human–LLM interaction](2026-informal-learning-human-llm.md) (arXiv:2607.17643v2, 2026-07-24): learning-oriented conversational behavior; primary HTML, PDF abstract/version, and code README checked; partial reading, no reproduction.
 
