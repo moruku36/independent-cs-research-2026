@@ -2,6 +2,10 @@
 
 # AI論文の読書・活用一覧
 
+## 2026-10-27追加：企業開示（論文件数の対象外）
+
+- [Anthropic Form S-1](../economics/2026-anthropic-s1.ja.md): SEC索引・表紙を確認。全文・財務表未確認。日英ノートと版特定リンクを保存。
+
 ## 2026-10-26追加：シャドーAIと個人情報
 
 - [AIDB記事レビュー：禁止の次の統制](../surveys/security-governance/2026-shadow-ai-ban-pii-governance.ja.md) — 記事と主な参照論文arXiv:2606.00088v1、企業公式発表を区別。実務向け7行を収録。追加の匿名化研究は未精読。
