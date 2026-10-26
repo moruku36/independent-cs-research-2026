@@ -4,6 +4,8 @@
 
 Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review.
 
+- [Redesigning source control at Anthropic](2026-anthropic-scion-source-control.md) — Research report / technical article reading note. Partially reviewed; no reproduction.
+
 - [When to fold subagents into the main loop](2026-fold-subagents-main-loop.md) (2026-10-22): technical article; body checked, migration kit not run. Counted separately from research papers.
 - [Neuro-Formal Verification](2026-neuro-formal-verification.md) (v1, 2026-08-21): preprint; method, evaluation, and error analysis checked; partial reading, no reproduction.
 

@@ -2,6 +2,13 @@
 
 # AI Paper Reading and Application List
 
+## Added 2026-10-27: cloud DevOps and Scion
+
+- [Cloud Computing & DevOps: Research Insights 2025–2026](../surveys/cloud-resilience/2026-cloud-devops-research-insights.md)
+- [Redesigning source control at Anthropic](../surveys/coding-agents/2026-anthropic-scion-source-control.md)
+
+Distinguished as a research report and an engineering article. Referenced papers and reproduction unverified.
+
 ## Added 2026-10-27: corporate disclosure, excluded from paper counts
 
 - [Anthropic Form S-1](../economics/2026-anthropic-s1.md): SEC index and cover checked; full body and financial statements unverified. Bilingual notes with version-identifying links.

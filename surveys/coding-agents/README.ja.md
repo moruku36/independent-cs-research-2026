@@ -4,6 +4,8 @@
 
 AIコーディング支援・自動修復・自動レビューのベンチマークと企業での実証研究。
 
+- [Anthropicのソース管理再設計：Scion](2026-anthropic-scion-source-control.ja.md) — 研究動向報告・技術記事の読書ノート。部分確認／再現未実施。
+
 - [サブエージェントをメインループへ統合すべき条件](2026-fold-subagents-main-loop.ja.md)（2026-10-22）— 技術記事。本文確認済み／移行キット未実行。論文件数とは区別。
 - [Neuro-Formal Verification](2026-neuro-formal-verification.ja.md)（v1、2026-08-21）— プレプリント。方法・評価・誤り分析確認／部分読了／再現未実施。
 

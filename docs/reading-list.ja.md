@@ -2,6 +2,13 @@
 
 # AI論文の読書・活用一覧
 
+## 2026-10-27追加：クラウド・DevOpsとScion
+
+- [Cloud Computing & DevOps：2025–2026年の研究動向](../surveys/cloud-resilience/2026-cloud-devops-research-insights.ja.md)
+- [Anthropicのソース管理再設計：Scion](../surveys/coding-agents/2026-anthropic-scion-source-control.ja.md)
+
+研究動向報告・企業技術記事として整理。引用論文の個別検証と再現は未実施。
+
 ## 2026-10-27追加：企業開示（論文件数の対象外）
 
 - [Anthropic Form S-1](../economics/2026-anthropic-s1.ja.md): SEC索引・表紙を確認。全文・財務表未確認。日英ノートと版特定リンクを保存。
