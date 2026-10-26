@@ -2,6 +2,10 @@
 
 # AI論文の読書・活用一覧
 
+## 2026-10-26追加：シャドーAIと個人情報
+
+- [AIDB記事レビュー：禁止の次の統制](../surveys/security-governance/2026-shadow-ai-ban-pii-governance.ja.md) — 記事と主な参照論文arXiv:2606.00088v1、企業公式発表を区別。実務向け7行を収録。追加の匿名化研究は未精読。
+
 ## 2026-10-26追加：実務での読み解き
 
 - [再帰的自己改善（RSI）：証拠の読み分け](../surveys/articles/2026-rsi-evidence-review.ja.md)

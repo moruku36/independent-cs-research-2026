@@ -2,6 +2,10 @@
 
 # AI Paper Reading and Application List
 
+## Added 2026-10-26: shadow AI and personal data
+
+- [AIDB review: governance beyond bans](../surveys/security-governance/2026-shadow-ai-ban-pii-governance.md) — Distinguishes the article, primary study arXiv:2606.00088v1, and corporate notice. Seven-line practical reading; additional anonymization studies not independently read.
+
 ## Added 2026-10-26: practical interpretation
 
 - [Recursive self-improvement: evidence review](../surveys/articles/2026-rsi-evidence-review.md)
