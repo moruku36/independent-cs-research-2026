@@ -4,6 +4,8 @@
 
 GenAI利用・暗号移行・マルチクラウド統制の一貫性をめぐる、組織面のセキュリティの問い。
 
+- [生成AIの禁止の次に必要なこと：シャドーAI・個人情報](2026-shadow-ai-ban-pii-governance.ja.md) — AIDB記事レビュー。主な参照論文と企業公式発表を確認。論文4本とは別計上。部分読了／再現未実施。
+
 - [Agentic Inequality：AIエージェントを使える力の格差](2025-agentic-inequality.ja.md) — 一次資料を部分確認／実務向け7行・比較・限界・未実施の確認案を収録。
 
 - [AWS・Azure・GCPを横断するマルチクラウド・セキュリティ設計](2026-multi-cloud-security-architecture.ja.md)（2026-09-24）— 出版元PDF本文確認。定量検証の記述不足／再現未実施。
