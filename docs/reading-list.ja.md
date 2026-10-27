@@ -2,6 +2,13 @@
 
 # AI論文の読書・活用一覧
 
+## 2026-10-27追加：Claudeの安全設計と公開時の漏えい対策
+
+- [Claude Duetの安全設計](../surveys/security-governance/2026-claude-duet-safety-privacy-security.ja.md)
+- [Claude Codeの記事公開時の漏えい経路](../surveys/security-governance/2026-claude-code-publication-leak-paths.ja.md)
+
+公式記事と個人の実践記事。本文確認／独立検証・再現未実施。
+
 ## 2026-10-27追加：Microsoftの大規模コード移行
 
 - [AIエージェントによるコード移行と仕様駆動開発](../surveys/coding-agents/2026-microsoft-agentic-code-modernization.ja.md)：企業技術記事。本文確認／独立検証・再現未実施。

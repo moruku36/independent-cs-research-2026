@@ -4,6 +4,9 @@
 
 Organizational security questions around GenAI, cryptographic migration, and multi-cloud control consistency.
 
+- [Claude Duet safety and privacy](2026-claude-duet-safety-privacy-security.md) — Vendor article; primary text checked, not independently validated.
+- [Claude Code publication leak paths](2026-claude-code-publication-leak-paths.md) — Practitioner article; text checked, not reproduced.
+
 - [Beyond AI bans: shadow AI and personal data](2026-shadow-ai-ban-pii-governance.md) — AIDB article review with main primary paper and official incident notice checked. Counted separately from the four paper notes; partial reading, no reproduction.
 
 - [Agentic Inequality](2025-agentic-inequality.md) — Primary sources partially checked; seven-line practical reading, comparison, limitations, and unexecuted check plan.
