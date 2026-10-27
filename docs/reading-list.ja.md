@@ -2,6 +2,10 @@
 
 # AI論文の読書・活用一覧
 
+## 2026-10-27追加：Microsoftの大規模コード移行
+
+- [AIエージェントによるコード移行と仕様駆動開発](../surveys/coding-agents/2026-microsoft-agentic-code-modernization.ja.md)：企業技術記事。本文確認／独立検証・再現未実施。
+
 ## 2026-10-27追加：Claude Codeのコードレビュー
 
 - [Claude Codeチームのコードレビュー](../surveys/coding-agents/2026-claude-code-review.ja.md)：企業技術記事。一次記事確認、指定のX投稿・PDF本文は未確認／再現未実施。

@@ -6,7 +6,7 @@
 
 - [AIエージェントの安全性・逸脱行動](agent-safety/README.ja.md)（論文4本＋研究記事1本）: AIエージェントが権限外の行動をとるか、実際のワークフローがどう攻撃されうるか。 [Agentic Overconfidence：AIエージェントの自信は成功率と一致するか](agent-safety/2026-agentic-overconfidence.ja.md)。
 - [おとり・欺瞞とLLMシステム防御](deception-defense/README.ja.md)（2本）: 偽の証拠やおとりモデルで、悪意あるエージェントや要求を誘導・隔離する研究。
-- [コーディングエージェント・コードレビュー・開発現場](coding-agents/README.ja.md)（論文7本＋研究記事1本＋技術記事1本）: AIコーディング支援・自動修復・自動レビューのベンチマークと企業での実証研究。 [Anthropicのソース管理再設計：Scion](coding-agents/2026-anthropic-scion-source-control.ja.md) (技術記事・報告).
+- [コーディングエージェント・コードレビュー・開発現場](coding-agents/README.ja.md)（論文7本＋研究記事1本＋技術記事4本）: AIコーディング支援・自動修復・自動レビューのベンチマークと企業での実証研究。 [Anthropicのソース管理再設計：Scion](coding-agents/2026-anthropic-scion-source-control.ja.md) (技術記事・報告).
 - [職場での人とAIの協働](human-ai-collaboration/README.ja.md)（5本）: AIの同僚への期待、待ち時間・注意の扱い、AI利用による業務活動と学習機会の変化。 [人とAIの協働で、目標を独立した共有情報として扱う](human-ai-collaboration/2026-goals-first-class-abstractions.ja.md)。
 - [セキュリティ・ガバナンス（プライバシー・組織ポリシー・暗号アジリティ・クラウド統制）](security-governance/README.ja.md)（論文4本＋記事レビュー1本）: GenAI利用・暗号移行・マルチクラウド統制の一貫性をめぐる、組織面のセキュリティの問い。 [Agentic Inequality：AIエージェントを使える力の格差](security-governance/2025-agentic-inequality.ja.md)。 [シャドーAI・個人情報の解説記事レビュー](security-governance/2026-shadow-ai-ban-pii-governance.ja.md).
 - [LLM推論基盤と費用対効果](llm-infrastructure/README.ja.md)（3本）: LLM推論のハードウェア選択、スケジューリング、KVキャッシュ制御、長期記憶検索。
