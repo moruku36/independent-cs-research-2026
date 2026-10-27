@@ -2,6 +2,10 @@
 
 # AI Paper Reading and Application List
 
+## Added 2026-10-27: Microsoft code modernization
+
+- [Agentic code migration and specification-driven development](../surveys/coding-agents/2026-microsoft-agentic-code-modernization.md): company engineering article; primary text checked, no independent validation or reproduction.
+
 ## Added 2026-10-27: Claude Code review
 
 - [Claude Code team code review](../surveys/coding-agents/2026-claude-code-review.md): company engineering article; primary article checked, requested X/PDF not independently read; no reproduction.

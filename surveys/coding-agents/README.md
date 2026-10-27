@@ -4,6 +4,8 @@
 
 Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review.
 
+- [Microsoft agentic code migration and specification-driven development](2026-microsoft-agentic-code-modernization.md) (2026-10-26): company engineering article; primary text checked; migration and proofs not independently verified or reproduced.
+
 - [How the Claude Code team does code review](2026-claude-code-review.md) — Company engineering article; primary article checked, X/PDF content not independently verified; no reproduction.
 
 - [Redesigning source control at Anthropic](2026-anthropic-scion-source-control.md) — Research report / technical article reading note. Partially reviewed; no reproduction.
