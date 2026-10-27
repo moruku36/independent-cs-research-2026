@@ -2,6 +2,13 @@
 
 # AI Paper Reading and Application List
 
+## Added 2026-10-27: Claude safety and publication leak paths
+
+- [Claude Duet safety](../surveys/security-governance/2026-claude-duet-safety-privacy-security.md)
+- [Claude Code publication leak paths](../surveys/security-governance/2026-claude-code-publication-leak-paths.md)
+
+Vendor and practitioner articles; texts checked; no independent validation or replication.
+
 ## Added 2026-10-27: Microsoft code modernization
 
 - [Agentic code migration and specification-driven development](../surveys/coding-agents/2026-microsoft-agentic-code-modernization.md): company engineering article; primary text checked, no independent validation or reproduction.
