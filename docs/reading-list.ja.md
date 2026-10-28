@@ -2,6 +2,20 @@
 
 # AI論文の読書・活用一覧
 
+## 2026-10-28追加：インフラ・AI統制・エージェント設計と評価
+
+- [自宅サーバー25年の変化：仮想化からAIへ](../surveys/cloud-resilience/2026-home-server-evolution.ja.md) — 個人の経験に基づく技術記事
+- [メルカリの全社エージェント活用とAIセキュリティ統制](../surveys/security-governance/2026-mercari-ai-security-governance.ja.md) — 登壇資料（AI×Security Conference 2026）
+- [Scion解説：Gitの前提とエージェント規模の開発基盤](../surveys/coding-agents/2026-scion-qiita-design-review.ja.md) — 一次記事を解説する個人の技術記事
+- [Check PointとDaybreak：脆弱性調査から防御へ](../surveys/security-governance/2026-check-point-daybreak.ja.md) — 提供元の顧客導入事例
+- [ハーネス蒸留でエージェントの周辺設計はどう変わるか](../surveys/coding-agents/2026-harness-distillation-commentary.ja.md) — 研究を論じる技術解説・論説
+- [現代AI入門：モデルから思考するシステムへ](../surveys/coding-agents/2026-thinking-systems.ja.md) — IBISチュートリアルの登壇資料
+- [知識労働のベンチマークは何を測るべきか](../surveys/human-ai-collaboration/2026-knowledge-work-benchmark-design.ja.md) — プレプリント（評価設計・報告の方法論）
+- [tfdrift：IaCドリフトの重要度分類と通知の削減](../surveys/cloud-resilience/2026-tfdrift-severity-taxonomy.ja.md) — デモ論文（本文はIC2E 2026採択版と記載、会場情報は独立未確認）
+- [2026年AIエージェント動向：企業導入と業務の再設計](../surveys/human-ai-collaboration/2026-state-of-ai-agents-report.ja.md) — 企業調査レポート（48ページ）
+
+各ノートに3行概要・7行の実務向け解説・確認範囲・限界・未実施の確認案を記録。登壇資料は抽出トランスクリプト中心の部分確認、Anthropicレポートは主要調査部分の確認。tfdriftの検出率の不一致を明記。再現・導入は未実施。
+
 ## 2026-10-27追加：Claudeの安全設計と公開時の漏えい対策
 
 - [Claude Duetの安全設計](../surveys/security-governance/2026-claude-duet-safety-privacy-security.ja.md)

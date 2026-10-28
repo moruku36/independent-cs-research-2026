@@ -4,6 +4,11 @@
 
 GenAI利用・暗号移行・マルチクラウド統制の一貫性をめぐる、組織面のセキュリティの問い。
 
+## 2026-10-28追加
+
+- [メルカリの全社エージェント活用とAIセキュリティ統制](2026-mercari-ai-security-governance.ja.md) — 登壇資料（AI×Security Conference 2026）。Speaker Deckの公開トランスクリプトを部分確認。多数のページは見出しのみ抽出され、図・詳細設定・発表音声は未確認。
+- [Check PointとDaybreak：脆弱性調査から防御へ](2026-check-point-daybreak.ja.md) — 提供元の顧客導入事例。公式記事本文確認。時間短縮の測定条件、データ、実装は非公開で独立検証・再現未実施。
+
 - [Claude Duetの安全設計](2026-claude-duet-safety-privacy-security.ja.md) — 公式製品記事。本文確認／独立検証未実施。
 - [Claude Codeの記事公開時の漏えい経路](2026-claude-code-publication-leak-paths.ja.md) — 個人の実践記事。本文確認／再現未実施。
 

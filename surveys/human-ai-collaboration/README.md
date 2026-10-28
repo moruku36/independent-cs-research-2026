@@ -4,6 +4,11 @@
 
 What people expect from AI co-workers, how tools treat waiting time and attention, and how AI use changes work activity and learning opportunities.
 
+## Added October 28, 2026
+
+- [Design and Report Benchmarks for Knowledge Work](2026-knowledge-work-benchmark-design.md) — Methodological preprint. Primary HTML methods, case analyses and discussion checked; appendices not closely read, no reproduction.
+- [The 2026 State of AI Agents Report](2026-state-of-ai-agents-report.md) — Vendor-commissioned survey report, 48 pages. Primary PDF methodology and main survey findings, printed pages 3–22, partially checked; later case studies and outlook not closely read.
+
 - [Goals as First-Class Abstractions in Human-AI Collaboration](2026-goals-first-class-abstractions.md) — Primary sources partially checked; seven-line practical reading, comparison, limitations, and unexecuted check plan.
 
 - [Generative AI adoption and workplace activity allocation](2026-genai-workplace-productivity-communication.md) (arXiv:2608.15550v1, 2026-08-16): observational M365 traces; primary HTML results, methods, and limitations checked; partial reading, no reproduction.

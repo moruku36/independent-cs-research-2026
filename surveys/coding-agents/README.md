@@ -4,6 +4,12 @@
 
 Benchmarks and industrial studies of AI coding assistants, automated repair, and automated review.
 
+## Added October 28, 2026
+
+- [Scion commentary: Git assumptions at agent scale](2026-scion-qiita-design-review.md) — Practitioner commentary on a primary engineering article. Body and publication metadata read through Qiita's API. Primary Scion article has an existing note; figures and additional Entire claims were not independently rechecked.
+- [How harness distillation changes agent engineering](2026-harness-distillation-commentary.md) — Technical commentary, republished from Arize. Article body returned by search checked; primary Harness-Zero/RRSI papers and experiments not independently checked.
+- [Modern AI: from language models to thinking systems](2026-thinking-systems.md) — IBIS tutorial presentation. Description and major transcript sections partially checked; diagrams and cited studies not independently validated.
+
 - [Microsoft agentic code migration and specification-driven development](2026-microsoft-agentic-code-modernization.md) (2026-10-26): company engineering article; primary text checked; migration and proofs not independently verified or reproduced.
 
 - [How the Claude Code team does code review](2026-claude-code-review.md) — Company engineering article; primary article checked, X/PDF content not independently verified; no reproduction.
