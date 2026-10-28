@@ -2,6 +2,20 @@
 
 # AI Paper Reading and Application List
 
+## Added October 28, 2026: infrastructure, agent governance, design and evaluation
+
+- [Home servers over 25 years: virtualization to AI](../surveys/cloud-resilience/2026-home-server-evolution.md) — Practitioner technology article
+- [Mercari's enterprise agent security and governance](../surveys/security-governance/2026-mercari-ai-security-governance.md) — Conference presentation
+- [Scion commentary: Git assumptions at agent scale](../surveys/coding-agents/2026-scion-qiita-design-review.md) — Practitioner commentary on a primary engineering article
+- [Check Point and Daybreak: vulnerability research to defense](../surveys/security-governance/2026-check-point-daybreak.md) — Vendor customer case study
+- [How harness distillation changes agent engineering](../surveys/coding-agents/2026-harness-distillation-commentary.md) — Technical commentary, republished from Arize
+- [Modern AI: from language models to thinking systems](../surveys/coding-agents/2026-thinking-systems.md) — IBIS tutorial presentation
+- [Design and Report Benchmarks for Knowledge Work](../surveys/human-ai-collaboration/2026-knowledge-work-benchmark-design.md) — Methodological preprint
+- [tfdrift: severity classification for infrastructure drift](../surveys/cloud-resilience/2026-tfdrift-severity-taxonomy.md) — Demo paper; text states IC2E 2026 acceptance, not independently verified
+- [The 2026 State of AI Agents Report](../surveys/human-ai-collaboration/2026-state-of-ai-agents-report.md) — Vendor-commissioned survey report, 48 pages
+
+Each note includes a three-line overview, seven-line practical reading, verification scope, limitations and an unperformed check plan. Presentations were partially read through transcripts; the Anthropic report's main survey sections were checked. The tfdrift coverage inconsistency is recorded. No reproduction or adoption.
+
 ## Added 2026-10-27: Claude safety and publication leak paths
 
 - [Claude Duet safety](../surveys/security-governance/2026-claude-duet-safety-privacy-security.md)
