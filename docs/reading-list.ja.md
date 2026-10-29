@@ -151,3 +151,7 @@
 ## 2026年10月：OpenAIの自社調査記事
 
 - [Research acceleration: The view inside OpenAI — 調査記事の読書記録](../surveys/articles/2026-10-21-openai-research-acceleration.ja.md)（記録日2026-10-21 JST）：筆者の感想を別節に分けた記事の読書記録。学術論文の件数には含めない。
+
+## 本文確認待ち（2026-10-29 UTC）
+
+- [Wiz：The Rise of Agentic Attacks](../surveys/agent-safety/2026-wiz-agentic-attacks-pending.ja.md) — 指定URLを登録。本文・題名未確認。
