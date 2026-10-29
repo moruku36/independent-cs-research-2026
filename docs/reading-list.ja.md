@@ -2,6 +2,17 @@
 
 # AI論文の読書・活用一覧
 
+## 2026-10-30追加：AIエージェントのセキュリティ
+
+- [危険な3条件（Lethal Trifecta）](../surveys/security-governance/2025-lethal-trifecta.ja.md)
+- [OWASP エージェント型アプリケーションの10大リスク](../surveys/security-governance/2025-owasp-agentic-top10.ja.md)
+- [Meta：エージェントの Rule of Two](../surveys/security-governance/2025-meta-rule-of-two.ja.md)
+- [Google：AIセキュリティの防御戦略](../surveys/security-governance/2025-google-ai-security-frontier.ja.md)
+- [CSA：MAESTRO 脅威モデリング](../surveys/security-governance/2025-csa-maestro.ja.md)
+- [NVIDIA：Open Agent Safety Platform](../surveys/security-governance/2026-nvidia-open-agent-safety.ja.md)
+
+一次記事を確認。独立検証・再現は未実施。
+
 ## 2026-10-29追加
 
 - [AIエージェントは自由な研究を進められるか](../surveys/agent-safety/2026-open-ended-ai-research-shadow-evaluation.ja.md)
