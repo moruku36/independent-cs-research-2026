@@ -4,6 +4,17 @@
 
 ## 2026-10-30追加：AIエージェントのセキュリティ
 
+- [INFUSE：間接プロンプトインジェクションの評価](../surveys/agent-safety/2026-arxiv-2610.20776.ja.md)
+- [The Innocent Courier：Web取得機能を経由した秘密情報の流出](../surveys/agent-safety/2026-arxiv-2610.01768.ja.md)
+- [MCPサーバーのファイル権限と資格情報流出](../surveys/agent-safety/2026-arxiv-2610.22301.ja.md)
+- [マルチエージェントでの信頼伝播と権限制御](../surveys/agent-safety/2026-arxiv-2609.17648.ja.md)
+- [承認から権限濫用へ：コーディングエージェントの権限拡大](../surveys/agent-safety/2026-arxiv-2610.22987.ja.md)
+- [Loopjacking：人の承認と実際の操作のすり替え](../surveys/agent-safety/2026-arxiv-2609.21081.ja.md)
+- [OverAct：AIによる不要な個人情報アクセス](../surveys/agent-safety/2026-arxiv-2610.01508.ja.md)
+- [CoDeL：攻撃と防御を共進化させるプロンプト注入対策](../surveys/agent-safety/2026-arxiv-2609.34463.ja.md)
+
+4本は転載抄録のみ、1本は一次抄録のみ確認。残り3本は一次HTMLの主要部分を確認。いずれも独立再現なし。
+
 - [危険な3条件（Lethal Trifecta）](../surveys/security-governance/2025-lethal-trifecta.ja.md)
 - [OWASP エージェント型アプリケーションの10大リスク](../surveys/security-governance/2025-owasp-agentic-top10.ja.md)
 - [Meta：エージェントの Rule of Two](../surveys/security-governance/2025-meta-rule-of-two.ja.md)
