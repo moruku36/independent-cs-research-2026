@@ -4,6 +4,15 @@
 
 GenAI利用・暗号移行・マルチクラウド統制の一貫性をめぐる、組織面のセキュリティの問い。
 
+## 2026-10-30追加：AIエージェントのセキュリティ
+
+- [危険な3条件（Lethal Trifecta）](2025-lethal-trifecta.ja.md)
+- [OWASP エージェント型アプリケーションの10大リスク](2025-owasp-agentic-top10.ja.md)
+- [Meta：エージェントの Rule of Two](2025-meta-rule-of-two.ja.md)
+- [Google：AIセキュリティの防御戦略](2025-google-ai-security-frontier.ja.md)
+- [CSA：MAESTRO 脅威モデリング](2025-csa-maestro.ja.md)
+- [NVIDIA：Open Agent Safety Platform](2026-nvidia-open-agent-safety.ja.md)
+
 ## 2026-10-28追加
 
 - [メルカリの全社エージェント活用とAIセキュリティ統制](2026-mercari-ai-security-governance.ja.md) — 登壇資料（AI×Security Conference 2026）。Speaker Deckの公開トランスクリプトを部分確認。多数のページは見出しのみ抽出され、図・詳細設定・発表音声は未確認。
