@@ -143,3 +143,7 @@ When adding an entry, record the primary URL, bibliographic information, reading
 ## October 2026: OpenAI company research article
 
 - [Research acceleration: The view inside OpenAI](../surveys/articles/2026-10-21-openai-research-acceleration.md) (recorded 2026-10-21 JST): article reading record with a separate author reflection; outside academic paper counts.
+
+## Source pending (2026-10-29 UTC)
+
+- [Wiz: The Rise of Agentic Attacks](../surveys/agent-safety/2026-wiz-agentic-attacks-pending.md) — requested URL recorded; source and title unverified.
