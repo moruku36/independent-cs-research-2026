@@ -4,6 +4,15 @@
 
 Newest first. Earlier entries use dates recorded as additions in the reading list; these do not establish the user's actual reading dates. Undated entries are omitted.
 
+## 2026-10-30
+
+- [The lethal trifecta](../surveys/security-governance/2025-lethal-trifecta.md)
+- [OWASP Top 10 for Agentic Applications](../surveys/security-governance/2025-owasp-agentic-top10.md)
+- [Agents Rule of Two](../surveys/security-governance/2025-meta-rule-of-two.md)
+- [How we’re securing the AI frontier](../surveys/security-governance/2025-google-ai-security-frontier.md)
+- [MAESTRO threat modeling](../surveys/security-governance/2025-csa-maestro.md)
+- [NVIDIA Open Agent Safety Platform](../surveys/security-governance/2026-nvidia-open-agent-safety.md)
+
 ## 2026-10-29
 
 - [Can AI agents conduct open-ended AI research?](../surveys/agent-safety/2026-open-ended-ai-research-shadow-evaluation.md)
