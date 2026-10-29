@@ -4,6 +4,17 @@
 
 ## Added 2026-10-30: AI agent security
 
+- [INFUSE: A Unified Surface Benchmark for Indirect Prompt Injection in Agentic Systems](../surveys/agent-safety/2026-arxiv-2610.20776.md)
+- [The Innocent Courier: Covert Exfiltration Through Legitimate LLM Web Fetching](../surveys/agent-safety/2026-arxiv-2610.01768.md)
+- [My Credentials, Please: Detecting Filesystem Capability Laundering in MCP Servers at Scale](../surveys/agent-safety/2026-arxiv-2610.22301.md)
+- [Trust propagation and structural containment in Multi-agent LLM pipelines](../surveys/agent-safety/2026-arxiv-2609.17648.md)
+- [From Approval to Abuse: Privilege Escalation Attacks on Harness-Protected Coding Agents](../surveys/agent-safety/2026-arxiv-2610.22987.md)
+- [Loopjacking: Hijacking Human-in-the-Loop Approval](../surveys/agent-safety/2026-arxiv-2609.21081.md)
+- [OverAct: Measuring and Mitigating Proactive Over-Authorization in LLM Tool-Calling Agents](../surveys/agent-safety/2026-arxiv-2610.01508.md)
+- [CoDeL: Co-Evolutionary Defense against Indirect Prompt Injection in LLM-based Agents](../surveys/agent-safety/2026-arxiv-2609.34463.md)
+
+Four entries use copied abstracts, one uses a primary abstract, and three use key sections of primary HTML. No independent replication.
+
 - [The lethal trifecta](../surveys/security-governance/2025-lethal-trifecta.md)
 - [OWASP Top 10 for Agentic Applications](../surveys/security-governance/2025-owasp-agentic-top10.md)
 - [Agents Rule of Two](../surveys/security-governance/2025-meta-rule-of-two.md)
