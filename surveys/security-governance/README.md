@@ -4,6 +4,15 @@
 
 Organizational security questions around GenAI, cryptographic migration, and multi-cloud control consistency.
 
+## Added 2026-10-30: AI agent security
+
+- [The lethal trifecta](2025-lethal-trifecta.md)
+- [OWASP Top 10 for Agentic Applications](2025-owasp-agentic-top10.md)
+- [Agents Rule of Two](2025-meta-rule-of-two.md)
+- [How we’re securing the AI frontier](2025-google-ai-security-frontier.md)
+- [MAESTRO threat modeling](2025-csa-maestro.md)
+- [NVIDIA Open Agent Safety Platform](2026-nvidia-open-agent-safety.md)
+
 ## Added October 28, 2026
 
 - [Mercari's enterprise agent security and governance](2026-mercari-ai-security-governance.md) — Conference presentation. Public transcript partially checked; many pages expose headings only. Diagrams, configuration details and talk audio not checked.
