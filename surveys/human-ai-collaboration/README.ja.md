@@ -18,3 +18,5 @@ AIの同僚への期待、待ち時間・注意の扱い、AI利用による業�
 - [Too Long to Watch, Too Short to Leave — エージェントのマイクロ待ち時間の設計](2026-agent-micro-waits-sidecar.ja.md)（[arXiv:2610.27170](https://arxiv.org/abs/2610.27170)、v1、2026-10-19）— エージェントが動く1〜2分の待ち時間向けに、同じタブ内の脇アシスタントSidecarを提案。予備インタビュー（n=12）と被験者内比較（N=16）。一次HTMLを抽出ツール経由で確認（末尾約4,000字は未読）／会場未確認／再現未実施。
 
 [サーベイ索引](../README.ja.md) | [リポジトリREADME](../../README.ja.md)
+
+- [AIエージェントと人による教育対話の行動ラベル付け](2026-coding-agents-behavioral-labeling.ja.md) — arXiv:2603.27440v1; 主要部分確認・再現未実施.

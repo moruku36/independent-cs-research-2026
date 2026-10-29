@@ -2,6 +2,13 @@
 
 # AI論文の読書・活用一覧
 
+## 2026-10-29追加
+
+- [AIエージェントは自由な研究を進められるか](../surveys/agent-safety/2026-open-ended-ai-research-shadow-evaluation.ja.md)
+- [AI生成Terraformの失敗パターンと防御策](../surveys/cloud-resilience/2026-ai-generated-terraform-guardrails.ja.md)
+- [AIエージェントと人による教育対話の行動ラベル付け](../surveys/human-ai-collaboration/2026-coding-agents-behavioral-labeling.ja.md)
+- [Anthropicのソース管理再設計：Scion（再確認）](../surveys/coding-agents/2026-anthropic-scion-source-control.ja.md)
+
 ## 2026-10-28追加：インフラ・AI統制・エージェント設計と評価
 
 - [自宅サーバー25年の変化：仮想化からAIへ](../surveys/cloud-resilience/2026-home-server-evolution.ja.md) — 個人の経験に基づく技術記事

@@ -22,6 +22,8 @@ Each theme index links to individual notes, their evidence and reading status, a
 
 ## Reading and research
 
+- [Reading history by date](docs/reading-history.md)
+
 - [Reading and application list](docs/reading-list.md): entries and their verification status.
 - [Research agenda](docs/research-agenda.md): prospective, unverified topics.
 - [Publishing and presenting independent CS research](docs/publication-pathways-2026.md): publication pathways and venues.
