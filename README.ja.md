@@ -22,6 +22,8 @@ AI・クラウド・セキュリティ・ソフトウェア開発を中心に、
 
 ## 読書・研究を進める
 
+- [日付別の読書履歴](docs/reading-history.ja.md)
+
 - [読書・活用一覧](docs/reading-list.ja.md)：追加した資料と確認状況。
 - [研究候補](docs/research-agenda.ja.md)：検討中のテーマ。内容は未検証。
 - [個人による研究発表・論文投稿](docs/publication-pathways-2026.ja.md)：発表経路や投稿先の調査。

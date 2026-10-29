@@ -18,3 +18,5 @@ What people expect from AI co-workers, how tools treat waiting time and attentio
 - [Too Long to Watch, Too Short to Leave: Designing for Agent Micro-Waits](2026-agent-micro-waits-sidecar.md) ([arXiv:2610.27170](https://arxiv.org/abs/2610.27170), v1, 2026-10-19): Sidecar, a same-tab side assistant for the 1-2 minute waits while an agent works; formative interviews (n=12) and a within-subjects study (N=16). Primary HTML checked through an extraction tool (last ~4,000 characters unread); venue unconfirmed; no reproduction.
 
 [Survey index](../README.md) | [Repository README](../../README.md)
+
+- [From Tool to Teammate: LLM Coding Agents as Collaborative Partners for Behavioral Labeling in Educational Dialogue Analysis](2026-coding-agents-behavioral-labeling.md) — arXiv:2603.27440v1; key sections checked; not reproduced.

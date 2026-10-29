@@ -2,6 +2,13 @@
 
 # AI Paper Reading and Application List
 
+## Added 2026-10-29
+
+- [Can AI agents conduct open-ended AI research?](../surveys/agent-safety/2026-open-ended-ai-research-shadow-evaluation.md)
+- [AI-Generated Terraform in 2026: Benchmarks, Failure Modes, Guardrails](../surveys/cloud-resilience/2026-ai-generated-terraform-guardrails.md)
+- [From Tool to Teammate: LLM Coding Agents as Collaborative Partners for Behavioral Labeling in Educational Dialogue Analysis](../surveys/human-ai-collaboration/2026-coding-agents-behavioral-labeling.md)
+- [Redesigning source control at Anthropic (revisited)](../surveys/coding-agents/2026-anthropic-scion-source-control.md)
+
 ## Added October 28, 2026: infrastructure, agent governance, design and evaluation
 
 - [Home servers over 25 years: virtualization to AI](../surveys/cloud-resilience/2026-home-server-evolution.md) — Practitioner technology article

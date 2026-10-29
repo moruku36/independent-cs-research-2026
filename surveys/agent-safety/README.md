@@ -14,3 +14,5 @@ Whether AI agents act outside their authorization, and how they can be attacked 
 - [GitInject](2026-gitinject.md) (2026-06-07): real-world prompt injection against AI-powered CI/CD workflows. Primary HTML read in full; no reproduction, PDF cross-check, or code check. Mismatches between tables and text recorded as unresolved.
 
 [Survey index](../README.md) | [Repository README](../../README.md)
+
+- [Can AI agents conduct open-ended AI research?](2026-open-ended-ai-research-shadow-evaluation.md) — arXiv:2607.27191v2; key sections checked; not reproduced.

@@ -14,3 +14,5 @@ AIエージェントが権限外の行動をとるか、実際のワークフロ
 - [GitInject](2026-gitinject.ja.md)（2026-06-07）— AI搭載CI/CDワークフローへの実環境プロンプトインジェクションを評価。一次HTML通読／再現・PDF照合・コード確認は未実施。表と本文の不一致は未解決のまま記録。
 
 [サーベイ索引](../README.ja.md) | [リポジトリREADME](../../README.ja.md)
+
+- [AIエージェントは自由な研究を進められるか](2026-open-ended-ai-research-shadow-evaluation.ja.md) — arXiv:2607.27191v2; 主要部分確認・再現未実施.
