@@ -4,6 +4,10 @@
 
 Organizational security questions around GenAI, cryptographic migration, and multi-cloud control consistency.
 
+
+- [QERS: PQC for IoT communications](2026-qers-pqc-iot.md) — primary text partly checked; result inconsistencies noted.
+- [NRI Secure: requested blog pending](2026-nri-ai-development-pending.md) — specified blog unavailable; separate announcement checked.
+
 ## Added 2026-10-30: AI agent security
 
 - [The lethal trifecta](2025-lethal-trifecta.md)
