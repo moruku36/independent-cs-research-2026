@@ -4,6 +4,11 @@
 
 
 
+
+## Added 2026-10-30: GitHub development trends
+
+- [Octoverse 2026: GitHub activity and agents](../surveys/articles/2026-github-octoverse-agents.md) — company report, with measurement scope and limitations.
+
 ## Added 2026-10-30: continual learning
 
 - [Google Sleep: continual learning and memory consolidation](../surveys/llm-infrastructure/2026-google-sleep-continual-learning.md) — article and underlying paper recorded as one study.
