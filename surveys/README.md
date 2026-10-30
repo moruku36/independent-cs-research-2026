@@ -14,6 +14,8 @@ Reading records for computer science and AI-security papers and research article
 - [Events, technical articles, and work/labor research](articles/README.md) (5 articles/reports + 1 academic paper): A CHI paper is kept distinct from the articles. [Recursive self-improvement: evidence review](articles/2026-rsi-evidence-review.md)。
 
 
+- [Forecasting and benchmarks](forecasting/README.md): Time-series forecasts and evaluation datasets.
+
 Research articles follow the same record fields but are counted separately from academic papers and preprints.
 
 ## Principles for research notes
