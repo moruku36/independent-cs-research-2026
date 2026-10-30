@@ -6,6 +6,8 @@
 
 ## 2026-10-30
 
+- [Google Sleep：継続学習と記憶の定着](../surveys/llm-infrastructure/2026-google-sleep-continual-learning.ja.md)
+
 - [QERS：IoT通信の耐量子暗号評価](../surveys/security-governance/2026-qers-pqc-iot.ja.md)
 - [IDOBE：感染症流行予測](../surveys/forecasting/2026-idobe-outbreak-benchmark.ja.md)
 
