@@ -6,6 +6,8 @@ Newest first. Earlier entries use dates recorded as additions in the reading lis
 
 ## 2026-10-30
 
+- [Google Sleep: continual learning and memory consolidation](../surveys/llm-infrastructure/2026-google-sleep-continual-learning.md)
+
 - [QERS: PQC for IoT](../surveys/security-governance/2026-qers-pqc-iot.md)
 - [IDOBE outbreak forecasting](../surveys/forecasting/2026-idobe-outbreak-benchmark.md)
 
