@@ -4,6 +4,11 @@
 
 
 
+
+## 2026-10-30追加：GitHub開発動向
+
+- [Octoverse 2026：AIエージェントとGitHubの開発動向](../surveys/articles/2026-github-octoverse-agents.ja.md) — 企業レポート。集計の範囲と限界を明記。
+
 ## 2026-10-30追加：継続学習
 
 - [Google Sleep：継続学習と記憶の定着](../surveys/llm-infrastructure/2026-google-sleep-continual-learning.ja.md) — 研究記事と元論文を一件として整理。
