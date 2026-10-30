@@ -10,4 +10,6 @@ Hardware choices, scheduling, KV cache control, and long-term memory retrieval.
 
 - [Raw-RAG versus agentic memory](2026-raw-rag-agentic-memory.md) ([arXiv:2610.30755v1](https://arxiv.org/html/2610.30755v1), 2026): raw-history retrieval versus complex memory management. Primary body and selected appendix material checked; partially read; code and reproduction unverified.
 
+- [Google Sleep: continual learning and memory consolidation](2026-google-sleep-continual-learning.md) — Google blog and underlying preprint partially checked; not reproduced.
+
 [Survey index](../README.md) | [Repository README](../../README.md)

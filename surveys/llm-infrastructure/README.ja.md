@@ -10,4 +10,6 @@ LLM推論のハードウェア選択、スケジューリング、KVキャッシ
 
 - [Raw-RAGとエージェント記憶の比較](2026-raw-rag-agentic-memory.ja.md)（[arXiv:2610.30755v1](https://arxiv.org/html/2610.30755v1)、2026）— 原履歴検索と複雑な記憶管理の比較。一次本文・付録の一部を確認／部分読了／コード・再現未検証。
 
+- [Google Sleep：継続学習と記憶の定着](2026-google-sleep-continual-learning.ja.md) — Google記事と元論文を部分確認、再現未実施。
+
 [サーベイ索引](../README.ja.md) | [リポジトリREADME](../../README.ja.md)

@@ -3,6 +3,11 @@
 # AI Paper Reading and Application List
 
 
+
+## Added 2026-10-30: continual learning
+
+- [Google Sleep: continual learning and memory consolidation](../surveys/llm-infrastructure/2026-google-sleep-continual-learning.md) — article and underlying paper recorded as one study.
+
 ## Added 2026-10-30: PQC and forecasting
 
 - [QERS: PQC for IoT](../surveys/security-governance/2026-qers-pqc-iot.md) — duplicate link counted once; primary text partially checked, inconsistencies recorded.

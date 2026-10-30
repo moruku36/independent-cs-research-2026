@@ -3,6 +3,11 @@
 # AI論文の読書・活用一覧
 
 
+
+## 2026-10-30追加：継続学習
+
+- [Google Sleep：継続学習と記憶の定着](../surveys/llm-infrastructure/2026-google-sleep-continual-learning.ja.md) — 研究記事と元論文を一件として整理。
+
 ## 2026-10-30追加：耐量子暗号と時系列予測
 
 - [QERS：IoT通信の耐量子暗号評価](../surveys/security-governance/2026-qers-pqc-iot.ja.md) — ResearchGateの重複URLは1件に統合。一次本文部分確認、矛盾あり。
