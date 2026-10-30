@@ -6,6 +6,9 @@ Newest first. Earlier entries use dates recorded as additions in the reading lis
 
 ## 2026-10-30
 
+- [QERS: PQC for IoT](../surveys/security-governance/2026-qers-pqc-iot.md)
+- [IDOBE outbreak forecasting](../surveys/forecasting/2026-idobe-outbreak-benchmark.md)
+
 - [INFUSE: A Unified Surface Benchmark for Indirect Prompt Injection in Agentic Systems](../surveys/agent-safety/2026-arxiv-2610.20776.md)
 - [The Innocent Courier: Covert Exfiltration Through Legitimate LLM Web Fetching](../surveys/agent-safety/2026-arxiv-2610.01768.md)
 - [My Credentials, Please: Detecting Filesystem Capability Laundering in MCP Servers at Scale](../surveys/agent-safety/2026-arxiv-2610.22301.md)

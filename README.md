@@ -18,6 +18,7 @@ Each theme index links to individual notes, their evidence and reading status, a
 | [LLM infrastructure](surveys/llm-infrastructure/README.md) | Serving, cost, caching, and memory |
 | [Cloud resilience and SRE](surveys/cloud-resilience/README.md) | Fault injection, recovery, cloud and DevOps |
 | [Events, articles, and work research](surveys/articles/README.md) | Event reports, technology trends, and workplace research |
+| [Forecasting and benchmarks](surveys/forecasting/README.md) | Time-series forecasting, datasets and uncertainty |
 | [Economics and corporate disclosures](economics/README.md) | Public corporate materials, kept separate from papers |
 
 ## Reading and research

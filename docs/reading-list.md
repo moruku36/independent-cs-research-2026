@@ -2,6 +2,13 @@
 
 # AI Paper Reading and Application List
 
+
+## Added 2026-10-30: PQC and forecasting
+
+- [QERS: PQC for IoT](../surveys/security-governance/2026-qers-pqc-iot.md) — duplicate link counted once; primary text partially checked, inconsistencies recorded.
+- [IDOBE outbreak forecasting](../surveys/forecasting/2026-idobe-outbreak-benchmark.md) — primary v2 partially checked.
+- [NRI Secure requested blog](../surveys/security-governance/2026-nri-ai-development-pending.md) — pending; separate official announcement distinguished.
+
 ## Added 2026-10-30: AI agent security
 
 - [INFUSE: A Unified Surface Benchmark for Indirect Prompt Injection in Agentic Systems](../surveys/agent-safety/2026-arxiv-2610.20776.md)

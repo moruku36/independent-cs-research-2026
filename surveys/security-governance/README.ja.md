@@ -4,6 +4,10 @@
 
 GenAI利用・暗号移行・マルチクラウド統制の一貫性をめぐる、組織面のセキュリティの問い。
 
+
+- [QERS：IoT通信の耐量子暗号評価](2026-qers-pqc-iot.ja.md) — 一次本文を部分確認、結果に不一致あり。
+- [NRIセキュア：指定ブログ確認待ち](2026-nri-ai-development-pending.ja.md) — 指定記事は未取得、関連公式発表は別資料として確認。
+
 ## 2026-10-30追加：AIエージェントのセキュリティ
 
 - [危険な3条件（Lethal Trifecta）](2025-lethal-trifecta.ja.md)

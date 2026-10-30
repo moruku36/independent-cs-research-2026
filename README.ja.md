@@ -18,6 +18,7 @@ AI・クラウド・セキュリティ・ソフトウェア開発を中心に、
 | [LLM推論基盤](surveys/llm-infrastructure/README.ja.md) | 推論環境、コスト、キャッシュ、メモリー |
 | [クラウドの耐障害性・SRE](surveys/cloud-resilience/README.ja.md) | 障害注入、復旧、クラウド・DevOps |
 | [イベント・技術記事・仕事／労働研究](surveys/articles/README.ja.md) | イベント報告、技術動向、仕事に関する研究 |
+| [予測・ベンチマーク](surveys/forecasting/README.ja.md) | 時系列予測、評価データと不確実性 |
 | [経済・企業開示](economics/README.ja.md) | 企業の公開資料を論文と分けて整理 |
 
 ## 読書・研究を進める

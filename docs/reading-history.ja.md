@@ -6,6 +6,9 @@
 
 ## 2026-10-30
 
+- [QERS：IoT通信の耐量子暗号評価](../surveys/security-governance/2026-qers-pqc-iot.ja.md)
+- [IDOBE：感染症流行予測](../surveys/forecasting/2026-idobe-outbreak-benchmark.ja.md)
+
 - [INFUSE：間接プロンプトインジェクションの評価](../surveys/agent-safety/2026-arxiv-2610.20776.ja.md)
 - [The Innocent Courier：Web取得機能を経由した秘密情報の流出](../surveys/agent-safety/2026-arxiv-2610.01768.ja.md)
 - [MCPサーバーのファイル権限と資格情報流出](../surveys/agent-safety/2026-arxiv-2610.22301.ja.md)

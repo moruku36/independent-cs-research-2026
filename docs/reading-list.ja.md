@@ -2,6 +2,13 @@
 
 # AI論文の読書・活用一覧
 
+
+## 2026-10-30追加：耐量子暗号と時系列予測
+
+- [QERS：IoT通信の耐量子暗号評価](../surveys/security-governance/2026-qers-pqc-iot.ja.md) — ResearchGateの重複URLは1件に統合。一次本文部分確認、矛盾あり。
+- [IDOBE：感染症流行予測](../surveys/forecasting/2026-idobe-outbreak-benchmark.ja.md) — 一次v2部分確認。
+- [NRIセキュアの指定ブログ](../surveys/security-governance/2026-nri-ai-development-pending.ja.md) — 本文確認待ち。別の公式発表を明確に区別。
+
 ## 2026-10-30追加：AIエージェントのセキュリティ
 
 - [INFUSE：間接プロンプトインジェクションの評価](../surveys/agent-safety/2026-arxiv-2610.20776.ja.md)
