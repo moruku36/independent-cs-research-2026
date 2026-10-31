@@ -29,3 +29,5 @@ AIエージェントが権限外の行動をとるか、実際のワークフロ
 - [AIエージェントは自由な研究を進められるか](2026-open-ended-ai-research-shadow-evaluation.ja.md) — arXiv:2607.27191v2; 主要部分確認・再現未実施.
 
 - [Wiz：The Rise of Agentic Attacks](2026-wiz-agentic-attacks-pending.ja.md) — 本文未取得、確認・要約待ち。
+
+- [エージェントの構造的な網羅率テスト](2026-agent-workflow-structural-testing.ja.md) — 一次HTML主要部分確認、集計の不一致あり、再現未実施。

@@ -29,3 +29,5 @@ Whether AI agents act outside their authorization, and how they can be attacked 
 - [Can AI agents conduct open-ended AI research?](2026-open-ended-ai-research-shadow-evaluation.md) — arXiv:2607.27191v2; key sections checked; not reproduced.
 
 - [Wiz: The Rise of Agentic Attacks](2026-wiz-agentic-attacks-pending.md) — source unavailable; awaiting verification and summary.
+
+- [Testing Agentic Workflows with Structural Coverage Criteria](2026-agent-workflow-structural-testing.md) — primary HTML selected sections; conflicting totals noted; not reproduced.

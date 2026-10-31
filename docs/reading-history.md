@@ -4,6 +4,12 @@
 
 Newest first. Earlier entries use dates recorded as additions in the reading list; these do not establish the user's actual reading dates. Undated entries are omitted.
 
+## 2026-10-31
+
+- [Structural testing of agent workflows](../surveys/agent-safety/2026-agent-workflow-structural-testing.md) — selected primary sections checked.
+- [Agentic evidence black box](../surveys/security-governance/2026-agentic-evidence-black-box.md) — selected primary sections checked.
+- [ECB speech](../economics/2026-ecb-ai-adoption-pending.md) — added for tracking; primary text unavailable, not read.
+
 ## 2026-10-30
 
 - [Octoverse 2026: GitHub activity and agents](../surveys/articles/2026-github-octoverse-agents.md)
