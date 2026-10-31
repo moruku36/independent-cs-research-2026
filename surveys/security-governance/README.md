@@ -35,3 +35,5 @@ Organizational security questions around GenAI, cryptographic migration, and mul
 - [Practical evaluation of CAMM](2026-camm-practical-evaluation.md) (v1, 2026-04-14): crypto-agility maturity model. Primary PDF text checked; no experimental verification.
 
 [Survey index](../README.md) | [Repository README](../../README.md)
+
+- [A Black Box for Agentic Processes](2026-agentic-evidence-black-box.md) — architecture proposal; selected primary sections checked, no empirical evaluation.
