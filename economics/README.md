@@ -9,3 +9,5 @@ Reading notes for filings, prospectuses, and company financial disclosures. Coun
 Conventions: retain primary URLs and accession identifiers; track amendments separately. Do not describe missing full text or unchecked numbers as archived or verified.
 
 [Repository README](../README.md)
+
+- [ECB speech on AI adoption: pending primary verification](2026-ecb-ai-adoption-pending.md) — specified primary page unavailable; title and contents unverified.
