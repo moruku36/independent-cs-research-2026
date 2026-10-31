@@ -186,3 +186,9 @@ When adding an entry, record the primary URL, bibliographic information, reading
 ## Source pending (2026-10-29 UTC)
 
 - [Wiz: The Rise of Agentic Attacks](../surveys/agent-safety/2026-wiz-agentic-attacks-pending.md) — requested URL recorded; source and title unverified.
+
+## Added 2026-10-31 (JST)
+
+- [Structural testing of agent workflows](../surveys/agent-safety/2026-agent-workflow-structural-testing.md) — selected primary sections checked; conflicting totals, no reproduction.
+- [Agentic evidence black box](../surveys/security-governance/2026-agentic-evidence-black-box.md) — architecture proposal, no empirical evaluation.
+- [ECB speech: primary verification pending](../economics/2026-ecb-ai-adoption-pending.md) — specified page unavailable; not read.
