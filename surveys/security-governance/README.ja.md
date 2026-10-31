@@ -35,3 +35,5 @@ GenAI利用・暗号移行・マルチクラウド統制の一貫性をめぐる
 - [CAMMの実用評価](2026-camm-practical-evaluation.ja.md)（v1、2026-04-14）— 暗号アジリティ成熟度モデル。一次PDF本文確認済み／再現未実施。評価条件・限界を整理。
 
 [サーベイ索引](../README.ja.md) | [リポジトリREADME](../../README.ja.md)
+
+- [エージェントの監査証拠を残すブラックボックス](2026-agentic-evidence-black-box.ja.md) — 設計提案、一次資料の主要部分確認、実証なし。
