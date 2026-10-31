@@ -4,6 +4,12 @@
 
 新しい日付順。過去分は既存の読書一覧に記された追加日を使用し、本人の読了日を保証するものではありません。日付が特定できない資料は省いています。
 
+## 2026-10-31
+
+- [エージェントの構造的テスト](../surveys/agent-safety/2026-agent-workflow-structural-testing.ja.md) — 一次資料の主要部分確認。
+- [エージェントの監査証拠ブラックボックス](../surveys/security-governance/2026-agentic-evidence-black-box.ja.md) — 一次資料の主要部分確認。
+- [ECB講演](../economics/2026-ecb-ai-adoption-pending.ja.md) — 確認待ちとして登録、一次本文未読。
+
 ## 2026-10-30
 
 - [Octoverse 2026：AIエージェントとGitHubの開発動向](../surveys/articles/2026-github-octoverse-agents.ja.md)
